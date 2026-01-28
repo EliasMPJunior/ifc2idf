@@ -34,7 +34,7 @@ RUN pip install --no-cache-dir ebcpy teaser fmpy
 RUN pip install --force-reinstall --no-cache-dir git+https://github.com/BIM2SIM/geomeppy@fix_dependencies
 
 # Install numpy-stl
-RUN pip install --no-cache-dir numpy-stl
+RUN pip install --no-cache-dir numpy-stl gitpython
 
 RUN pip install --upgrade "pint>=0.24.1" "pint-pandas>=0.6"
 # Minimal EnergyPlus install (9.4.0)
@@ -64,3 +64,5 @@ RUN cd /usr/local/bin && find -L . -type l -delete
 
 # Back to mamba user
 USER $MAMBA_USER
+
+WORKDIR /app
