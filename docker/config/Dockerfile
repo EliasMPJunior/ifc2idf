@@ -23,6 +23,8 @@ COPY --chown=$MAMBA_USER:$MAMBA_USER . .
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
 ENV PIP_DEFAULT_TIMEOUT=500
+ENV GIT_PYTHON_REFRESH=quiet
+ENV GIT_PYTHON_GIT_EXECUTABLE=/usr/bin/git
 
 # Install ebcpy and teaser via pip since they're not available on conda-forge
 RUN pip install --no-cache-dir ebcpy teaser fmpy
