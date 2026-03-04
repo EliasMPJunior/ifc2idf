@@ -1,0 +1,1847 @@
+Program Version:,EnergyPlus, Version 9.4.0-998c4b761e, YMD=2026.03.04 19:36
+Tabular Output Report in Format: ,Comma
+
+Building:,None
+Environment:,RUN PERIOD 1 ** Aachen NW DEU ISD-TMYx WMO#=105010
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Building Utility Performance Summary
+FOR:,Entire Facility
+Values gathered over      8760.00 hours
+
+Site and Source Energy
+
+,,Total Energy [kWh],Energy Per Total Building Area [kWh/m2],Energy Per Conditioned Building Area [kWh/m2]
+,Total Site Energy,20911.37,100.27,100.27
+,Net Site Energy,20911.37,100.27,100.27
+,Total Source Energy,69498.32,333.25,333.25
+,Net Source Energy,69498.32,333.25,333.25
+
+
+Site to Source Energy Conversion Factors
+
+,,Site=>Source Conversion Factor
+,Electricity,3.167
+,Natural Gas,1.084
+,District Cooling,1.056
+,District Heating,3.613
+,Steam,1.200
+,Gasoline,1.050
+,Diesel,1.050
+,Coal,1.050
+,Fuel Oil No 1,1.050
+,Fuel Oil No 2,1.050
+,Propane,1.050
+,Other Fuel 1,1.000
+,Other Fuel 2,1.000
+
+
+Building Area
+
+,,Area [m2]
+,Total Building Area,208.55
+,Net Conditioned Building Area,208.55
+,Unconditioned Building Area,0.00
+
+
+End Uses
+
+,,Electricity [kWh],Natural Gas [kWh],Gasoline [kWh],Diesel [kWh],Coal [kWh],Fuel Oil No 1 [kWh],Fuel Oil No 2 [kWh],Propane [kWh],Other Fuel 1 [kWh],Other Fuel 2 [kWh],District Cooling [kWh],District Heating [kWh],Water [m3]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7330.90,0.00
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting,1019.28,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,12561.19,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,,
+,Total End Uses,13580.47,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7330.90,0.00
+Note: District heat appears to be the principal heating source based on energy usage.
+
+
+End Uses By Subcategory
+
+,,Subcategory,Electricity [kWh],Natural Gas [kWh],Gasoline [kWh],Diesel [kWh],Coal [kWh],Fuel Oil No 1 [kWh],Fuel Oil No 2 [kWh],Propane [kWh],Other Fuel 1 [kWh],Other Fuel 2 [kWh],District Cooling [kWh],District Heating [kWh],Water [m3]
+,Heating,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7330.90,0.00
+,Cooling,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting,General,1019.28,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,General,12561.19,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,Ventilation (simple),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+Normalized Metrics
+Utility Use Per Conditioned Floor Area
+
+,,Electricity Intensity [kWh/m2],Natural Gas Intensity [kWh/m2],Gasoline Intensity [kWh/m2],Diesel Intensity [kWh/m2],Coal Intensity [kWh/m2],Fuel Oil No 1 Intensity [kWh/m2],Fuel Oil No 2 Intensity [kWh/m2],Propane Intensity [kWh/m2],Other Fuel 1 Intensity [kWh/m2],Other Fuel 2 Intensity [kWh/m2],District Cooling Intensity [kWh/m2],District Heating Intensity [kWh/m2],Water Intensity [m3/m2]
+,Lighting,4.89,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,HVAC,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,35.15,0.00
+,Other,60.23,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total,65.12,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,35.15,0.00
+
+
+Utility Use Per Total Floor Area
+
+,,Electricity Intensity [kWh/m2],Natural Gas Intensity [kWh/m2],Gasoline Intensity [kWh/m2],Diesel Intensity [kWh/m2],Coal Intensity [kWh/m2],Fuel Oil No 1 Intensity [kWh/m2],Fuel Oil No 2 Intensity [kWh/m2],Propane Intensity [kWh/m2],Other Fuel 1 Intensity [kWh/m2],Other Fuel 2 Intensity [kWh/m2],District Cooling Intensity [kWh/m2],District Heating Intensity [kWh/m2],Water Intensity [m3/m2]
+,Lighting,4.89,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,HVAC,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,35.15,0.00
+,Other,60.23,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total,65.12,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,35.15,0.00
+
+
+Electric Loads Satisfied
+
+,,Electricity [kWh],Percent Electricity [%]
+,Fuel-Fired Power Generation,0.000,0.00
+,High Temperature Geothermal*,0.000,0.00
+,Photovoltaic Power,0.000,0.00
+,Wind Power,0.000,0.00
+,Power Conversion,0.000,0.00
+,Net Decrease in On-Site Storage,0.000,0.00
+,Total On-Site Electric Sources,0.000,0.00
+,,,
+,Electricity Coming From Utility,13580.469,100.00
+,Surplus Electricity Going To Utility,0.000,0.00
+,Net Electricity From Utility,13580.469,100.00
+,,,
+,Total On-Site and Utility Electric Sources,13580.469,100.00
+,Total Electricity End Uses,13580.469,100.00
+
+
+On-Site Thermal Sources
+
+,,Heat [kWh],Percent Heat [%]
+,Water-Side Heat Recovery,0.00,
+,Air to Air Heat Recovery for Cooling,0.00,
+,Air to Air Heat Recovery for Heating,0.00,
+,High-Temperature Geothermal*,0.00,
+,Solar Water Thermal,0.00,
+,Solar Air Thermal,0.00,
+,Total On-Site Thermal Sources,0.00,
+
+
+Water Source Summary
+
+,,Water [m3],Percent Water [%]
+,Rainwater Collection,0.00,-
+,Condensate Collection,0.00,-
+,Groundwater Well,0.00,-
+,Total On Site Water Sources,0.00,-
+,-,-,-
+,Initial Storage,0.00,-
+,Final Storage,0.00,-
+,Change in Storage,0.00,-
+,-,-,-
+,Water Supplied by Utility,0.00,-
+,-,-,-
+,Total On Site, Change in Storage, and Utility Water Sources,0.00,-
+,Total Water End Uses,0.00,-
+
+
+Setpoint Not Met Criteria
+
+,,Degrees [deltaC]
+,Tolerance for Zone Heating Setpoint Not Met Time,0.20
+,Tolerance for Zone Cooling Setpoint Not Met Time,0.20
+
+
+Comfort and Setpoint Not Met Summary
+
+,,Facility [Hours]
+,Time Setpoint Not Met During Occupied Heating,0.00
+,Time Setpoint Not Met During Occupied Cooling,5934.50
+,Time Not Comfortable Based on Simple ASHRAE 55-2004,6536.75
+
+
+Note 1: An asterisk (*) indicates that the feature is not yet implemented.
+----------------------------------------------------------------------------------------------------
+REPORT:,Input Verification and Results Summary
+FOR:,Entire Facility
+General
+
+,,Value
+,Program Version and Build,EnergyPlus, Version 9.4.0-998c4b761e, YMD=2026.03.04 19:36
+,RunPeriod,RUN PERIOD 1
+,Weather File,Aachen NW DEU ISD-TMYx WMO#=105010
+,Latitude [deg],50.80
+,Longitude [deg],6.02
+,Elevation [m],232.00
+,Time Zone,1.00
+,North Axis Angle [deg],0.00
+,Rotation for Appendix G [deg],0.00
+,Hours Simulated [hrs],8760.00
+
+
+ENVELOPE
+Window-Wall Ratio
+
+,,Total,North (315 to 45 deg),East (45 to 135 deg),South (135 to 225 deg),West (225 to 315 deg)
+,Gross Wall Area [m2],156.24,35.84,41.98,37.04,41.38
+,Above Ground Wall Area [m2],156.24,35.84,41.98,37.04,41.38
+,Window Opening Area [m2],22.99,7.20,5.49,4.80,5.49
+,Gross Window-Wall Ratio [%],14.71,20.09,13.09,12.96,13.28
+,Above Ground Window-Wall Ratio [%],14.71,20.09,13.09,12.96,13.28
+
+
+Conditioned Window-Wall Ratio
+
+,,Total,North (315 to 45 deg),East (45 to 135 deg),South (135 to 225 deg),West (225 to 315 deg)
+,Gross Wall Area [m2],156.24,35.84,41.98,37.04,41.38
+,Above Ground Wall Area [m2],156.24,35.84,41.98,37.04,41.38
+,Window Opening Area [m2],22.99,7.20,5.49,4.80,5.49
+,Gross Window-Wall Ratio [%],14.71,20.09,13.09,12.96,13.28
+,Above Ground Window-Wall Ratio [%],14.71,20.09,13.09,12.96,13.28
+
+
+Skylight-Roof Ratio
+
+,,Total
+,Gross Roof Area [m2],124.46
+,Skylight Area [m2],0.00
+,Skylight-Roof Ratio [%],0.00
+
+
+PERFORMANCE
+Zone Summary
+
+,,Area [m2],Conditioned (Y/N),Part of Total Floor Area (Y/N),Volume [m3],Multipliers,Above Ground Gross Wall Area [m2],Underground Gross Wall Area [m2],Window Glass Area [m2],Opening Area [m2],Lighting [W/m2],People [m2 per person],Plug and Process [W/m2]
+,0LT8GR_E9ESEGH5UY_G9E9,25.99,Yes,Yes,64.97,1.00,26.79,0.00,4.80,4.80,0.5000,50.00,2.0000
+,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,Yes,Yes,31.26,1.00,8.43,0.00,2.40,2.40,1.3333,,0.0000
+,17JZCMFRF5TOFTUTIDA0D3,16.31,Yes,Yes,40.76,1.00,20.26,0.00,4.80,4.80,3.3333,2.00,300.0000
+,2RSCZLOBZ4FAK$_WE8VCKM,12.98,Yes,Yes,32.46,1.00,18.02,0.00,4.80,4.80,3.3333,14.00,7.0000
+,2DQFGGKBB1FOC1CQZDIDLX,107.16,Yes,Yes,217.53,1.00,53.51,0.00,1.39,1.39,0.5000,50.00,2.0000
+,3$F2P7VYLB7EOX67SA_ZKE,11.53,Yes,Yes,28.66,1.00,5.48,0.00,0.00,0.00,0.6667,,0.0000
+,347JFE2YX7IHCEIALMUPEH,22.07,Yes,Yes,55.18,1.00,23.75,0.00,4.80,4.80,2.0000,10.00,4.0000
+,Total,208.55,,,470.82,,156.24,0.00,22.99,22.99,1.1159,14.95,25.5921
+,Conditioned Total,208.55,,,470.82,,156.24,0.00,22.99,22.99,1.1159,14.95,25.5921
+,Unconditioned Total,0.00,,,0.00,,0.00,0.00,0.00,0.00,,,
+,Not Part of Total,0.00,,,0.00,,0.00,0.00,0.00,0.00,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Demand End Use Components Summary
+FOR:,Entire Facility
+End Uses
+
+,,Electricity [W],Natural Gas [W],Gasoline [W],Diesel [W],Coal [W],Fuel Oil No 1 [W],Fuel Oil No 2 [W],Propane [W],Other Fuel 1 [W],Other Fuel 2 [W],District Cooling [W],District Heating [W],Water [m3/s]
+,Time of Peak,01-JAN-11:15,-,-,-,-,-,-,-,-,-,-,13-JAN-05:00,-
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3769.25,0.00
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting,232.71,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,5248.31,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,,
+,Total End Uses,5481.02,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3769.25,0.00
+
+
+End Uses By Subcategory
+
+,,Subcategory,Electricity [W],Natural Gas [W],Gasoline [W],Diesel [W],Coal [W],Fuel Oil No 1 [W],Fuel Oil No 2 [W],Propane [W],Other Fuel 1 [W],Other Fuel 2 [W],District Cooling [W],District Heating [W],Water [m3/s]
+,Heating,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3769.25,0.00
+,Cooling,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting,General,232.71,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,General,5248.31,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,Ventilation (simple),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Source Energy End Use Components Summary
+FOR:,Entire Facility
+Values gathered over      8760.00 hours
+
+Source Energy End Use Components Summary
+
+,,Source Electricity [kWh],Source Natural Gas [kWh],Source Gasoline [kWh],Source Diesel [kWh],Source Coal [kWh],Source Fuel Oil No 1 [kWh],Source Fuel Oil No 2 [kWh],Source Propane [kWh],Source Other Fuel 1 [kWh],Source Other Fuel 2 [kWh],Source District Cooling [kWh],Source District Heating [kWh]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,26488.98
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting,3228.05,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,39781.29,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,
+,Total Source Energy End Use Components,43009.34,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,26488.98
+
+
+Normalized Metrics
+Source Energy End Use Components Per Conditioned Floor Area
+
+,,Source Electricity [kWh/m2],Source Natural Gas [kWh/m2],Source Gasoline [kWh/m2],Source Diesel [kWh/m2],Source Coal [kWh/m2],Source Fuel Oil No 1 [kWh/m2],Source Fuel Oil No 2 [kWh/m2],Source Propane [kWh/m2],Source Other Fuel 1 [kWh/m2],Source Other Fuel 2 [kWh/m2],Source District Cooling [kWh/m2],Source District Heating [kWh/m2]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,127.02
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting,15.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,190.76,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,
+,Total Source Energy End Use Components,206.23,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,127.02
+
+
+Source Energy End Use Components Per Total Floor Area
+
+,,Source Electricity [kWh/m2],Source Natural Gas [kWh/m2],Source Gasoline [kWh/m2],Source Diesel [kWh/m2],Source Coal [kWh/m2],Source Fuel Oil No 1 [kWh/m2],Source Fuel Oil No 2 [kWh/m2],Source Propane [kWh/m2],Source Other Fuel 1 [kWh/m2],Source Other Fuel 2 [kWh/m2],Source District Cooling [kWh/m2],Source District Heating [kWh/m2]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,127.02
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting,15.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,190.76,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,
+,Total Source Energy End Use Components,206.23,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,127.02
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Component Sizing Summary
+FOR:,Entire Facility
+ZoneHVAC:IdealLoadsAirSystem
+
+,,User-Specified Maximum Heating Air Flow Rate [m3/s],Design Size Maximum Cooling Air Flow Rate [m3/s]
+,0LT8GR_E9ESEGH5UY_G9E9 IDEAL LOADS AIR SYSTEM,0.000000,0.088990
+,0E_HBKIQ5DMQLIJ$2V3J_M IDEAL LOADS AIR SYSTEM,0.000000,0.002303
+,17JZCMFRF5TOFTUTIDA0D3 IDEAL LOADS AIR SYSTEM,0.000000,0.664705
+,2RSCZLOBZ4FAK$_WE8VCKM IDEAL LOADS AIR SYSTEM,0.000000,0.088854
+,2DQFGGKBB1FOC1CQZDIDLX IDEAL LOADS AIR SYSTEM,0.000000,0.293476
+,3$F2P7VYLB7EOX67SA_ZKE IDEAL LOADS AIR SYSTEM,0.000000,0.447296
+,347JFE2YX7IHCEIALMUPEH IDEAL LOADS AIR SYSTEM,0.000000,0.099079
+User-Specified values were used. Design Size values were used if no User-Specified values were provided.
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Surface Shadowing Summary
+FOR:,Entire Facility
+Surfaces (Walls, Roofs, etc) that may be Shadowed by Other Surfaces
+
+,,Possible Shadow Receivers
+,3AJGADZJQM2TVCK7YHD3JS,1$5LZAYB5FFW_APQAOFJ6X |
+,1$5LZAYB5FFW_APQAOFJ6X,3AJGADZJQM2TVCK7YHD3JS |
+,2VFATWQ4M5$UJNRFPAGPDU,3AJGADZJQM2TVCK7YHD3JS | 1$5LZAYB5FFW_APQAOFJ6X |
+
+
+Subsurfaces (Windows and Doors) that may be Shadowed by Surfaces
+
+,,Possible Shadow Receivers
+,3IG9WO1YVN7Q0LIDENCZIP,066DHLHD6EXMRBFGE$_NF3 | 0FWBZIEJPKAHKNBHIA9EM7 |
+,3QYT_DQI88XMWHB_P1VFXP,0MJEZNGMXXEYZS2NPTYAJX |
+,2WEOGUFSLDOEPKKJ8B92ZG,13LAIDFS3_ZX2GBUK7UTGF |
+,0LC85YX5QB4XRN8O5WBTRF,3LPOH7MLADXTGE9OCCKEXH |
+,1CD3MQUFQT5C2MNLRUWGXL,0LMOXCJFVUQ2HV9UDYKFYK |
+,3XYW9SWB7YBTXNJUV3X$K5,2CVWUZPEDESDJARZPMJYC8 |
+,3XTF9VNRG$5_FYP6RRZVUW,2NVIMH_1VARANYAE7V_22C |
+,2QENT$DF1PYDUNVUQVZSWA,0EHDWN$JRMOLRZSS_CMUG1_1 | 0EHDWN$JRMOLRZSS_CMUG1_2 | 0EHDWN$JRMOLRZSS_CMUG1_3 | 0EHDWN$JRMOLRZSS_CMUG1_4 | 0EHDWN$JRMOLRZSS_CMUG1_5 | 0EHDWN$JRMOLRZSS_CMUG1_6 | 0EHDWN$JRMOLRZSS_CMUG1_7 | 0EHDWN$JRMOLRZSS_CMUG1_8 |
+,0DXBKPKUSBXBX7UHWKY0Y2,0LATUSCHMS3UUHGXJFE9JD_1 | 0LATUSCHMS3UUHGXJFE9JD_2 | 0LATUSCHMS3UUHGXJFE9JD_3 | 0LATUSCHMS3UUHGXJFE9JD_4 | 0LATUSCHMS3UUHGXJFE9JD_5 | 0LATUSCHMS3UUHGXJFE9JD_6 | 0LATUSCHMS3UUHGXJFE9JD_7 | 0LATUSCHMS3UUHGXJFE9JD_8 |
+,3EBBM8XQDFK076K2TBN8PV,1MMTMP85F4G3JD6QQRDD0E |
+,3JI5NBFXVZ_5G1BI$GM2JJ,2P0NCF3QQHLR$KFWLMVSDQ |
+,217LLFHXJQNQBQY5_3XARW,0FDITNYIOP9X6HT13C1FXZ |
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Adaptive Comfort Summary
+FOR:,Entire Facility
+Time Not Meeting the Adaptive Comfort Models during Occupied Hours
+
+,,ASHRAE55 90% Acceptability Limits [Hours],ASHRAE55 80% Acceptability Limits  [Hours],CEN15251 Category I Acceptability Limits [Hours],CEN15251 Category II Acceptability Limits [Hours],CEN15251 Category III Acceptability Limits [Hours]
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Initialization Summary
+FOR:,Entire Facility
+Version
+
+,,Version ID
+,1,9.4
+
+
+Timesteps per Hour
+
+,,#TimeSteps,Minutes per TimeStep {minutes}
+,1,4,15
+
+
+System Convergence Limits
+
+,,Minimum System TimeStep {minutes},Max HVAC Iterations,Minimum Plant Iterations,Maximum Plant Iterations
+,1,1,20,2,8
+
+
+Simulation Control
+
+,,Do Zone Sizing,Do System Sizing,Do Plant Sizing,Do Design Days,Do Weather Simulation,Do HVAC Sizing Simulation
+,1,No,Yes,No,No,Yes,No
+
+
+Performance Precision Tradeoffs
+
+,,Use Coil Direct Simulation,Zone Radiant Exchange Algorithm,Override Mode,Number of Timestep In Hour,Force Euler Method,Minimum Number of Warmup Days,Force Suppress All Begin Environment Resets,Minimum System Timestep,MaxZoneTempDiff,MaxAllowedDelTemp
+,1,No,ScriptF,Normal,4,No,1,No,1.0,0.300,2.0000E-003
+
+
+Output Reporting Tolerances
+
+,,Tolerance for Time Heating Setpoint Not Met,Tolerance for Zone Cooling Setpoint Not Met Time
+,1,0.200,0.200
+
+
+Site:GroundTemperature:BuildingSurface
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00
+
+
+Site:GroundTemperature:FCfactorMethod
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,3.10,2.46,3.61,5.41,10.11,13.75,16.20,16.94,15.67,12.85,9.08,5.58
+
+
+Site:GroundTemperature:Shallow
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00
+
+
+Site:GroundTemperature:Deep
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00
+
+
+Site:GroundReflectance
+
+,,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+,1,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20
+
+
+Site:GroundReflectance:SnowModifier
+
+,,Normal,Daylighting {dimensionless}
+,1,1.000,1.000
+
+
+Site:GroundReflectance:Snow
+
+,,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+,1,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20
+
+
+Site:GroundReflectance:Snow:Daylighting
+
+,,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+,1,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20
+
+
+Environment:Weather Station
+
+,,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient-Internal,Temperature Modifier Coefficient-Internal
+,1,10.000,0.140,270.000,1.500,1.586,9.750E-003
+
+
+Site:Location
+
+,,Location Name,Latitude {N+/S- Deg},Longitude {E+/W- Deg},Time Zone Number {GMT+/-},Elevation {m},Standard Pressure at Elevation {Pa},Standard RhoAir at Elevation
+,1,Aachen NW DEU ISD-TMYx WMO#=105010,50.80,6.02,1.00,232.00,98569,1.1715
+
+
+Site Water Mains Temperature Information
+
+,,Calculation Method{},Water Mains Temperature Schedule Name{},Annual Average Outdoor Air Temperature{C},Maximum Difference In Monthly Average Outdoor Air Temperatures{deltaC},Fixed Default Water Mains Temperature{C}
+,1,FixedDefault,NA,NA,NA,10.0
+
+
+Building Information
+
+,,Building Name,North Axis {deg},Terrain,Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+,1,None,0.000,Suburbs,4.00000E-002,0.40000,FullExterior,25,6
+
+
+Inside Convection Algorithm
+
+,,Algorithm {Simple
+,,TARP
+,,CeilingDiffuser
+,,AdaptiveConvectionAlgorithm}
+,1,TARP
+
+
+Outside Convection Algorithm
+
+,,Algorithm {SimpleCombined
+,,TARP
+,,MoWitt
+,,DOE-2
+,,AdaptiveConvectionAlgorithm}
+,1,DOE-2
+
+
+Sky Radiance Distribution
+
+,,Value {Anisotropic}
+,1,Anisotropic
+
+
+Zone Air Solution Algorithm
+
+,,Value {ThirdOrderBackwardDifference
+,,AnalyticalSolution
+,,EulerMethod}
+,1,ThirdOrderBackwardDifference
+
+
+Zone Air Carbon Dioxide Balance Simulation
+
+,,Simulation {Yes/No},Carbon Dioxide Concentration
+,1,No,N/A
+
+
+Zone Air Generic Contaminant Balance Simulation
+
+,,Simulation {Yes/No},Generic Contaminant Concentration
+,1,No,N/A
+
+
+Zone Air Mass Flow Balance Simulation
+
+,,Enforce Mass Balance,Adjust Zone Mixing,Adjust Zone Infiltration {AddInfiltration,Infiltration Zones {MixingSourceZonesOnly
+,,,,AdjustInfiltration,AllZones}
+,,,,None},
+,1,No,N/A,N/A,N/A
+
+
+HVACSystemRootFindingAlgorithm
+
+,,Value {RegulaFalsi
+,,Bisection
+,,BisectionThenRegulaFalsi
+,,RegulaFalsiThenBisection}
+,1,RegulaFalsi
+
+
+Environment:Site Atmospheric Variation
+
+,,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+,1,0.220,370.000,6.500000E-003
+
+
+Surface Geometry
+
+,,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+,1,UpperLeftCorner,Counterclockwise,WorldCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+
+
+Surface Heat Transfer Algorithm
+
+,,Value {CTF - ConductionTransferFunction,Inside Surface Max Temperature Limit{C},Surface Convection Coefficient Lower Limit {W/m2-K},Surface Convection Coefficient Upper Limit {W/m2-K}
+,,EMPD - MoisturePenetrationDepthConductionTransferFunction,,,
+,,CondFD - ConductionFiniteDifference,,,
+,,HAMT - CombinedHeatAndMoistureFiniteElement} - Description,,,
+,1,CTF - ConductionTransferFunction,200,0.10,1000.0
+
+
+Shading Summary
+
+,,Number of Fixed Detached Shades,Number of Building Detached Shades,Number of Attached Shades
+,1,0,0,0
+
+
+Zone Summary
+
+,,Number of Zones,Number of Zone Surfaces,Number of SubSurfaces
+,1,7,102,33
+
+
+Zone Information
+
+,,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST},Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2},Number of Surfaces,Number of SubSurfaces,Number of Shading SubSurfaces,Part of Total Building Area
+,1,0LT8GR_E9ESEGH5UY_G9E9,0.0,0.00,0.00,0.00,8.31,2.19,1.25,1,1,1,4.70,11.70,0.30,4.01,0.00,2.50,2.50,64.97,TARP,DOE-2,25.99,26.79,17.21,4.80,6,3,3,Yes
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,0.0,0.00,0.00,0.00,5.73,7.85,1.25,1,1,1,4.04,7.41,5.99,9.70,0.00,2.50,2.50,31.26,TARP,DOE-2,12.50,8.43,6.03,2.40,6,2,0,Yes
+,3,17JZCMFRF5TOFTUTIDA0D3,0.0,0.00,0.00,0.00,2.50,2.16,1.25,1,1,1,0.30,4.70,0.30,4.01,0.00,2.50,2.50,40.76,TARP,DOE-2,16.31,20.26,15.46,4.80,5,2,2,Yes
+,4,2RSCZLOBZ4FAK$_WE8VCKM,0.0,0.00,0.00,0.00,2.05,7.85,1.25,1,1,1,0.30,3.80,5.99,9.70,0.00,2.50,2.50,32.46,TARP,DOE-2,12.99,18.03,13.23,4.80,6,3,0,Yes
+,5,2DQFGGKBB1FOC1CQZDIDLX,0.0,0.00,0.00,0.00,6.05,5.00,3.73,1,1,1,0.30,11.70,0.30,9.70,2.70,6.09,2.03,217.53,TARP,DOE-2,107.16,53.51,52.12,1.39,16,16,1,Yes
+,6,3$F2P7VYLB7EOX67SA_ZKE,0.0,0.00,0.00,0.00,3.94,4.83,1.28,1,1,1,0.30,7.41,4.01,5.75,0.00,2.50,2.48,28.66,TARP,DOE-2,11.53,5.48,3.45,0.00,14,4,2,Yes
+,7,347JFE2YX7IHCEIALMUPEH,0.0,0.00,0.00,0.00,9.68,6.98,1.25,1,1,1,7.65,11.70,4.25,9.70,0.00,2.50,2.50,55.18,TARP,DOE-2,22.07,23.75,18.95,4.80,8,3,0,Yes
+
+
+Zone Internal Gains Nominal
+
+,,Zone Name,Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+,1,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,50.000,2.000E-002,0.500,2.000,0.000,0.000,0.000,0.000,2.500,No
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,N/A,0.000,1.333,0.000,0.000,0.000,0.000,0.000,1.333,No
+,3,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,2.000,0.500,3.333,300.000,0.000,0.000,0.000,0.000,303.333,No
+,4,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,14.000,7.143E-002,3.333,7.000,0.000,0.000,0.000,0.000,10.333,No
+,5,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,50.000,2.000E-002,0.500,2.000,0.000,0.000,0.000,0.000,2.500,No
+,6,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,N/A,0.000,0.667,0.000,0.000,0.000,0.000,0.000,0.667,No
+,7,347JFE2YX7IHCEIALMUPEH,22.07,2.2,10.000,0.100,2.000,4.000,0.000,0.000,0.000,0.000,6.000,No
+
+
+People Internal Gains Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate,Nominal Minimum Number of People,Nominal Maximum Number of People
+,1,0LT8GR_E9ESEGH5UY_G9E9,SCHEDULE PEOPLE LIVING,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,0.5,2.000E-002,50.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,1
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,SCHEDULE PEOPLE WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,0.0,0.000,N/A,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,0
+,3,17JZCMFRF5TOFTUTIDA0D3,SCHEDULE PEOPLE KITCHEN IN NON-RESIDENTIAL BUILDINGS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,8.2,0.500,2.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,8
+,4,2RSCZLOBZ4FAK$_WE8VCKM,SCHEDULE PEOPLE SINGLE OFFICE,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,0.9,7.143E-002,14.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,1
+,5,2DQFGGKBB1FOC1CQZDIDLX,SCHEDULE PEOPLE LIVING,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,2.1,2.000E-002,50.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,1,2
+,6,3$F2P7VYLB7EOX67SA_ZKE,SCHEDULE PEOPLE TRAFFIC AREA,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,0.0,0.000,N/A,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,0
+,7,347JFE2YX7IHCEIALMUPEH,SCHEDULE PEOPLE BED ROOM,347JFE2YX7IHCEIALMUPEH,22.07,2.2,2.2,0.100,10.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,2,2
+
+
+Lights Internal Gains Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Lighting Level {W},Lights/Floor Area {W/m2},Lights per person {W/person},Fraction Return Air,Fraction Radiant,Fraction Short Wave,Fraction Convected,Fraction Replaceable,End-Use Category,Nominal Minimum Lighting Level {W},Nominal Maximum Lighting Level {W}
+,1,0LT8GR_E9ESEGH5UY_G9E9,SCHEDULE LIGHTING LIVING,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,12.994,0.500,25.000,0.000,0.420,0.180,0.400,1.000,General,0.000,12.994
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,SCHEDULE LIGHTING WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,16.670,1.333,N/A,0.000,0.420,0.180,0.400,1.000,General,0.000,16.670
+,3,17JZCMFRF5TOFTUTIDA0D3,SCHEDULE LIGHTING KITCHEN IN NON-RESIDENTIAL BUILDINGS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,54.352,3.333,6.667,0.000,0.420,0.180,0.400,1.000,General,0.000,54.352
+,4,2RSCZLOBZ4FAK$_WE8VCKM,SCHEDULE LIGHTING SINGLE OFFICE,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,43.283,3.333,46.667,0.000,0.420,0.180,0.400,1.000,General,0.000,43.283
+,5,2DQFGGKBB1FOC1CQZDIDLX,SCHEDULE LIGHTING LIVING,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,53.580,0.500,25.000,0.000,0.420,0.180,0.400,1.000,General,0.000,53.580
+,6,3$F2P7VYLB7EOX67SA_ZKE,SCHEDULE LIGHTING TRAFFIC AREA,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,7.688,0.667,N/A,0.000,0.420,0.180,0.400,1.000,General,0.000,7.688
+,7,347JFE2YX7IHCEIALMUPEH,SCHEDULE LIGHTING BED ROOM,347JFE2YX7IHCEIALMUPEH,22.07,2.2,44.145,2.000,20.000,0.000,0.420,0.180,0.400,1.000,General,0.000,44.145
+
+
+ElectricEquipment Internal Gains Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Equipment Level {W},Equipment/Floor Area {W/m2},Equipment per person {W/person},Fraction Latent,Fraction Radiant,Fraction Lost,Fraction Convected,End-Use SubCategory,Nominal Minimum Equipment Level {W},Nominal Maximum Equipment Level {W}
+,1,0LT8GR_E9ESEGH5UY_G9E9,SCHEDULE EQUIPMENT LIVING,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,51.977,2.000,100.000,0.000,0.000,0.000,1.000,General,5.198,51.977
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,SCHEDULE EQUIPMENT WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,0.000,0.000,N/A,0.000,0.000,0.000,1.000,General,0.000,0.000
+,3,17JZCMFRF5TOFTUTIDA0D3,SCHEDULE EQUIPMENT KITCHEN IN NON-RESIDENTIAL BUILDINGS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,4891.635,300.000,600.000,0.000,0.000,0.000,1.000,General,489.164,4891.635
+,4,2RSCZLOBZ4FAK$_WE8VCKM,SCHEDULE EQUIPMENT SINGLE OFFICE,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,90.895,7.000,98.000,0.000,0.000,0.000,1.000,General,9.090,72.716
+,5,2DQFGGKBB1FOC1CQZDIDLX,SCHEDULE EQUIPMENT LIVING,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,214.320,2.000,100.000,0.000,0.000,0.000,1.000,General,21.432,214.320
+,6,3$F2P7VYLB7EOX67SA_ZKE,SCHEDULE EQUIPMENT TRAFFIC AREA,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,0.000,0.000,N/A,0.000,0.000,0.000,1.000,General,0.000,0.000
+,7,347JFE2YX7IHCEIALMUPEH,SCHEDULE EQUIPMENT BED ROOM,347JFE2YX7IHCEIALMUPEH,22.07,2.2,88.290,4.000,40.000,0.000,0.000,0.000,1.000,General,17.658,70.632
+
+
+Solar View Factor Check Values
+
+,,Zone/Enclosure Name,Original Check Value,Calculated Fixed Check Value,Final Check Value,Number of Iterations,Fixed RowSum Convergence,Used RowSum Convergence
+,1,Solar Enclosure 1,0.191537,6.727859E-004,6.727859E-004,12,66.000000,6.727859E-004
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,1.776357E-015,7.726826E-004,7.726826E-004,9,7.726826E-004,7.726826E-004
+,3,2RSCZLOBZ4FAK$_WE8VCKM,8.881784E-015,6.538690E-004,6.538690E-004,10,6.538690E-004,6.538690E-004
+,4,347JFE2YX7IHCEIALMUPEH,1.776357E-015,9.031312E-004,9.031312E-004,12,9.031312E-004,9.031312E-004
+
+
+Shadowing/Sun Position Calculations Annual Simulations
+
+,,Shading Calculation Method,Shading Calculation Update Frequency Method,Shading Calculation Update Frequency {days},Maximum Figures in Shadow Overlap Calculations {},Polygon Clipping Algorithm,Pixel Counting Resolution,Sky Diffuse Modeling Algorithm,Output External Shading Calculation Results,Disable Self-Shading Within Shading Zone Groups,Disable Self-Shading From Shading Zone Groups to Other Zones
+,1,PolygonClipping,Periodic,20,15000,SutherlandHodgman,512,SimpleSkyDiffuseModeling,No,No,No
+
+
+Surface View Factor Check Values
+
+,,Zone/Enclosure Name,Original Check Value,Calculated Fixed Check Value,Final Check Value,Number of Iterations,Fixed RowSum Convergence,Used RowSum Convergence
+,1,Radiant Enclosure 1,0.191537,6.727859E-004,6.727859E-004,12,66.000000,6.727859E-004
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,1.776357E-015,7.726826E-004,7.726826E-004,9,7.726826E-004,7.726826E-004
+,3,2RSCZLOBZ4FAK$_WE8VCKM,8.881784E-015,6.538690E-004,6.538690E-004,10,6.538690E-004,6.538690E-004
+,4,347JFE2YX7IHCEIALMUPEH,1.776357E-015,9.031312E-004,9.031312E-004,12,9.031312E-004,9.031312E-004
+
+
+ZoneInfiltration Airflow Stats Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/Exterior Surface Area {m3/s-m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m},Equation D - Velocity Squared Term Coefficient {s2/m2}
+,1,0LT8GR_E9ESEGH5UY_G9E9,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,3.610E-003,1.389E-004,1.144E-004,0.200,1.000,0.000,0.000,0.000
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,1.736E-003,1.389E-004,2.061E-004,0.200,1.000,0.000,0.000,0.000
+,3,17JZCMFRF5TOFTUTIDA0D3,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,2.265E-003,1.389E-004,1.118E-004,0.200,1.000,0.000,0.000,0.000
+,4,2RSCZLOBZ4FAK$_WE8VCKM,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,1.803E-003,1.389E-004,1.001E-004,0.200,1.000,0.000,0.000,0.000
+,5,2DQFGGKBB1FOC1CQZDIDLX,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,1.209E-002,1.128E-004,6.818E-005,0.200,1.000,0.000,0.000,0.000
+,6,3$F2P7VYLB7EOX67SA_ZKE,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,1.592E-003,1.381E-004,1.933E-004,0.200,1.000,0.000,0.000,0.000
+,7,347JFE2YX7IHCEIALMUPEH,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,3.066E-003,1.389E-004,1.291E-004,0.200,1.000,0.000,0.000,0.000
+
+
+ZoneVentilation Airflow Stats Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/person Area {m3/s-person},ACH - Air Changes per Hour,Fan Type {Exhaust;Intake;Natural},Fan Pressure Rise {Pa},Fan Efficiency {},Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m},Equation D - Velocity Squared Term Coefficient {s2/m2},Minimum Indoor Temperature{C}/Schedule,Maximum Indoor Temperature{C}/Schedule,Delta Temperature{C}/Schedule,Minimum Outdoor Temperature{C}/Schedule,Maximum Outdoor Temperature{C}/Schedule,Maximum WindSpeed{m/s}
+,1,0LT8GR_E9ESEGH5UY_G9E9_WINTER,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,3.610E-003,1.389E-004,6.944E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+,2,0LT8GR_E9ESEGH5UY_G9E9_SUMMER,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,1.805E-002,6.944E-004,3.472E-002,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+,3,0LT8GR_E9ESEGH5UY_G9E9_OVERHEATING,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,5.414E-002,2.083E-003,0.104,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+,4,0E_HBKIQ5DMQLIJ$2V3J_M_WINTER,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,1.736E-003,1.389E-004,N/A,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+,5,0E_HBKIQ5DMQLIJ$2V3J_M_SUMMER,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,8.682E-003,6.944E-004,N/A,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+,6,0E_HBKIQ5DMQLIJ$2V3J_M_OVERHEATING,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,2.605E-002,2.083E-003,N/A,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+,7,17JZCMFRF5TOFTUTIDA0D3_WINTER,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,2.265E-003,1.389E-004,2.778E-004,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+,8,17JZCMFRF5TOFTUTIDA0D3_SUMMER,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,1.132E-002,6.944E-004,1.389E-003,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+,9,17JZCMFRF5TOFTUTIDA0D3_OVERHEATING,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,3.397E-002,2.083E-003,4.167E-003,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+,10,2RSCZLOBZ4FAK$_WE8VCKM_WINTER,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,1.803E-003,1.389E-004,1.944E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+,11,2RSCZLOBZ4FAK$_WE8VCKM_SUMMER,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,9.017E-003,6.944E-004,9.722E-003,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+,12,2RSCZLOBZ4FAK$_WE8VCKM_OVERHEATING,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,2.705E-002,2.083E-003,2.917E-002,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+,13,2DQFGGKBB1FOC1CQZDIDLX_WINTER,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,1.209E-002,1.128E-004,5.639E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+,14,2DQFGGKBB1FOC1CQZDIDLX_SUMMER,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,6.043E-002,5.639E-004,2.819E-002,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+,15,2DQFGGKBB1FOC1CQZDIDLX_OVERHEATING,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,0.181,1.692E-003,8.458E-002,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+,16,3$F2P7VYLB7EOX67SA_ZKE_WINTER,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,1.592E-003,1.381E-004,N/A,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+,17,3$F2P7VYLB7EOX67SA_ZKE_SUMMER,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,7.960E-003,6.903E-004,N/A,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+,18,3$F2P7VYLB7EOX67SA_ZKE_OVERHEATING,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,2.388E-002,2.071E-003,N/A,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+,19,347JFE2YX7IHCEIALMUPEH_WINTER,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,3.066E-003,1.389E-004,1.389E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+,20,347JFE2YX7IHCEIALMUPEH_SUMMER,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,1.533E-002,6.944E-004,6.944E-003,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+,21,347JFE2YX7IHCEIALMUPEH_OVERHEATING,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,4.598E-002,2.083E-003,2.083E-002,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+
+
+CrossMixing Airflow Stats Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/person Area {m3/s-person},ACH - Air Changes per Hour,From/Source Zone,Delta Temperature {C}
+,1,Air Boundary Mixing Zones 1 and 1,Constant-1.0,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,9.024E-003,3.472E-004,1.736E-002,0.500,0LT8GR_E9ESEGH5UY_G9E9,0.00
+,2,Air Boundary Mixing Zones 1 and 1,Constant-1.0,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,9.024E-003,3.472E-004,1.736E-002,0.500,0LT8GR_E9ESEGH5UY_G9E9,0.00
+,3,Air Boundary Mixing Zones 3 and 3,Constant-1.0,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,5.662E-003,3.472E-004,6.944E-004,0.500,17JZCMFRF5TOFTUTIDA0D3,0.00
+,4,Air Boundary Mixing Zones 3 and 3,Constant-1.0,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,5.662E-003,3.472E-004,6.944E-004,0.500,17JZCMFRF5TOFTUTIDA0D3,0.00
+
+
+AirFlow Model
+
+,,Simple
+,1,Simple
+
+
+RoomAir Model
+
+,,Zone Name,Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+,1,0LT8GR_E9ESEGH5UY_G9E9,Mixing/Well-Stirred
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,Mixing/Well-Stirred
+,3,17JZCMFRF5TOFTUTIDA0D3,Mixing/Well-Stirred
+,4,2RSCZLOBZ4FAK$_WE8VCKM,Mixing/Well-Stirred
+,5,2DQFGGKBB1FOC1CQZDIDLX,Mixing/Well-Stirred
+,6,3$F2P7VYLB7EOX67SA_ZKE,Mixing/Well-Stirred
+,7,347JFE2YX7IHCEIALMUPEH,Mixing/Well-Stirred
+
+
+AirflowNetwork Model:Control
+
+,,No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+,1,NoMultizoneOrDistribution
+
+
+Zone Volume Capacitance Multiplier
+
+,,Sensible Heat Capacity Multiplier,Moisture Capacity Multiplier,Carbon Dioxide Capacity Multiplier,Generic Contaminant Capacity Multiplier
+,1,1.000,1.000,1.000,1.000
+
+
+Load Timesteps in Zone Design Calculation Averaging Window
+
+,,Value
+,1,4
+
+
+Heating Sizing Factor Information
+
+,,Sizing Factor ID,Value
+,1,Global,1.0000
+
+
+Cooling Sizing Factor Information
+
+,,Sizing Factor ID,Value
+,1,Global,1.0000
+
+
+Zone Sizing Information
+
+,,Zone Name,Load Type,Calc Des Load {W},User Des Load {W},Calc Des Air Flow Rate {m3/s},User Des Air Flow Rate {m3/s},Design Day Name,Date/Time of Peak,Temperature at Peak {C},Humidity Ratio at Peak {kgWater/kgDryAir},Floor Area {m2},# Occupants,Calc Outdoor Air Flow Rate {m3/s},Calc DOAS Heat Addition Rate {W}
+,1,0LT8GR_E9ESEGH5UY_G9E9,Cooling,743.83191,743.83191,8.89900E-002,8.89900E-002,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 16:30:00,25.10000,7.39976E-003,25.98855,0.51977,0.00000,0.00000
+,2,0LT8GR_E9ESEGH5UY_G9E9,Heating,465.61931,465.61931,1.28099E-002,1.28099E-002,WINTER DESIGN DAY FROM WEATHER FILE,2/28 09:15:00,10.57500,6.27777E-003,25.98855,0.51977,0.00000,0.00000
+,3,0E_HBKIQ5DMQLIJ$2V3J_M,Cooling,30.24953,30.24953,2.30314E-003,2.30314E-003,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 16:30:00,25.10000,7.39976E-003,12.50270,0.00000,0.00000,0.00000
+,4,0E_HBKIQ5DMQLIJ$2V3J_M,Heating,402.00159,402.00159,1.27604E-002,1.27604E-002,WINTER DESIGN DAY FROM WEATHER FILE,2/28 09:15:00,10.57500,6.27777E-003,12.50270,0.00000,0.00000,0.00000
+,5,17JZCMFRF5TOFTUTIDA0D3,Cooling,5555.78905,5555.78905,0.66471,0.66471,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 12:00:00,24.30000,7.71052E-003,16.30545,8.15273,0.00000,0.00000
+,6,2RSCZLOBZ4FAK$_WE8VCKM,Cooling,742.67846,742.67846,8.88540E-002,8.88540E-002,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 17:30:00,24.60000,7.18429E-003,12.98500,0.92750,0.00000,0.00000
+,7,2RSCZLOBZ4FAK$_WE8VCKM,Heating,240.82288,240.82288,6.62525E-003,6.62525E-003,WINTER DESIGN DAY FROM WEATHER FILE,3/2 06:00:00,1.00000,3.66822E-003,12.98500,0.92750,0.00000,0.00000
+,8,2DQFGGKBB1FOC1CQZDIDLX,Cooling,2452.98385,2452.98385,0.29348,0.29348,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 17:00:00,24.90000,7.21307E-003,107.16000,2.14320,0.00000,0.00000
+,9,2DQFGGKBB1FOC1CQZDIDLX,Heating,1716.66071,1716.66071,4.72254E-002,4.72254E-002,WINTER DESIGN DAY FROM WEATHER FILE,2/28 09:30:00,10.75000,6.26820E-003,107.16000,2.14320,0.00000,0.00000
+,10,3$F2P7VYLB7EOX67SA_ZKE,Cooling,1068.22132,1068.22132,0.44730,0.44730,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 16:45:00,25.00000,7.30601E-003,11.53140,0.00000,0.00000,0.00000
+,11,347JFE2YX7IHCEIALMUPEH,Cooling,828.10495,828.10495,9.90789E-002,9.90789E-002,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 12:30:00,24.45000,7.38976E-003,22.07250,2.20725,0.00000,0.00000
+,12,347JFE2YX7IHCEIALMUPEH,Heating,242.26553,242.26553,6.66559E-003,6.66559E-003,WINTER DESIGN DAY FROM WEATHER FILE,2/27 07:45:00,0.67500,2.52192E-003,22.07250,2.20725,0.00000,0.00000
+
+
+Component Sizing Information
+
+,,Component Type,Component Name,Input Field Description,Value
+,1,ZoneHVAC:IdealLoadsAirSystem,0LT8GR_E9ESEGH5UY_G9E9 IDEAL LOADS AIR SYSTEM,User-Specified Maximum Heating Air Flow Rate [m3/s],0.00000
+,2,ZoneHVAC:IdealLoadsAirSystem,0LT8GR_E9ESEGH5UY_G9E9 IDEAL LOADS AIR SYSTEM,Design Size Maximum Cooling Air Flow Rate [m3/s],0.08899
+,3,ZoneHVAC:IdealLoadsAirSystem,0E_HBKIQ5DMQLIJ$2V3J_M IDEAL LOADS AIR SYSTEM,User-Specified Maximum Heating Air Flow Rate [m3/s],0.00000
+,4,ZoneHVAC:IdealLoadsAirSystem,0E_HBKIQ5DMQLIJ$2V3J_M IDEAL LOADS AIR SYSTEM,Design Size Maximum Cooling Air Flow Rate [m3/s],0.00230
+,5,ZoneHVAC:IdealLoadsAirSystem,17JZCMFRF5TOFTUTIDA0D3 IDEAL LOADS AIR SYSTEM,User-Specified Maximum Heating Air Flow Rate [m3/s],0.00000
+,6,ZoneHVAC:IdealLoadsAirSystem,17JZCMFRF5TOFTUTIDA0D3 IDEAL LOADS AIR SYSTEM,Design Size Maximum Cooling Air Flow Rate [m3/s],0.66471
+,7,ZoneHVAC:IdealLoadsAirSystem,2RSCZLOBZ4FAK$_WE8VCKM IDEAL LOADS AIR SYSTEM,User-Specified Maximum Heating Air Flow Rate [m3/s],0.00000
+,8,ZoneHVAC:IdealLoadsAirSystem,2RSCZLOBZ4FAK$_WE8VCKM IDEAL LOADS AIR SYSTEM,Design Size Maximum Cooling Air Flow Rate [m3/s],0.08885
+,9,ZoneHVAC:IdealLoadsAirSystem,2DQFGGKBB1FOC1CQZDIDLX IDEAL LOADS AIR SYSTEM,User-Specified Maximum Heating Air Flow Rate [m3/s],0.00000
+,10,ZoneHVAC:IdealLoadsAirSystem,2DQFGGKBB1FOC1CQZDIDLX IDEAL LOADS AIR SYSTEM,Design Size Maximum Cooling Air Flow Rate [m3/s],0.29348
+,11,ZoneHVAC:IdealLoadsAirSystem,3$F2P7VYLB7EOX67SA_ZKE IDEAL LOADS AIR SYSTEM,User-Specified Maximum Heating Air Flow Rate [m3/s],0.00000
+,12,ZoneHVAC:IdealLoadsAirSystem,3$F2P7VYLB7EOX67SA_ZKE IDEAL LOADS AIR SYSTEM,Design Size Maximum Cooling Air Flow Rate [m3/s],0.44730
+,13,ZoneHVAC:IdealLoadsAirSystem,347JFE2YX7IHCEIALMUPEH IDEAL LOADS AIR SYSTEM,User-Specified Maximum Heating Air Flow Rate [m3/s],0.00000
+,14,ZoneHVAC:IdealLoadsAirSystem,347JFE2YX7IHCEIALMUPEH IDEAL LOADS AIR SYSTEM,Design Size Maximum Cooling Air Flow Rate [m3/s],0.09908
+
+
+Environment
+
+,,Environment Name,Environment Type,Start Date,End Date,Start DayOfWeek,Duration {#days},Source:Start DayOfWeek,Use Daylight Saving,Use Holidays,Apply Weekend Holiday Rule,Use Rain Values,Use Snow Values,Sky Temperature Model
+,1,RUN PERIOD 1,WeatherFileRunPeriod,01/01/2013,12/31/2013,Tuesday,365,Use RunPeriod Specified Day,Yes,Yes,No,Yes,Yes,Clark and Allen
+
+
+Environment:Daylight Saving
+
+,,Daylight Saving Indicator,Source,Start Date,End Date
+,1,No,,,
+
+
+Environment:WarmupDays
+
+,,NumberofWarmupDays
+,1,7
+
+
+Warmup Convergence Information
+
+,,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+,1,0LT8GR_E9ESEGH5UY_G9E9,RunPeriod: RUN PERIOD 1,2.1464311809E-015,2.4312504166E-015,Pass,Pass,3.9351975342E-002,6.4632750142E-002,Pass,Pass
+,2,0E_HBKIQ5DMQLIJ$2V3J_M,RunPeriod: RUN PERIOD 1,3.2566542056E-015,2.7455426067E-015,Pass,Pass,9.2411455571E-003,2.2835308120E-002,Pass,Pass
+,3,17JZCMFRF5TOFTUTIDA0D3,RunPeriod: RUN PERIOD 1,0.5625469229,1.6973274039,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+,4,2RSCZLOBZ4FAK$_WE8VCKM,RunPeriod: RUN PERIOD 1,2.0724163126E-015,2.2740759639E-015,Pass,Pass,7.4642093264E-002,0.1672115113,Pass,Pass
+,5,2DQFGGKBB1FOC1CQZDIDLX,RunPeriod: RUN PERIOD 1,2.7015426933E-015,2.4455726625E-015,Pass,Pass,3.7673494295E-002,7.4349584407E-002,Pass,Pass
+,6,3$F2P7VYLB7EOX67SA_ZKE,RunPeriod: RUN PERIOD 1,3.0552109199E-002,3.6587386641E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+,7,347JFE2YX7IHCEIALMUPEH,RunPeriod: RUN PERIOD 1,2.5165055225E-015,2.2884841923E-015,Pass,Pass,4.5507560838E-002,9.5018879413E-002,Pass,Pass
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Heat Emissions Summary
+FOR:,Entire Facility
+Heat Emission by Components
+
+,,Envelope Convection,Zone Exfiltration,Zone Exhaust Air,HVAC Relief Air,HVAC Reject Heat,Total
+,Heat Emissions [GJ],300.64,87.19,0.00,0.00,0.00,387.83
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Climatic Data Summary
+FOR:,Entire Facility
+SizingPeriod:DesignDay
+
+,,Maximum Dry Bulb [C],Daily Temperature Range [deltaC],Humidity Value,Humidity Type,Wind Speed [m/s],Wind Direction
+,None,,,,,,
+
+
+Weather Statistics File
+
+,,Value
+,None,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Envelope Summary
+FOR:,Entire Facility
+Opaque Exterior
+
+,,Construction,Reflectance,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Net Area [m2],Azimuth [deg],Tilt [deg],Cardinal Direction
+,3IG9WO1YVN7Q0LIDENCZIP,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,17.51,10.34,180.00,90.00,S
+,3QYT_DQI88XMWHB_P1VFXP,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,9.28,6.88,90.00,90.00,E
+,0WXQSYU9XFZU3VLFEOAGQ9,BPS-GROUNDFLOOR_3_0.04_0.06_0.16,0.30,0.566,0.623,25.99,25.99,0.00,180.00,
+,2WEOGUFSLDOEPKKJ8B92ZG,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,8.43,6.03,0.00,90.00,N
+,2WEIPZIICR4KWBSMCS97PG,BPS-GROUNDFLOOR_3_0.04_0.06_0.16,0.30,0.566,0.623,12.50,12.50,0.00,180.00,
+,0LC85YX5QB4XRN8O5WBTRF,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,10.99,8.59,180.00,90.00,S
+,1CD3MQUFQT5C2MNLRUWGXL,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,9.28,6.88,270.00,90.00,W
+,1WO7JFPGGVDGMZEIVZPQDP,BPS-GROUNDFLOOR_3_0.04_0.06_0.16,0.30,0.566,0.623,16.31,16.31,0.00,180.00,
+,3XYW9SWB7YBTXNJUV3X$K5,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,8.75,6.35,0.00,90.00,N
+,3XTF9VNRG$5_FYP6RRZVUW,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,9.27,6.88,270.00,90.00,W
+,2SN7UALFXA$PORAX5B6WQO,BPS-GROUNDFLOOR_3_0.04_0.06_0.16,0.30,0.566,0.623,12.98,12.98,0.00,180.00,
+,2QENT$DF1PYDUNVUQVZSWA,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,19.08,18.39,90.00,90.00,E
+,3_HJUFIVTEBP6_PAWETVHJ,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,7.67,7.67,180.00,90.00,S
+,0DXBKPKUSBXBX7UHWKY0Y2,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,19.08,18.39,270.00,90.00,W
+,13UJDMCIGNMNY28GTM7OLY,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,7.67,7.67,0.00,90.00,N
+,348WYWZXCJJLGIA5P7KLFU,BPS-GROUNDFLOOR_3_0.04_0.06_0.16,0.30,0.566,0.623,0.82,0.82,0.00,180.00,
+,0FS9MTULAV8VZQ4LTD2_FP,BPS-ROOF_3_0.15_0.12_0.03,0.30,0.478,0.512,61.87,61.87,180.00,30.00,
+,17WTAD5BGHLW7NWUK3LIKT,BPS-ROOF_3_0.15_0.12_0.03,0.30,0.478,0.512,61.87,61.87,0.00,30.00,
+,3AJGADZJQM2TVCK7YHD3JS,PROJECT WALL,0.30,0.870,1.000,0.87,0.87,180.00,90.00,S
+,1$5LZAYB5FFW_APQAOFJ6X,PROJECT WALL,0.30,0.870,1.000,0.87,0.87,0.00,90.00,N
+,3EBBM8XQDFK076K2TBN8PV,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,3.75,1.72,270.00,90.00,W
+,29SJT6HO2MKZOVZTTANM5H,BPS-GROUNDFLOOR_3_0.04_0.06_0.16,0.30,0.566,0.623,11.53,11.53,0.00,180.00,
+,2VFATWQ4M5$UJNRFPAGPDU,PROJECT CEILING,0.30,0.879,1.000,0.72,0.72,0.00,0.00,
+,3JI5NBFXVZ_5G1BI$GM2JJ,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,10.12,7.72,0.00,90.00,N
+,217LLFHXJQNQBQY5_3XARW,BPS-OUTERWALL_2_0.175_0.07,0.30,0.504,0.545,13.62,11.22,90.00,90.00,E
+,2DABDKK14H6N6EKHTDWEXH,BPS-GROUNDFLOOR_3_0.04_0.06_0.16,0.30,0.566,0.623,22.07,22.07,0.00,180.00,
+
+
+Opaque Interior
+
+,,Construction,Reflectance,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Net Area [m2],Azimuth [deg],Tilt [deg],Cardinal Direction
+,3GVJZXXDGLJ3KDERHHKFU_,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,10.12,10.12,0.00,90.00,N
+,0W9QLBNAEKXGYDG3AAC7SX,AIR WALL,1.00,0.000,0.000,6.79,6.79,0.00,90.00,N
+,0ICM9IR1IWGQMD8UGV$IZX,AIR WALL,1.00,0.000,0.000,9.28,9.28,270.00,90.00,W
+,0PBW99AFX7I8WRP5NR0BMH,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,0.60,0.60,0.00,90.00,N
+,2PGK3DPJSC39TXKGXE$HQ4,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,10.18,10.18,270.00,0.00,
+,2ICFPKEXJ7L0XQSIKQ$RMC,AIR WALL,1.00,0.000,0.000,15.80,15.80,0.00,0.00,
+,3ADDSFVO7DGMY_Y3H9IJ_L,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,9.27,9.27,90.00,90.00,E
+,09BIV6KXYHYE$FI0$BZJNR,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,8.43,6.65,180.00,90.00,S
+,2AWEX06$PDMMQGDV$HXHWO,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,9.27,9.27,270.00,90.00,W
+,2PDD83UQXMRSY8GMP6SZU8,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,12.50,12.50,0.00,0.00,
+,0GID$AJD6BLB0V3EDTOFEI,AIR WALL,1.00,0.000,0.000,9.28,9.28,90.00,90.00,E
+,0TSXSCXEP6ULJIORE6ZFRO,AIR WALL,1.00,0.000,0.000,2.24,2.24,0.00,90.00,N
+,2VUY1YE7AIAHNJMJHMFGWD,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,8.75,8.75,0.00,90.00,N
+,30_ZHX$GCTCBP285QVSDG_,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,16.31,16.31,0.00,0.00,
+,3S62UZOCO66NGDMMARS2M9,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,9.27,9.27,90.00,90.00,E
+,1ZVTHPRHFWSVHGO9MXUL0M,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,8.75,6.97,180.00,90.00,S
+,14TEGE_AGDXLMTT8FX0VQP,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,12.98,12.98,0.00,0.00,
+,0VSCZAFTJ3T7_0IAKSQJ3Z,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,10.18,10.18,270.00,180.00,
+,30Y14$N6BCKO4ZT3HJGWMK,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,22.07,22.07,0.00,180.00,
+,1QEBH1KSDPUVONBLPN2Z6E,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,16.31,16.31,0.00,180.00,
+,0RMNUXZ0B7ZVL3K1PNTHLJ,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,12.98,12.98,0.00,180.00,
+,3POPVBFJUMC3O8TYAWFJTL,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,12.50,12.50,0.00,180.00,
+,0IVLCYUFM86KH6VPLEFX4L,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,10.74,10.74,0.00,180.00,
+,1HYST5UGDRRPIH45KDXX64,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,0.07,0.07,0.00,180.00,
+,2GNYVFNEYR6NOPKW4T5ODJ,AIR WALL,1.00,0.000,0.000,15.80,15.80,0.00,180.00,
+,2K6EO1SB9CGRDYKD4LJGYP,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.518,0.623,4.89,4.89,180.00,180.00,
+,0J0JBR2DBDTENCUT0MTMIR,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.518,0.623,0.79,0.79,0.00,180.00,
+,17KP$4DMVZTUXD21AK9WBX,AIR WALL,1.00,0.000,0.000,2.24,2.24,180.00,90.00,S
+,3NVOYTV9LI_QOPOZXQZDCB,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,8.75,8.75,180.00,90.00,S
+,0LXQLKATO0K0HX$FAGDQ3I,AIR WALL,1.00,0.000,0.000,6.79,6.79,180.00,90.00,S
+,3LWFLCAQDSG0JEX6IRJFFW,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,8.75,6.97,0.00,90.00,N
+,3EOBRCAA$859EE_8QFRODO,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,8.43,6.65,0.00,90.00,N
+,24CS3EKNKYWTHMMVK8AYVJ,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,3.75,1.97,90.00,90.00,E
+,1J31PMXEXC6O1X7BMWVPL7,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,0.55,0.55,90.00,90.00,E
+,3XOCA98850NAAP9EKG5$AJ,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,0.60,0.60,0.00,90.00,N
+,3ILSLMGMRF_PQNGHQF_MUY,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,0.55,0.55,270.00,90.00,W
+,3GDPY6RTY1_T5DBJOUWYXI,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,10.74,10.74,0.00,0.00,
+,1OJ77MH75TBSXM94QQLPFI,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,0.07,0.07,0.00,0.00,
+,0F8DHWVIWAA92A8PANKADM,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,10.12,10.12,180.00,90.00,S
+,3U2QHL_XLN0E5XDX$TS8AD,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,9.27,9.27,270.00,90.00,W
+,0LYLYTQNLDLTXOGYJHOS_O,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,3.75,1.97,270.00,90.00,W
+,0EJNZ84RZ0SR9UQLU$R489,BPS-INNERWALL_3_0.01_0.15_0.01,0.30,0.703,0.846,0.60,0.60,270.00,90.00,W
+,2XUHFJHXX3MEYXBTYBTDYC,BPS-INNERFLOOR_3_0.04_0.06_0.16,0.30,0.534,0.623,22.07,22.07,0.00,0.00,
+
+
+Exterior Fenestration
+
+,,Construction,Glass Area [m2],Frame Area [m2],Divider Area [m2],Area of One Opening [m2],Area of Multiplied Openings [m2],Glass U-Factor [W/m2-K],Glass SHGC,Glass Visible Transmittance,Frame Conductance [W/m2-K],Divider Conductance [W/m2-K],Shade Control,Parent Surface,Azimuth [deg],Tilt [deg],Cardinal Direction
+,0FWBZIEJPKAHKNBHIA9EM7,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,3IG9WO1YVN7Q0LIDENCZIP,180.00,90.00,S
+,0MJEZNGMXXEYZS2NPTYAJX,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,3QYT_DQI88XMWHB_P1VFXP,90.00,90.00,E
+,13LAIDFS3_ZX2GBUK7UTGF,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,2WEOGUFSLDOEPKKJ8B92ZG,0.00,90.00,N
+,3LPOH7MLADXTGE9OCCKEXH,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,0LC85YX5QB4XRN8O5WBTRF,180.00,90.00,S
+,0LMOXCJFVUQ2HV9UDYKFYK,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,1CD3MQUFQT5C2MNLRUWGXL,270.00,90.00,W
+,2CVWUZPEDESDJARZPMJYC8,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,3XYW9SWB7YBTXNJUV3X$K5,0.00,90.00,N
+,2NVIMH_1VARANYAE7V_22C,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,3XTF9VNRG$5_FYP6RRZVUW,270.00,90.00,W
+,0EHDWN$JRMOLRZSS_CMUG1_1,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0EHDWN$JRMOLRZSS_CMUG1_2,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0EHDWN$JRMOLRZSS_CMUG1_3,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0EHDWN$JRMOLRZSS_CMUG1_4,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0EHDWN$JRMOLRZSS_CMUG1_5,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0EHDWN$JRMOLRZSS_CMUG1_6,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0EHDWN$JRMOLRZSS_CMUG1_7,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0EHDWN$JRMOLRZSS_CMUG1_8,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,2QENT$DF1PYDUNVUQVZSWA,90.00,90.00,E
+,0LATUSCHMS3UUHGXJFE9JD_1,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,0LATUSCHMS3UUHGXJFE9JD_2,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,0LATUSCHMS3UUHGXJFE9JD_3,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,0LATUSCHMS3UUHGXJFE9JD_4,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,0LATUSCHMS3UUHGXJFE9JD_5,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,0LATUSCHMS3UUHGXJFE9JD_6,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,0LATUSCHMS3UUHGXJFE9JD_7,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,0LATUSCHMS3UUHGXJFE9JD_8,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,0.09,0.00,0.00,0.09,0.09,1.130,0.651,0.580,,,No,0DXBKPKUSBXBX7UHWKY0Y2,270.00,90.00,W
+,2P0NCF3QQHLR$KFWLMVSDQ,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,3JI5NBFXVZ_5G1BI$GM2JJ,0.00,90.00,N
+,0FDITNYIOP9X6HT13C1FXZ,WINDOW_WM_GLAS1995_2015ALUODERSTAHLFENSTERWAERMESCHUTZVERGLASUNGZWEIFACH_0.024,2.40,0.00,0.00,2.40,2.40,1.130,0.651,0.580,,,No,217LLFHXJQNQBQY5_3XARW,90.00,90.00,E
+,Total or Average,,,,,,22.99,1.130,0.651,0.580,,,,,,,
+,North Total or Average,,,,,,7.20,1.130,0.651,0.580,,,,,,,
+,Non-North Total or Average,,,,,,15.79,1.130,0.651,0.580,,,,,,,
+
+
+Interior Fenestration
+
+,,Construction,Area of One Opening [m2],Area of Openings [m2],Glass U-Factor [W/m2-K],Glass SHGC,Glass Visible Transmittance,Parent Surface
+,Total or Average,,,0.00,-,-,-,
+
+
+Exterior Door
+
+,,Construction,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Parent Surface
+,066DHLHD6EXMRBFGE$_NF3,BPS-OUTERDOOR_1_0.05,1.291,1.600,4.77,3IG9WO1YVN7Q0LIDENCZIP
+,1MMTMP85F4G3JD6QQRDD0E,BPS-OUTERDOOR_1_0.05,1.291,1.600,2.03,3EBBM8XQDFK076K2TBN8PV
+
+
+Interior Door
+
+,,Construction,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Parent Surface
+,1ZG$IPTVAW4G9BFS2CHRLO,BPS-INNERDOOR_1_0.05,1.157,1.600,1.78,09BIV6KXYHYE$FI0$BZJNR
+,1AGIHCK9TRZ$GJIWXX$JDV,BPS-INNERDOOR_1_0.05,1.157,1.600,1.78,1ZVTHPRHFWSVHGO9MXUL0M
+,064SCFX4RXJ9WMTPSMHFXX,BPS-INNERDOOR_1_0.05,1.157,1.600,1.78,3LWFLCAQDSG0JEX6IRJFFW
+,0SCE7NP2X7GOPCDLODOLGU,BPS-INNERDOOR_1_0.05,1.157,1.600,1.78,3EOBRCAA$859EE_8QFRODO
+,0RFEK4ACIROAQUP2Y9J$RT,BPS-INNERDOOR_1_0.05,1.157,1.600,1.78,24CS3EKNKYWTHMMVK8AYVJ
+,3VLEF$XZOGHHZ6V$G8T_KY,BPS-INNERDOOR_1_0.05,1.157,1.600,1.78,0LYLYTQNLDLTXOGYJHOS_O
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Shading Summary
+FOR:,Entire Facility
+Sunlit Fraction
+
+,,March 21 9am,March 21 noon,March 21 3pm,June 21 9am,June 21 noon,June 21 3pm,December 21 9am,December 21 noon,December 21 3pm
+,0FWBZIEJPKAHKNBHIA9EM7,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+,0MJEZNGMXXEYZS2NPTYAJX,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,13LAIDFS3_ZX2GBUK7UTGF,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,3LPOH7MLADXTGE9OCCKEXH,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+,0LMOXCJFVUQ2HV9UDYKFYK,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,2CVWUZPEDESDJARZPMJYC8,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,2NVIMH_1VARANYAE7V_22C,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0EHDWN$JRMOLRZSS_CMUG1_1,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0EHDWN$JRMOLRZSS_CMUG1_2,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0EHDWN$JRMOLRZSS_CMUG1_3,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0EHDWN$JRMOLRZSS_CMUG1_4,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0EHDWN$JRMOLRZSS_CMUG1_5,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0EHDWN$JRMOLRZSS_CMUG1_6,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0EHDWN$JRMOLRZSS_CMUG1_7,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0EHDWN$JRMOLRZSS_CMUG1_8,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,0LATUSCHMS3UUHGXJFE9JD_1,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0LATUSCHMS3UUHGXJFE9JD_2,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0LATUSCHMS3UUHGXJFE9JD_3,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0LATUSCHMS3UUHGXJFE9JD_4,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0LATUSCHMS3UUHGXJFE9JD_5,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0LATUSCHMS3UUHGXJFE9JD_6,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0LATUSCHMS3UUHGXJFE9JD_7,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,0LATUSCHMS3UUHGXJFE9JD_8,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,2P0NCF3QQHLR$KFWLMVSDQ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,0FDITNYIOP9X6HT13C1FXZ,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+
+
+Window Control
+
+,,Name,Type,Shaded Construction,Control,Glare Control
+,None,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Lighting Summary
+FOR:,Entire Facility
+Interior Lighting
+
+,,Zone,Lighting Power Density [W/m2],Zone Area [m2],Total Power [W],End Use Subcategory,Schedule Name,Scheduled Hours/Week [hr],Hours/Week > 1% [hr],Full Load Hours/Week [hr],Return Air Fraction,Conditioned (Y/N),Consumption [kWh]
+,0LT8GR_E9ESEGH5UY_G9E9,0LT8GR_E9ESEGH5UY_G9E9,0.5000,25.99,12.99,General,SCHEDULE LIGHTING LIVING,84.00,84.00,84.00,0.0000,Y,56.91
+,17JZCMFRF5TOFTUTIDA0D3,17JZCMFRF5TOFTUTIDA0D3,3.3333,16.31,54.35,General,SCHEDULE LIGHTING KITCHEN IN NON-RESIDENTIAL BUILDINGS,84.00,84.00,84.00,0.0000,Y,238.06
+,2RSCZLOBZ4FAK$_WE8VCKM,2RSCZLOBZ4FAK$_WE8VCKM,3.3333,12.98,43.28,General,SCHEDULE LIGHTING SINGLE OFFICE,84.00,84.00,84.00,0.0000,Y,189.58
+,2DQFGGKBB1FOC1CQZDIDLX,2DQFGGKBB1FOC1CQZDIDLX,0.5000,107.16,53.58,General,SCHEDULE LIGHTING LIVING,84.00,84.00,84.00,0.0000,Y,234.68
+,347JFE2YX7IHCEIALMUPEH,347JFE2YX7IHCEIALMUPEH,2.0000,22.07,44.14,General,SCHEDULE LIGHTING BED ROOM,84.00,84.00,84.00,0.0000,Y,193.36
+,0E_HBKIQ5DMQLIJ$2V3J_M,0E_HBKIQ5DMQLIJ$2V3J_M,1.3333,12.50,16.67,General,SCHEDULE LIGHTING WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,84.00,84.00,84.00,0.0000,Y,73.02
+,3$F2P7VYLB7EOX67SA_ZKE,3$F2P7VYLB7EOX67SA_ZKE,0.6667,11.53,7.69,General,SCHEDULE LIGHTING TRAFFIC AREA,84.00,84.00,84.00,0.0000,Y,33.67
+,Interior Lighting Total,,1.1159,208.55,232.71,,,,,,,,1019.28
+
+
+Daylighting
+
+,,Zone,Control Name,Daylighting Method,Control Type,Fraction Controlled,Lighting Installed in Zone [W],Lighting Controlled [W]
+,None,,,,,,,
+
+
+Exterior Lighting
+
+,,Total Watts,Astronomical Clock/Schedule,Schedule Name,Scheduled Hours/Week [hr],Hours/Week > 1% [hr],Full Load Hours/Week [hr],Consumption [kWh]
+,Exterior Lighting Total,0.00,,,,,,0.00
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Equipment Summary
+FOR:,Entire Facility
+Central Plant
+
+,,Type,Nominal Capacity [W],Nominal Efficiency [W/W],IPLV in SI Units [W/W],IPLV in IP Units [Btu/W-h]
+,None,,,,,
+
+
+Cooling Coils
+
+,,Type,Design Coil Load [W],Nominal Total Capacity [W],Nominal Sensible Capacity [W],Nominal Latent Capacity [W],Nominal Sensible Heat Ratio,Nominal Efficiency [W/W],Nominal Coil UA Value [W/C],Nominal Coil Surface Area [m2]
+,None,,,,,,,,,
+
+
+DX Cooling Coils
+
+,,DX Cooling Coil Type,Standard Rated Net Cooling Capacity [W],Standard Rated Net COP [W/W],EER [Btu/W-h],SEER User [Btu/W-h],SEER Standard [Btu/W-h],IEER [Btu/W-h]
+,None,,,,,,,
+
+
+DX Cooling Coil ASHRAE 127 Standard Ratings Report
+
+,,DX Cooling Coil Type,Rated Net Cooling Capacity Test A [W],Rated Electric Power Test A [W],Rated Net Cooling Capacity Test B [W],Rated Electric Power Test B [W],Rated Net Cooling Capacity Test C [W],Rated Electric Power Test C [W],Rated Net Cooling Capacity Test D [W],Rated Electric Power Test D [W]
+,None,,,,,,,,,
+
+
+DX Heating Coils
+
+,,DX Heating Coil Type,High Temperature Heating (net) Rating Capacity [W],Low Temperature Heating (net) Rating Capacity [W],HSPF [Btu/W-h],Region Number
+,None,,,,,
+
+
+Heating Coils
+
+,,Type,Design Coil Load [W],Nominal Total Capacity [W],Nominal Efficiency [W/W]
+,None,,,,
+
+
+Fans
+
+,,Type,Total Efficiency [W/W],Delta Pressure [pa],Max Air Flow Rate [m3/s],Rated Electricity Rate [W],Rated Power Per Max Air Flow Rate [W-s/m3],Motor Heat In Air Fraction,Fan Energy Index,End Use Subcategory,Design Day Name for Fan Sizing Peak,Date/Time for Fan Sizing Peak
+,None,,,,,,,,,,,
+
+
+Pumps
+
+,,Type,Control,Head [pa],Water Flow [m3/s],Electricity Rate [W],Power Per Water Flow Rate [W-s/m3],Motor Efficiency [W/W],End Use Subcategory
+,None,,,,,,,,
+
+
+Service Water Heating
+
+,,Type,Storage Volume [m3],Input [W],Thermal Efficiency [W/W],Recovery Efficiency [W/W],Energy Factor
+,None,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,HVAC Sizing Summary
+FOR:,Entire Facility
+Zone Sensible Cooling
+
+,,Calculated Design Load [W],User Design Load [W],User Design Load per Area [W/m2],Calculated Design Air Flow [m3/s],User Design Air Flow [m3/s],Design Day Name,Date/Time Of Peak {TIMESTAMP},Thermostat Setpoint Temperature at Peak Load [C],Indoor Temperature at Peak Load [C],Indoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Outdoor Temperature at Peak Load [C],Outdoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Minimum Outdoor Air Flow Rate [m3/s],Heat Gain Rate from DOAS [W]
+,0LT8GR_E9ESEGH5UY_G9E9,743.83,743.83,28.62,0.089,0.089,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 16:30:00,20.00,20.00,0.00763,25.10,0.00740,0.000,0.00
+,17JZCMFRF5TOFTUTIDA0D3,5555.79,5555.79,340.73,0.665,0.665,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 12:00:00,20.00,20.00,0.00770,24.30,0.00771,0.000,0.00
+,2RSCZLOBZ4FAK$_WE8VCKM,742.68,742.68,57.20,0.089,0.089,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 17:30:00,20.00,20.00,0.00758,24.60,0.00718,0.000,0.00
+,2DQFGGKBB1FOC1CQZDIDLX,2452.98,2452.98,22.89,0.293,0.293,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 17:00:00,20.00,20.00,0.00756,24.90,0.00721,0.000,0.00
+,347JFE2YX7IHCEIALMUPEH,828.10,828.10,37.52,0.099,0.099,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 12:30:00,20.00,20.00,0.00767,24.45,0.00739,0.000,0.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,30.25,30.25,2.42,0.002,0.002,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 16:30:00,24.00,24.00,0.00751,25.10,0.00740,0.000,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,1068.22,1068.22,92.64,0.447,0.447,SUMMER DESIGN DAY FROM WEATHER FILE,7/29 16:45:00,15.00,15.00,0.00768,25.00,0.00731,0.000,0.00
+The Design Load is the zone sensible load only. It does not include any system effects or ventilation loads.
+
+
+Zone Sensible Heating
+
+,,Calculated Design Load [W],User Design Load [W],User Design Load per Area [W/m2],Calculated Design Air Flow [m3/s],User Design Air Flow [m3/s],Design Day Name,Date/Time Of Peak {TIMESTAMP},Thermostat Setpoint Temperature at Peak Load [C],Indoor Temperature at Peak Load [C],Indoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Outdoor Temperature at Peak Load [C],Outdoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Minimum Outdoor Air Flow Rate [m3/s],Heat Gain Rate from DOAS [W]
+,0LT8GR_E9ESEGH5UY_G9E9,465.62,465.62,17.92,0.013,0.013,WINTER DESIGN DAY FROM WEATHER FILE,2/28 09:15:00,20.00,19.99,0.01041,10.58,0.00628,0.000,0.00
+,17JZCMFRF5TOFTUTIDA0D3,0.0,0.0,0.0,0.0,0.0,N/A,N/A,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+,2RSCZLOBZ4FAK$_WE8VCKM,240.82,240.82,18.55,0.007,0.007,WINTER DESIGN DAY FROM WEATHER FILE,3/2 06:00:00,20.00,19.99,0.01117,1.00,0.00367,0.000,0.00
+,2DQFGGKBB1FOC1CQZDIDLX,1716.66,1716.66,16.02,0.047,0.047,WINTER DESIGN DAY FROM WEATHER FILE,2/28 09:30:00,20.00,19.99,0.01038,10.75,0.00627,0.000,0.00
+,347JFE2YX7IHCEIALMUPEH,242.27,242.27,10.98,0.007,0.007,WINTER DESIGN DAY FROM WEATHER FILE,2/27 07:45:00,20.00,19.99,0.00984,0.68,0.00252,0.000,0.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,402.00,402.00,32.15,0.013,0.013,WINTER DESIGN DAY FROM WEATHER FILE,2/28 09:15:00,24.00,23.99,0.01166,10.58,0.00628,0.000,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,0.0,0.0,0.0,0.0,0.0,N/A,N/A,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+The Design Load is the zone sensible load only. It does not include any system effects or ventilation loads.
+
+
+System Design Air Flow Rates
+
+,,Calculated cooling [m3/s],User cooling [m3/s],Calculated heating [m3/s],User heating [m3/s],Adjusted cooling [m3/s],Adjusted heating [m3/s],Adjusted main [m3/s],Calculated Heating Air Flow Ratio [],User Heating Air Flow Ratio []
+,None,,,,,,,,,
+
+
+Plant Loop Coincident Design Fluid Flow Rate Adjustments
+
+,,Previous Design Volume Flow Rate [m3/s],Algorithm Volume Flow Rate [m3/s],Coincident Design Volume Flow Rate [m3/s],Coincident Size Adjusted,Peak Sizing Period Name,Peak Day into Period {TIMESTAMP}[day],Peak Hour Of Day {TIMESTAMP}[hr],Peak Step Start Minute {TIMESTAMP}[min]
+,None,,,,,,,,
+
+
+Coil Sizing Summary
+
+,,Coil Type,HVAC Type,HVAC Name,Coil Final Gross Total Capacity [W],Coil Final Gross Sensible Capacity [W],Coil Final Reference Air Volume Flow Rate [m3/s],Coil Final Reference Plant Fluid Volume Flow Rate [m3/s],Coil U-value Times Area Value [W/K],Design Day Name at Sensible Ideal Loads Peak,Date/Time at Sensible Ideal Loads Peak,Design Day Name at Air Flow Ideal Loads Peak,Date/Time at Air Flow Ideal Loads Peak,Coil Total Capacity at Ideal Loads Peak [W],Coil Sensible Capacity at Ideal Loads Peak [W],Coil Air Volume Flow Rate at Ideal Loads Peak [m3/s],Coil Entering Air Drybulb at Ideal Loads Peak [C],Coil Entering Air Wetbulb at Ideal Loads Peak [C],Coil Entering Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Coil Leaving Air Drybulb at Ideal Loads Peak [C],Coil Leaving Air Wetbulb at Ideal Loads Peak [C],Coil Leaving Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Outdoor Air Drybulb at Ideal Loads Peak [C],Outdoor Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Outdoor Air Wetbulb at Ideal Loads Peak [C],Outdoor Air Flow Percentage at Ideal Loads Peak [%],Zone Air Drybulb at Ideal Loads Peak [C],Zone Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Zone Air Relative Humidity at Ideal Loads Peak [%],Zone Sensible Heat Gain at Ideal Loads Peak [W],Zone Latent Heat Gain at Ideal Loads Peak [W],Coil Total Capacity at Rating Conditions [W],Coil Sensible Capacity at Rating Conditions [W]
+,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Coil Sizing Details
+FOR:,Entire Facility
+Coils
+
+,,Coil Type,Coil Location,HVAC Type,HVAC Name,Zone Name(s),System Sizing Method Concurrence,System Sizing Method Capacity,System Sizing Method Air Flow,Autosized Coil Capacity?,Autosized Coil Airflow?,Autosized Coil Water Flow?,OA Pretreated prior to coil inlet?,Coil Final Gross Total Capacity [W],Coil Final Gross Sensible Capacity [W],Coil Final Reference Air Volume Flow Rate [m3/s],Coil Final Reference Plant Fluid Volume Flow Rate [m3/s],Coil U-value Times Area Value [W/K],Terminal Unit Reheat Coil Multiplier,DX Coil Capacity Increase Ratio from Too Low Flow/Capacity Ratio,DX Coil Capacity Decrease Ratio from Too High Flow/Capacity Ratio,Moist Air Heat Capacity [J/kg-K],Dry Air Heat Capacity [J/kg-K],Standard Air Density Adjusted for Elevation [kg/m3],Supply Fan Name for Coil,Supply Fan Type for Coil,Supply Fan Maximum Air Volume Flow Rate [m3/s],Supply Fan Maximum Air Mass Flow Rate [kg/s],Plant Name for Coil,Plant Fluid Specific Heat Capacity [J/kg-K],Plant Fluid Density [kg/m3],Plant Maximum Fluid Mass Flow Rate [kg/s],Plant Design Fluid Return Temperature [C],Plant Design Fluid Supply Temperature [C],Plant Design Fluid Temperature Difference [deltaC],Plant Design Capacity [W],Coil Capacity Percentage of Plant Design Capacity [%],Coil Fluid Flow Rate Percentage of Plant Design Flow Rate [%],Design Day Name at Sensible Ideal Loads Peak,Date/Time at Sensible Ideal Loads Peak,Design Day Name at Total Ideal Loads Peak,Date/Time at Total Ideal Loads Peak,Design Day Name at Air Flow Ideal Loads Peak,Date/Time at Air Flow Ideal Loads Peak,Peak Load Type to Size On,Coil Total Capacity at Ideal Loads Peak [W],Coil Sensible Capacity at Ideal Loads Peak [W],Coil Off-Rating Capacity Modifier at Ideal Loads Peak [ ],Coil Air Mass Flow Rate at Ideal Loads Peak [kg/s],Coil Air Volume Flow Rate at Ideal Loads Peak [m3/s],Coil Entering Air Drybulb at Ideal Loads Peak [C],Coil Entering Air Wetbulb at Ideal Loads Peak [C],Coil Entering Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Coil Entering Air Enthalpy at Ideal Loads Peak [J/KG-K],Coil Leaving Air Drybulb at Ideal Loads Peak [C],Coil Leaving Air Wetbulb at Ideal Loads Peak [C],Coil Leaving Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Coil Leaving Air Enthalpy at Ideal Loads Peak [J/KG-K],Coil Plant Fluid Mass Flow Rate at Ideal Loads Peak [kg/s],Coil Entering Plant Fluid Temperature at Ideal Loads Peak [C],Coil Leaving Plant Fluid Temperature at Ideal Loads Peak [C],Coil Plant Fluid Temperature Difference at Ideal Loads Peak [deltaC],Supply Fan Air Heat Gain at Ideal Loads Peak [W],Coil and Fan Net Total Capacity at Ideal Loads Peak [W],Outdoor Air Drybulb at Ideal Loads Peak [C],Outdoor Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Outdoor Air Wetbulb at Ideal Loads Peak [C],Outdoor Air Volume Flow Rate at Ideal Loads Peak [m3/s],Outdoor Air Flow Percentage at Ideal Loads Peak [%],System Return Air Drybulb at Ideal Loads Peak [C],System Return Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Zone Air Drybulb at Ideal Loads Peak [C],Zone Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Zone Air Relative Humidity at Ideal Loads Peak [%],Zone Sensible Heat Gain at Ideal Loads Peak [W],Zone Latent Heat Gain at Ideal Loads Peak [W],Coil Total Capacity at Rating Conditions [W],Coil Sensible Capacity at Rating Conditions [W],Coil Air Mass Flow Rate at Rating Conditions [kg/s],Coil Entering Air Drybulb at Rating Conditions [C],Coil Entering Air Wetbulb at Rating Conditions [C],Coil Entering Air Humidity Ratio at Rating Conditions [kgWater/kgDryAir],Coil Entering Air Enthalpy at Rating Conditions [J/KG-K],Coil Leaving Air Drybulb at Rating Conditions [C],Coil Leaving Air Wetbulb at Rating Conditions [C],Coil Leaving Air Humidity Ratio at Rating Conditions [kgWater/kgDryAir],Coil Leaving Air Enthalpy at Rating Conditions [J/KG-K]
+,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,System Summary
+FOR:,Entire Facility
+Economizer
+
+,,High Limit Shutoff Control,Minimum Outdoor Air [m3/s],Maximum Outdoor Air [m3/s],Return Air Temp Limit,Return Air Enthalpy Limit,Outdoor Air Temperature Limit [C],Outdoor Air Enthalpy Limit [C]
+,None,,,,,,,
+
+
+Demand Controlled Ventilation using Controller:MechanicalVentilation
+
+,,Controller:MechanicalVentilation Name,Outdoor Air Per Person [m3/s-person],Outdoor Air Per Area [m3/s-m2],Outdoor Air Per Zone [m3/s],Outdoor Air ACH [ach],Outdoor Air Method,Outdoor Air Schedule Name,Air Distribution Effectiveness in Cooling Mode,Air Distribution Effectiveness in Heating Mode,Air Distribution Effectiveness Schedule Name
+,None,,,,,,,,,,
+
+
+Time Not Comfortable Based on Simple ASHRAE 55-2004
+
+,,Winter Clothes [hr],Summer Clothes [hr],Summer or Winter Clothes [hr]
+,0LT8GR_E9ESEGH5UY_G9E9,5812.00,7927.50,5230.00
+,17JZCMFRF5TOFTUTIDA0D3,2866.00,2995.25,2656.75
+,2RSCZLOBZ4FAK$_WE8VCKM,2747.75,3365.50,2272.25
+,2DQFGGKBB1FOC1CQZDIDLX,5819.75,7695.50,5061.00
+,347JFE2YX7IHCEIALMUPEH,5646.50,7733.25,4934.50
+,0E_HBKIQ5DMQLIJ$2V3J_M,0.00,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,0.00
+,Facility,7142.75,8341.00,6536.75
+Aggregated over the RunPeriods for Weather
+
+
+Time Setpoint Not Met
+
+,,During Heating [hr],During Cooling [hr],During Occupied Heating [hr],During Occupied Cooling [hr]
+,0LT8GR_E9ESEGH5UY_G9E9,0.00,3647.50,0.00,3647.50
+,17JZCMFRF5TOFTUTIDA0D3,0.00,8760.00,0.00,3285.00
+,2RSCZLOBZ4FAK$_WE8VCKM,0.00,4244.50,0.00,2205.00
+,2DQFGGKBB1FOC1CQZDIDLX,0.00,3895.25,0.00,3895.25
+,347JFE2YX7IHCEIALMUPEH,0.00,4262.75,0.00,4262.75
+,0E_HBKIQ5DMQLIJ$2V3J_M,0.00,304.50,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,0.00,8760.00,0.00,0.00
+,Facility,0.00,8760.00,0.00,5934.50
+Aggregated over the RunPeriods for Weather
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Outdoor Air Summary
+FOR:,Entire Facility
+Average Outdoor Air During Occupied Hours
+
+,,Average Number of Occupants,Nominal Number of Occupants,Zone Volume [m3],Mechanical Ventilation [ach],Infiltration [ach],AFN Infiltration [ach],Simple Ventilation [ach]
+,0LT8GR_E9ESEGH5UY_G9E9,0.39,0.52,64.97,0.000,0.208,0.000,0.916
+,17JZCMFRF5TOFTUTIDA0D3,4.53,8.15,40.76,0.000,0.221,0.000,1.138
+,2RSCZLOBZ4FAK$_WE8VCKM,0.51,0.93,32.46,0.000,0.207,0.000,1.095
+,2DQFGGKBB1FOC1CQZDIDLX,1.63,2.14,217.53,0.000,0.208,0.000,0.901
+,347JFE2YX7IHCEIALMUPEH,2.21,2.21,55.18,0.000,0.208,0.000,0.917
+Values shown for a single zone without multipliers
+
+
+Minimum Outdoor Air During Occupied Hours
+
+,,Average Number of Occupants,Nominal Number of Occupants,Zone Volume [m3],Mechanical Ventilation [ach],Infiltration [ach],AFN Infiltration [ach],Simple Ventilation [ach]
+,0LT8GR_E9ESEGH5UY_G9E9,0.39,0.52,64.97,0.000,0.003,0.000,0.000
+,17JZCMFRF5TOFTUTIDA0D3,4.53,8.15,40.76,0.000,0.003,0.000,0.000
+,2RSCZLOBZ4FAK$_WE8VCKM,0.51,0.93,32.46,0.000,0.003,0.000,0.000
+,2DQFGGKBB1FOC1CQZDIDLX,1.63,2.14,217.53,0.000,0.003,0.000,0.000
+,347JFE2YX7IHCEIALMUPEH,2.21,2.21,55.18,0.000,0.003,0.000,0.000
+Values shown for a single zone without multipliers
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Object Count Summary
+FOR:,Entire Facility
+Surfaces by Class
+
+,,Total,Outdoors
+,Wall,41,16
+,Floor,17,7
+,Roof,11,3
+,Internal Mass,0,0
+,Building Detached Shading,0,0
+,Fixed Detached Shading,0,0
+,Window,25,25
+,Door,8,2
+,Glass Door,0,0
+,Shading,0,0
+,Overhang,0,0
+,Fin,0,0
+,Tubular Daylighting Device Dome,0,0
+,Tubular Daylighting Device Diffuser,0,0
+
+
+HVAC
+
+,,Count
+,HVAC Air Loops,0
+,Conditioned Zones,7
+,Unconditioned Zones,0
+,Supply Plenums,0
+,Return Plenums,0
+
+
+Input Fields
+
+,,Count
+,IDF Objects,443
+,Defaulted Fields,70
+,Fields with Defaults,2030
+,Autosized Fields,28
+,Autosizable Fields,42
+,Autocalculated Fields,225
+,Autocalculatable Fields,232
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Energy Meters
+FOR:,Entire Facility
+Annual and Peak Values - Electricity
+
+,,Electricity Annual Value [kWh],Electricity Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Electricity Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,Electricity:Facility,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,Electricity:Building,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,Electricity:Zone:0LT8GR_E9ESEGH5UY_G9E9,297.86,5.20,01-JAN-00:15,64.97,01-JAN-07:15
+,InteriorLights:Electricity,1019.28,0.00,01-JAN-00:15,232.71,01-JAN-06:15
+,InteriorLights:Electricity:Zone:0LT8GR_E9ESEGH5UY_G9E9,56.91,0.00,01-JAN-00:15,12.99,01-JAN-06:15
+,General:InteriorLights:Electricity,1019.28,0.00,01-JAN-00:15,232.71,01-JAN-06:15
+,Electricity:Zone:0E_HBKIQ5DMQLIJ$2V3J_M,73.02,0.00,01-JAN-00:15,16.67,01-JAN-06:15
+,InteriorLights:Electricity:Zone:0E_HBKIQ5DMQLIJ$2V3J_M,73.02,0.00,01-JAN-00:15,16.67,01-JAN-06:15
+,Electricity:Zone:17JZCMFRF5TOFTUTIDA0D3,11129.29,489.16,01-JAN-00:15,4945.99,01-JAN-10:15
+,InteriorLights:Electricity:Zone:17JZCMFRF5TOFTUTIDA0D3,238.06,0.00,01-JAN-00:15,54.35,01-JAN-06:15
+,Electricity:Zone:2RSCZLOBZ4FAK$_WE8VCKM,431.77,9.09,01-JAN-00:15,116.00,01-JAN-10:15
+,InteriorLights:Electricity:Zone:2RSCZLOBZ4FAK$_WE8VCKM,189.58,0.00,01-JAN-00:15,43.28,01-JAN-06:15
+,Electricity:Zone:2DQFGGKBB1FOC1CQZDIDLX,1228.16,21.43,01-JAN-00:15,267.90,01-JAN-07:15
+,InteriorLights:Electricity:Zone:2DQFGGKBB1FOC1CQZDIDLX,234.68,0.00,01-JAN-00:15,53.58,01-JAN-06:15
+,Electricity:Zone:3$F2P7VYLB7EOX67SA_ZKE,33.67,0.00,01-JAN-00:15,7.69,01-JAN-06:15
+,InteriorLights:Electricity:Zone:3$F2P7VYLB7EOX67SA_ZKE,33.67,0.00,01-JAN-00:15,7.69,01-JAN-06:15
+,Electricity:Zone:347JFE2YX7IHCEIALMUPEH,386.71,17.66,01-JAN-00:15,70.63,01-JAN-19:15
+,InteriorLights:Electricity:Zone:347JFE2YX7IHCEIALMUPEH,193.36,0.00,01-JAN-00:15,44.14,01-JAN-06:15
+,InteriorEquipment:Electricity,12561.20,542.54,01-JAN-00:15,5248.31,01-JAN-11:15
+,InteriorEquipment:Electricity:Zone:0LT8GR_E9ESEGH5UY_G9E9,240.94,5.20,01-JAN-00:15,51.98,01-JAN-07:15
+,General:InteriorEquipment:Electricity,12561.20,542.54,01-JAN-00:15,5248.31,01-JAN-11:15
+,InteriorEquipment:Electricity:Zone:0E_HBKIQ5DMQLIJ$2V3J_M,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,InteriorEquipment:Electricity:Zone:17JZCMFRF5TOFTUTIDA0D3,10891.23,489.16,01-JAN-00:15,4891.64,01-JAN-10:15
+,InteriorEquipment:Electricity:Zone:2RSCZLOBZ4FAK$_WE8VCKM,242.19,9.09,01-JAN-00:15,72.72,01-JAN-10:15
+,InteriorEquipment:Electricity:Zone:2DQFGGKBB1FOC1CQZDIDLX,993.48,21.43,01-JAN-00:15,214.32,01-JAN-07:15
+,InteriorEquipment:Electricity:Zone:3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,InteriorEquipment:Electricity:Zone:347JFE2YX7IHCEIALMUPEH,193.36,17.66,01-JAN-00:15,70.63,01-JAN-19:15
+,Fans:Electricity,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Fans:Electricity:Zone:0LT8GR_E9ESEGH5UY_G9E9,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Ventilation (simple):Fans:Electricity,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Fans:Electricity:Zone:0E_HBKIQ5DMQLIJ$2V3J_M,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Fans:Electricity:Zone:17JZCMFRF5TOFTUTIDA0D3,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Fans:Electricity:Zone:2RSCZLOBZ4FAK$_WE8VCKM,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Fans:Electricity:Zone:2DQFGGKBB1FOC1CQZDIDLX,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Fans:Electricity:Zone:3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Fans:Electricity:Zone:347JFE2YX7IHCEIALMUPEH,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,ElectricityPurchased:Facility,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,ElectricityPurchased:Plant,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,Cogeneration:ElectricityPurchased,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,General:Cogeneration:ElectricityPurchased,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,ElectricitySurplusSold:Facility,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,ElectricitySurplusSold:Plant,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Cogeneration:ElectricitySurplusSold,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,General:Cogeneration:ElectricitySurplusSold,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,ElectricityNet:Facility,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,ElectricityNet:Plant,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,Cogeneration:ElectricityNet,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+,General:Cogeneration:ElectricityNet,13580.48,542.54,01-JAN-00:15,5481.02,01-JAN-11:15
+
+
+Annual and Peak Values - Natural Gas
+
+,,Natural Gas Annual Value [kWh],Natural Gas Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Natural Gas Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Cooling
+
+,,Cooling Annual Value [kWh],Cooling Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Cooling Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,DistrictCooling:Facility,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,DistrictCooling:HVAC,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Cooling:DistrictCooling,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,General:Cooling:DistrictCooling,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+
+
+Annual and Peak Values - Water
+
+,,Annual Value [m3],Minimum Value [m3/s],Timestamp of Minimum {TIMESTAMP},Maximum Value [m3/s],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Other by Weight/Mass
+
+,,Annual Value [kg],Minimum Value [kg/s],Timestamp of Minimum {TIMESTAMP},Maximum Value [kg/s],Timestamp of Maximum {TIMESTAMP}
+,Carbon Equivalent:Facility,0.00,0.000,01-JAN-00:15,0.000,01-JAN-00:15
+,CarbonEquivalentEmissions:Carbon Equivalent,0.00,0.000,01-JAN-00:15,0.000,01-JAN-00:15
+
+
+Annual and Peak Values - Other Volumetric
+
+,,Annual Value [m3],Minimum Value [m3/s],Timestamp of Minimum {TIMESTAMP},Maximum Value [m3/s],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Other Liquid/Gas
+
+,,Annual Value [L],Minimum Value [L],Timestamp of Minimum {TIMESTAMP},Maximum Value [L],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Other
+
+,,Annual Value [kWh],Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,EnergyTransfer:Facility,7330.91,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+,EnergyTransfer:Building,7330.91,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+,EnergyTransfer:Zone:0LT8GR_E9ESEGH5UY_G9E9,985.76,0.00,17-JAN-13:00,562.28,13-JAN-06:00
+,Heating:EnergyTransfer,7330.91,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+,Heating:EnergyTransfer:Zone:0LT8GR_E9ESEGH5UY_G9E9,985.76,0.00,17-JAN-13:00,562.28,13-JAN-06:00
+,General:Heating:EnergyTransfer,7330.91,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+,Cooling:EnergyTransfer,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Cooling:EnergyTransfer:Zone:0LT8GR_E9ESEGH5UY_G9E9,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,General:Cooling:EnergyTransfer,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,EnergyTransfer:Zone:0E_HBKIQ5DMQLIJ$2V3J_M,1965.60,0.00,14-MAY-13:45,421.85,15-JAN-12:00
+,Heating:EnergyTransfer:Zone:0E_HBKIQ5DMQLIJ$2V3J_M,1965.60,0.00,14-MAY-13:45,421.85,15-JAN-12:00
+,Cooling:EnergyTransfer:Zone:0E_HBKIQ5DMQLIJ$2V3J_M,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,EnergyTransfer:Zone:17JZCMFRF5TOFTUTIDA0D3,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Heating:EnergyTransfer:Zone:17JZCMFRF5TOFTUTIDA0D3,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Cooling:EnergyTransfer:Zone:17JZCMFRF5TOFTUTIDA0D3,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,EnergyTransfer:Zone:2RSCZLOBZ4FAK$_WE8VCKM,601.00,0.00,05-JAN-14:15,370.09,13-JAN-06:00
+,Heating:EnergyTransfer:Zone:2RSCZLOBZ4FAK$_WE8VCKM,601.00,0.00,05-JAN-14:15,370.09,13-JAN-06:00
+,Cooling:EnergyTransfer:Zone:2RSCZLOBZ4FAK$_WE8VCKM,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,EnergyTransfer:Zone:2DQFGGKBB1FOC1CQZDIDLX,3199.13,0.00,19-JAN-18:30,2054.75,13-JAN-06:00
+,Heating:EnergyTransfer:Zone:2DQFGGKBB1FOC1CQZDIDLX,3199.13,0.00,19-JAN-18:30,2054.75,13-JAN-06:00
+,Cooling:EnergyTransfer:Zone:2DQFGGKBB1FOC1CQZDIDLX,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,EnergyTransfer:Zone:3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Heating:EnergyTransfer:Zone:3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,Cooling:EnergyTransfer:Zone:3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,EnergyTransfer:Zone:347JFE2YX7IHCEIALMUPEH,579.42,0.00,14-FEB-11:00,378.27,13-JAN-06:00
+,Heating:EnergyTransfer:Zone:347JFE2YX7IHCEIALMUPEH,579.42,0.00,14-FEB-11:00,378.27,13-JAN-06:00
+,Cooling:EnergyTransfer:Zone:347JFE2YX7IHCEIALMUPEH,0.00,0.00,01-JAN-00:15,0.00,01-JAN-00:15
+,DistrictHeating:Facility,7330.90,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+,DistrictHeating:HVAC,7330.90,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+,Heating:DistrictHeating,7330.90,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+,General:Heating:DistrictHeating,7330.90,0.00,14-MAY-13:45,3769.25,13-JAN-06:00
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Sensible Heat Gain Summary
+FOR:,Entire Facility
+Annual Building Sensible Heat Gain Components
+
+,,HVAC Zone Eq & Other Sensible Air Heating [kWh],HVAC Zone Eq & Other Sensible Air Cooling [kWh],HVAC Terminal Unit Sensible Air Heating [kWh],HVAC Terminal Unit Sensible Air Cooling [kWh],HVAC Input Heated Surface Heating [kWh],HVAC Input Cooled Surface Cooling [kWh],People Sensible Heat Addition [kWh],Lights Sensible Heat Addition [kWh],Equipment Sensible Heat Addition [kWh],Window Heat Addition [kWh],Interzone Air Transfer Heat Addition [kWh],Infiltration Heat Addition [kWh],Opaque Surface Conduction and Other Heat Addition [kWh],Equipment Sensible Heat Removal [kWh],Window Heat Removal [kWh],Interzone Air Transfer Heat Removal [kWh],Infiltration Heat Removal [kWh],Opaque Surface Conduction and Other Heat Removal [kWh]
+,0LT8GR_E9ESEGH5UY_G9E9,985.757,0.000,0.000,0.000,0.000,0.000,238.520,56.915,240.940,1889.577,5.898,4.464,0.000,0.000,-354.89,-3.80,-1452.02,-1611.36
+,17JZCMFRF5TOFTUTIDA0D3,0.000,0.000,0.000,0.000,0.000,0.000,162.805,238.060,10891.234,1845.888,22.505,0.000,0.000,0.000,-403.97,-16.26,-2222.90,-10517.37
+,2RSCZLOBZ4FAK$_WE8VCKM,601.002,0.000,0.000,0.000,0.000,0.000,136.584,189.581,242.190,1161.102,0.000,1.592,0.000,0.000,-357.39,0.000,-807.48,-1167.18
+,2DQFGGKBB1FOC1CQZDIDLX,3199.125,0.000,0.000,0.000,0.000,0.000,980.087,234.681,993.481,439.964,0.000,23.357,0.023,0.000,-104.83,0.000,-4934.09,-831.77
+,347JFE2YX7IHCEIALMUPEH,579.420,0.000,0.000,0.000,0.000,0.000,1326.800,193.355,193.355,1127.765,0.000,3.836,0.000,0.000,-339.48,0.000,-1310.00,-1775.05
+,0E_HBKIQ5DMQLIJ$2V3J_M,1965.599,0.000,0.000,0.000,0.000,0.000,0.000,73.016,0.000,370.510,0.000,6.259,0.000,0.000,-211.58,0.000,-901.05,-1302.75
+,3$F2P7VYLB7EOX67SA_ZKE,0.000,0.000,0.000,0.000,0.000,0.000,0.000,33.672,0.000,0.000,0.000,3.333,604.688,0.000,0.000,0.000,-641.69,0.000
+,Total Facility,7330.902,0.000,0.000,0.000,0.000,0.000,2844.796,1019.279,12561.200,6834.805,28.403,42.841,604.711,0.000,-1772.13,-20.05,-12269.24,-17205.50
+
+
+Peak Cooling Sensible Heat Gain Components
+
+,,Time of Peak {TIMESTAMP},HVAC Zone Eq & Other Sensible Air Heating [W],HVAC Zone Eq & Other Sensible Air Cooling [W],HVAC Terminal Unit Sensible Air Heating [W],HVAC Terminal Unit Sensible Air Cooling [W],HVAC Input Heated Surface Heating [W],HVAC Input Cooled Surface Cooling [W],People Sensible Heat Addition [W],Lights Sensible Heat Addition [W],Equipment Sensible Heat Addition [W],Window Heat Addition [W],Interzone Air Transfer Heat Addition [W],Infiltration Heat Addition [W],Opaque Surface Conduction and Other Heat Addition [W],Equipment Sensible Heat Removal [W],Window Heat Removal [W],Interzone Air Transfer Heat Removal [W],Infiltration Heat Removal [W],Opaque Surface Conduction and Other Heat Removal [W]
+,0LT8GR_E9ESEGH5UY_G9E9,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,17JZCMFRF5TOFTUTIDA0D3,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,2RSCZLOBZ4FAK$_WE8VCKM,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,2DQFGGKBB1FOC1CQZDIDLX,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,347JFE2YX7IHCEIALMUPEH,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total Facility,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+Peak Heating Sensible Heat Gain Components
+
+,,Time of Peak {TIMESTAMP},HVAC Zone Eq & Other Sensible Air Heating [W],HVAC Zone Eq & Other Sensible Air Cooling [W],HVAC Terminal Unit Sensible Air Heating [W],HVAC Terminal Unit Sensible Air Cooling [W],HVAC Input Heated Surface Heating [W],HVAC Input Cooled Surface Cooling [W],People Sensible Heat Addition [W],Lights Sensible Heat Addition [W],Equipment Sensible Heat Addition [W],Window Heat Addition [W],Interzone Air Transfer Heat Addition [W],Infiltration Heat Addition [W],Opaque Surface Conduction and Other Heat Addition [W],Equipment Sensible Heat Removal [W],Window Heat Removal [W],Interzone Air Transfer Heat Removal [W],Infiltration Heat Removal [W],Opaque Surface Conduction and Other Heat Removal [W]
+,0LT8GR_E9ESEGH5UY_G9E9,13-JAN-06:00,562.27,0.00,0.00,0.00,0.00,0.00,36.38,0.00,5.20,0.00,0.00,0.00,0.00,0.00,-145.83,0.00,-145.66,-312.37
+,17JZCMFRF5TOFTUTIDA0D3,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,2RSCZLOBZ4FAK$_WE8VCKM,13-JAN-06:00,370.08,0.00,0.00,0.00,0.00,0.00,0.00,0.00,9.09,0.00,0.00,0.00,0.00,0.00,-148.27,0.00,-72.78,-158.13
+,2DQFGGKBB1FOC1CQZDIDLX,13-JAN-06:00,2054.71,0.00,0.00,0.00,0.00,0.00,150.02,0.00,21.43,0.00,0.00,0.00,0.00,0.00,-43.31,0.00,-487.97,-1694.89
+,347JFE2YX7IHCEIALMUPEH,13-JAN-06:00,378.26,0.00,0.00,0.00,0.00,0.00,154.51,0.00,17.66,0.00,0.00,0.00,0.00,0.00,-146.44,0.00,-123.71,-280.27
+,0E_HBKIQ5DMQLIJ$2V3J_M,15-JAN-11:55,421.85,0.00,0.00,0.00,0.00,0.00,0.00,16.67,0.00,49.90,0.00,0.00,0.00,0.00,-0.00,0.00,-174.31,-314.11
+,3$F2P7VYLB7EOX67SA_ZKE,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total Facility,13-JAN-06:00,3769.18,0.00,0.00,0.00,0.00,0.00,340.92,0.00,542.54,0.00,0.81,0.00,0.00,0.00,-715.44,0.00,-1059.72,-2878.29
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Standard 62.1 Summary
+FOR:,Entire Facility
+System Ventilation Requirements for Cooling
+
+,,Sum of Zone Primary Air Flow - Vpz-sum [m3/s],System Population - Ps,Sum of Zone Population - Pz-sum,Occupant Diversity - D,Uncorrected Outdoor Air Intake Airflow - Vou [m3/s],System Primary Airflow - Vps [m3/s],Average Outdoor Air Fraction - Xs,System Ventilation Efficiency - Ev,Outdoor Air Intake Flow - Vot [m3/s],Percent Outdoor Air - %OA,Environment Name of Peak System Population - Ps,Date and Time of Last Peak System Population - Ps
+,None,,,,,,,,,,,,
+
+
+System Ventilation Requirements for Heating
+
+,,Sum of Zone Primary Air Flow - Vpz-sum [m3/s],System Population - Ps,Sum of Zone Population - Pz-sum,Occupant Diversity - D,Uncorrected Outdoor Air Intake Airflow - Vou [m3/s],System Primary Airflow - Vps [m3/s],Average Outdoor Air Fraction - Xs,System Ventilation Efficiency - Ev,Outdoor Air Intake Flow Vot [m3/s],Percent Outdoor Air - %OA,Environment Name of Peak System Population - Ps,Date and Time of Last Peak System Population - Ps
+,None,,,,,,,,,,,,
+
+
+Zone Ventilation Parameters
+
+,,AirLoop Name,People Outdoor Air Rate - Rp [m3/s-person],Zone Population - Pz,Area Outdoor Air Rate - Ra [m3/s-m2],Zone Floor Area - Az [m2],Breathing Zone Outdoor Airflow - Vbz [m3/s],Cooling Zone Air Distribution Effectiveness - Ez-clg,Cooling Zone Outdoor Airflow - Voz-clg [m3/s],Heating Zone Air Distribution Effectiveness - Ez-htg,Heating Zone Outdoor Airflow - Voz-htg [m3/s]
+,None,,,,,,,,,,
+
+
+System Ventilation Parameters
+
+,,People Outdoor Air Rate - Rp [m3/s-person],Sum of Zone Population - Pz-sum,Area Outdoor Air Rate - Ra [m3/s-m2],Sum of Zone Floor Area - Az-sum [m2],Breathing Zone Outdoor Airflow - Vbz [m3/s],Cooling Zone Outdoor Airflow - Voz-clg [m3/s],Heating Zone Outdoor Airflow - Voz-htg [m3/s]
+,None,,,,,,,
+
+
+Zone Ventilation Calculations for Cooling Design
+
+,,AirLoop Name,Box Type,Zone Primary Airflow - Vpz [m3/s],Zone Discharge Airflow - Vdz [m3/s],Minimum Zone Primary Airflow - Vpz-min [m3/s],Zone Outdoor Airflow Cooling - Voz-clg [m3/s],Primary Outdoor Air Fraction - Zpz,Primary Air Fraction - Ep,Secondary Recirculation Fraction- Er,Supply Air Fraction- Fa,Mixed Air Fraction - Fb,Outdoor Air Fraction - Fc,Zone Ventilation Efficiency - Evz
+,None,,,,,,,,,,,,,
+
+
+System Ventilation Calculations for Cooling Design
+
+,,Sum of Zone Primary Airflow - Vpz-sum [m3/s],System Primary Airflow - Vps [m3/s],Sum of Zone Discharge Airflow - Vdz-sum [m3/s],Sum of Min Zone Primary Airflow - Vpz-min [m3/s],Zone Outdoor Airflow Cooling - Voz-clg [m3/s],Zone Ventilation Efficiency - Evz-min
+,None,,,,,,
+
+
+Zone Ventilation Calculations for Heating Design
+
+,,AirLoop Name,Box Type,Zone Primary Airflow - Vpz [m3/s],Zone Discharge Airflow - Vdz [m3/s],Minimum Zone Primary Airflow - Vpz-min [m3/s],Zone Outdoor Airflow Heating - Voz-htg [m3/s],Primary Outdoor Air Fraction - Zpz,Primary Air Fraction - Ep,Secondary Recirculation Fraction- Er,Supply Air Fraction- Fa,Mixed Air Fraction - Fb,Outdoor Air Fraction - Fc,Zone Ventilation Efficiency - Evz
+,None,,,,,,,,,,,,,
+
+
+System Ventilation Calculations for Heating Design
+
+,,Sum of Zone Primary Airflow - Vpz-sum [m3/s],System Primary Airflow - Vps [m3/s],Sum of Zone Discharge Airflow - Vdz-sum [m3/s],Sum of Min Zone Primary Airflow - Vpz-min [m3/s],Zone Outdoor Airflow Heating - Voz-htg [m3/s],Zone Ventilation Efficiency - Evz-min
+,None,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,LEED Summary
+FOR:,Entire Facility
+Sec1.1A-General Information
+
+,,Data
+,Weather File,RUN PERIOD 1 ** Aachen NW DEU ISD-TMYx WMO#=105010
+,Total gross floor area [m2],208.55
+,Principal Heating Source,District Heat
+
+
+EAp2-1. Space Usage Type
+
+,,Space Area [m2],Regularly Occupied Area [m2],Unconditioned Area [m2],Typical Hours/Week in Operation [hr/wk]
+,0LT8GR_E9ESEGH5UY_G9E9,25.99,25.99,0.00,168.00
+,17JZCMFRF5TOFTUTIDA0D3,16.31,16.31,0.00,63.00
+,2RSCZLOBZ4FAK$_WE8VCKM,12.98,12.98,0.00,77.00
+,2DQFGGKBB1FOC1CQZDIDLX,107.16,107.16,0.00,168.00
+,347JFE2YX7IHCEIALMUPEH,22.07,22.07,0.00,168.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,12.50,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,11.53,11.53,0.00,0.00
+,Totals,208.55,208.55,0.00,
+
+
+EAp2-2. Advisory Messages
+
+,,Data
+,Number of hours heating loads not met,0.00
+,Number of hours cooling loads not met,5934.50
+,Number of hours not met,5934.50
+
+
+EAp2-3. Energy Type Summary
+
+,,Utility Rate,Virtual Rate [$/unit energy],Units of Energy,Units of Demand
+,None,,,,
+
+
+EAp2-4/5. Performance Rating Method Compliance
+
+,,Electricity Energy Use [kWh],Electricity Demand [W],Natural Gas Energy Use [kWh],Natural Gas Demand [W],Gasoline Use [kWh],Gasoline Demand [W],Diesel Use [kWh],Diesel Demand [W],Coal Use [kWh],Coal Demand [W],Fuel Oil No 1 Use [kWh],Fuel Oil No 1 Demand [W],Fuel Oil No 2 Use [kWh],Fuel Oil No 2 Demand [W],Propane Use [kWh],Propane Demand [W],Other Fuel 1 Use [kWh],Other Fuel 1 Demand [W],Other Fuel 2 Use [kWh],Other Fuel 2 Demand [W],District Cooling Use [kWh],District Cooling Demand [W],District Heating Use [kWh],District Heating Demand [W]
+,Heating -- General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7330.90,3769.25
+,Cooling -- General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Lighting -- General,1019.28,232.71,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment -- General,12561.20,5248.31,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans -- Ventilation (simple),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators -- General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+EAp2-6. Energy Use Summary
+
+,,Process Subtotal [kWh],Total Energy Use [kWh]
+,Electricity,12561.20,13580.48
+,Natural Gas,0.00,0.00
+,Additional,0.00,7330.90
+,Total,12561.20,20911.38
+
+
+EAp2-7. Energy Cost Summary
+
+,,Process Subtotal [$],Total Energy Cost [$]
+,Electricity,0.00,
+,Natural Gas,0.00,
+,Additional,0.00,
+,Total,0.00,
+Process energy cost based on ratio of process to total energy.
+
+
+L-1. Renewable Energy Source Summary
+
+,,Rated Capacity [kW],Annual Energy Generated [kWh]
+,Photovoltaic,0.00,0.00
+,Wind,0.00,0.00
+
+
+EAp2-17a. Energy Use Intensity - Electricity
+
+,,Electricty [kWh/m2]
+,Interior Lighting (All),4.89
+,Space Heating,0.00
+,Space Cooling,0.00
+,Fans (All),0.00
+,Service Water Heating,0.00
+,Receptacle Equipment,60.23
+,Miscellaneous (All),65.12
+,Subtotal,65.12
+
+
+EAp2-17b. Energy Use Intensity - Natural Gas
+
+,,Natural Gas [kWh/m2]
+,Space Heating,0.00
+,Service Water Heating,0.00
+,Miscellaneous (All),0.00
+,Subtotal,0.00
+
+
+EAp2-17c. Energy Use Intensity - Additional
+
+,,Additional [kWh/m2]
+,Subtotal,0.00
+,Miscellaneous,0.00
+
+
+EAp2-18. End Use Percentage
+
+,,Percent [%]
+,Interior Lighting (All),4.87
+,Space Heating,35.06
+,Space Cooling,0.00
+,Fans (All),0.00
+,Service Water Heating,0.00
+,Receptacle Equipment,60.07
+,Miscellaneous,0.00
+
+
+Schedules-Equivalent Full Load Hours (Schedule Type=Fraction)
+
+,,Equivalent Full Load Hours of Operation Per Year [hr],Hours > 1% [hr]
+,SCHEDULE PEOPLE LIVING,6643.,8760.
+,SCHEDULE EQUIPMENT LIVING,4635.,8760.
+,SCHEDULE LIGHTING LIVING,4380.,4380.
+,SCHEDULE PEOPLE WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,2190.,4015.
+,SCHEDULE EQUIPMENT WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,2665.,8760.
+,SCHEDULE LIGHTING WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,4380.,4380.
+,SCHEDULE PEOPLE KITCHEN IN NON-RESIDENTIAL BUILDINGS,1825.,3285.
+,SCHEDULE EQUIPMENT KITCHEN IN NON-RESIDENTIAL BUILDINGS,2226.,8760.
+,SCHEDULE LIGHTING KITCHEN IN NON-RESIDENTIAL BUILDINGS,4380.,4380.
+,SCHEDULE PEOPLE SINGLE OFFICE,2190.,4015.
+,SCHEDULE EQUIPMENT SINGLE OFFICE,2665.,8760.
+,SCHEDULE LIGHTING SINGLE OFFICE,4380.,4380.
+,SCHEDULE PEOPLE TRAFFIC AREA,2190.,4015.
+,SCHEDULE EQUIPMENT TRAFFIC AREA,2665.,8760.
+,SCHEDULE LIGHTING TRAFFIC AREA,4380.,4380.
+,SCHEDULE PEOPLE BED ROOM,8760.,8760.
+,SCHEDULE EQUIPMENT BED ROOM,2190.,8760.
+,SCHEDULE LIGHTING BED ROOM,4380.,4380.
+,DAYTIME VENTILATION,3234.,3234.
+,INTERMITTENT,3650.,3650.
+,MAXIMUM OUTSIDE AIR,8760.,8760.
+,MINIMUM OUTSIDE AIR,1064.,8760.
+,ON,8760.,8760.
+,VAV MINIMUM AIR FRACTION,876.,8760.
+,ASSEMBLY LIGHTING,3343.,5527.
+,ASSEMBLY OCCUPANCY,2430.,5475.
+,ASSEMBLY SWH,307.,2608.
+,HEALTH LIGHTING,3136.,8760.
+,HEALTH OCCUPANCY,2437.,4955.
+,HEALTH SWH,2387.,8760.
+,HOTEL LIGHTING,3061.,8760.
+,HOTEL OCCUPANCY,5027.,8760.
+,HOTEL SWH,3301.,8760.
+,MANUFACTURING LIGHTING,2922.,8760.
+,MANUFACTURING OCCUPANCY,2536.,5998.
+,MANUFACTURING SWH,1594.,8760.
+,MULTIFAMILY SWH,2428.,8760.
+,MULTIFAMILY ONEZONE EQUIPMENT,3639.,8760.
+,MULTIFAMILY ONEZONE LIGHTING,2299.,2555.
+,MULTIFAMILY ONEZONE OCCUPANCY,4292.,8760.
+,MULTIFAMILY TWOZONEBEDROOM EQUIPMENT,456.,8760.
+,MULTIFAMILY TWOZONEBEDROOM LIGHTING,1183.,2555.
+,MULTIFAMILY TWOZONEBEDROOM OCCUPANCY,2493.,4745.
+,MULTIFAMILY TWOZONEOTHERROOMS EQUIPMENT,3216.,8760.
+,MULTIFAMILY TWOZONEOTHERROOMS LIGHTING,1179.,2555.
+,MULTIFAMILY TWOZONEOTHERROOMS OCCUPANCY,1781.,5840.
+,OFFICE LIGHTING,2948.,8760.
+,OFFICE OCCUPANCY,2536.,5998.
+,OFFICE SWH,1594.,8760.
+,RESTAURANT LIGHTING,5087.,8760.
+,RESTAURANT OCCUPANCY,2594..,7040.
+,RESTAURANT SWH,2767.,7040.
+,RETAIL LIGHTING,3695.,8760.
+,RETAIL OCCUPANCY,2415.,4954.
+,RETAIL SWH,2325.,8760.
+,SCHOOL LIGHTING,2616.,8760.
+,SCHOOL OCCUPANCY,1879.,4175.
+,SCHOOL SWH,1888.,8760.
+,WAREHOUSE LIGHTING,2487.,8760.
+,WAREHOUSE OCCUPANCY,1837.,3026.
+,WAREHOUSE SWH,1194.,8760.
+
+
+Schedules-SetPoints (Schedule Type=Temperature)
+
+,,First Object Used,Month Assumed,11am First Wednesday [C],Days with Same 11am Value,11pm First Wednesday [C],Days with Same 11pm Value
+,SCHEDULE HEATING LIVING,STATS LIVING DUAL SP CONTROL,January,20.00,365,20.00,365
+,SCHEDULE COOLING LIVING,STATS LIVING DUAL SP CONTROL,July,20.00,365,20.00,365
+,SCHEDULE HEATING WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,STATS WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS DUAL SP CONTROL,January,24.00,365,24.00,365
+,SCHEDULE COOLING WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,STATS WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS DUAL SP CONTROL,July,24.00,365,24.00,365
+,SCHEDULE HEATING KITCHEN IN NON-RESIDENTIAL BUILDINGS,STATS KITCHEN IN NON-RESIDENTIAL BUILDINGS DUAL SP CONTROL,January,20.00,365,20.00,365
+,SCHEDULE COOLING KITCHEN IN NON-RESIDENTIAL BUILDINGS,STATS KITCHEN IN NON-RESIDENTIAL BUILDINGS DUAL SP CONTROL,July,20.00,365,20.00,365
+,SCHEDULE HEATING SINGLE OFFICE,STATS SINGLE OFFICE DUAL SP CONTROL,January,20.00,365,20.00,365
+,SCHEDULE COOLING SINGLE OFFICE,STATS SINGLE OFFICE DUAL SP CONTROL,July,20.00,365,20.00,365
+,SCHEDULE HEATING TRAFFIC AREA,STATS TRAFFIC AREA DUAL SP CONTROL,January,15.00,365,15.00,365
+,SCHEDULE COOLING TRAFFIC AREA,STATS TRAFFIC AREA DUAL SP CONTROL,July,15.00,365,15.00,365
+,SCHEDULE HEATING BED ROOM,STATS BED ROOM DUAL SP CONTROL,January,20.00,365,20.00,365
+,SCHEDULE COOLING BED ROOM,STATS BED ROOM DUAL SP CONTROL,July,20.00,365,20.00,365
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Thermal Resilience Summary
+FOR:,Entire Facility
+Heat Index Hours
+
+,,Safe (≤ 26.7°C) [hr],Caution (> 26.7, ≤ 32.2°C) [hr],Extreme Caution (> 32.2, ≤ 39.4°C) [hr],Danger (> 39.4, ≤ 51.7°C) [hr],Extreme Danger (> 51.7°C) [hr]
+,0LT8GR_E9ESEGH5UY_G9E9,8650.75,109.25,0.00,0.00,0.00
+,17JZCMFRF5TOFTUTIDA0D3,3851.50,2505.00,606.25,939.00,858.25
+,2RSCZLOBZ4FAK$_WE8VCKM,8516.00,244.00,0.00,0.00,0.00
+,2DQFGGKBB1FOC1CQZDIDLX,8655.75,104.25,0.00,0.00,0.00
+,347JFE2YX7IHCEIALMUPEH,8638.50,121.50,0.00,0.00,0.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,8744.00,16.00,0.00,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,8650.25,109.75,0.00,0.00,0.00
+,Min,3851.50,16.00,0.00,0.00,0.00
+,Max,8744.00,2505.00,606.25,939.00,858.25
+,Average,7958.11,458.54,86.61,134.14,122.61
+,Sum,55706.75,3209.75,606.25,939.00,858.25
+
+
+Heat Index OccupantHours
+
+,,Safe (≤ 26.7°C) [hr],Caution (> 26.7, ≤ 32.2°C) [hr],Extreme Caution (> 32.2, ≤ 39.4°C) [hr],Danger (> 39.4, ≤ 51.7°C) [hr],Extreme Danger (> 51.7°C) [hr]
+,0LT8GR_E9ESEGH5UY_G9E9,0.00,0.00,0.00,0.00,0.00
+,17JZCMFRF5TOFTUTIDA0D3,869.25,1477.25,1169.25,4390.50,5598.75
+,2RSCZLOBZ4FAK$_WE8VCKM,0.00,0.00,0.00,0.00,0.00
+,2DQFGGKBB1FOC1CQZDIDLX,10141.00,79.00,0.00,0.00,0.00
+,347JFE2YX7IHCEIALMUPEH,17277.00,243.00,0.00,0.00,0.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,0.00,0.00,0.00,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00,0.00
+,Max,17277.00,1477.25,1169.25,4390.50,5598.75
+,Average,4041.04,257.04,167.04,627.21,799.82
+,Sum,28287.25,1799.25,1169.25,4390.50,5598.75
+
+
+Humidex Hours
+
+,,Little to no Discomfort (≤ 29) [hr],Some Discomfort (> 29, ≤ 40) [hr],Great Discomfort; Avoid Exertion (> 40, ≤ 45) [hr],Dangerous (> 45, ≤ 50) [hr],Heat Stroke Quite Possible (> 50) [hr]
+,0LT8GR_E9ESEGH5UY_G9E9,8509.00,251.00,0.00,0.00,0.00
+,17JZCMFRF5TOFTUTIDA0D3,3907.50,2703.25,495.00,442.50,1211.75
+,2RSCZLOBZ4FAK$_WE8VCKM,8326.25,433.75,0.00,0.00,0.00
+,2DQFGGKBB1FOC1CQZDIDLX,8492.00,268.00,0.00,0.00,0.00
+,347JFE2YX7IHCEIALMUPEH,8442.00,318.00,0.00,0.00,0.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,8565.00,195.00,0.00,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,8474.50,285.50,0.00,0.00,0.00
+,Min,3907.50,195.00,0.00,0.00,0.00
+,Max,8565.00,2703.25,495.00,442.50,1211.75
+,Average,7816.61,636.36,70.71,63.21,173.11
+,Sum,54716.25,4454.50,495.00,442.50,1211.75
+
+
+Humidex OccupantHours
+
+,,Little to no Discomfort (≤ 29) [hr],Some Discomfort (> 29, ≤ 40) [hr],Great Discomfort; Avoid Exertion (> 40, ≤ 45) [hr],Dangerous (> 45, ≤ 50) [hr],Heat Stroke Quite Possible (> 50) [hr]
+,0LT8GR_E9ESEGH5UY_G9E9,0.00,0.00,0.00,0.00,0.00
+,17JZCMFRF5TOFTUTIDA0D3,1158.75,1551.25,1497.00,1709.75,7588.25
+,2RSCZLOBZ4FAK$_WE8VCKM,0.00,0.00,0.00,0.00,0.00
+,2DQFGGKBB1FOC1CQZDIDLX,9954.25,265.75,0.00,0.00,0.00
+,347JFE2YX7IHCEIALMUPEH,16884.00,636.00,0.00,0.00,0.00
+,0E_HBKIQ5DMQLIJ$2V3J_M,0.00,0.00,0.00,0.00,0.00
+,3$F2P7VYLB7EOX67SA_ZKE,0.00,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00,0.00
+,Max,16884.00,1551.25,1497.00,1709.75,7588.25
+,Average,3999.57,350.43,213.86,244.25,1084.04
+,Sum,27997.00,2453.00,1497.00,1709.75,7588.25
+
+
+Heating SET Hours
+
+,,SET ≤ 12.2°C Hours (°C),SET ≤ 12.2°C OccupantHours (°C),Longest SET ≤ 12.2°C Duration [hr],Start Time of the Longest SET ≤ 12.2°C Duration
+,None,,,,
+
+
+Cooling SET Hours
+
+,,SET > 30°C Hours (°C),SET > 30°C OccupantHours (°C),Longest SET > 30°C Duration [hr],Start Time of the Longest SET > 30°C Duration
+,None,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual CO2 Resilience Summary
+FOR:,Entire Facility
+CO2 Level Hours
+
+,,Safe (<= 1000 ppm) [hr],Caution (> 1000, <= 5000 ppm) [hr],Hazard (> 5000 ppm) [hr]
+,None,,,
+
+
+CO2 Level OccupantHours
+
+,,Safe (<= 1000 ppm) [hr],Caution (> 1000, <= 5000 ppm) [hr],Hazard (> 5000 ppm) [hr]
+,None,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Visual Resilience Summary
+FOR:,Entire Facility
+Illuminance Level Hours
+
+,,A Bit Dark (<= 100 lux) [hr],Dim (> 100, <= 300 lux) [hr],Adequate (> 300, <= 500 lux) [hr],Bright (>500 lux) [hr]
+,None,,,,
+
+
+Illuminance Level OccupantHours
+
+,,A Bit Dark (<= 100 lux) [hr],Dim (> 100, <= 300 lux) [hr],Adequate (> 300, <= 500 lux) [hr],Bright (>500 lux) [hr]
+,None,,,,
+
+

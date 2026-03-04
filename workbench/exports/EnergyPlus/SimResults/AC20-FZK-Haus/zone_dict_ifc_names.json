@@ -1,0 +1,51 @@
+{
+    "0Lt8gR_E9ESeGH5uY_g9e9": {
+        "ZoneUsage": "Living",
+        "Name": "5",
+        "LongName": "Wohnen",
+        "StoreyName": "Erdgeschoss",
+        "StoreyElevation": 0.0
+    },
+    "0e_hbkIQ5DMQlIJ$2V3j_m": {
+        "ZoneUsage": "WC and sanitary rooms in non-residential buildings",
+        "Name": "3",
+        "LongName": "Bad",
+        "StoreyName": "Erdgeschoss",
+        "StoreyElevation": 0.0
+    },
+    "17JZcMFrf5tOftUTidA0d3": {
+        "ZoneUsage": "Kitchen in non-residential buildings",
+        "Name": "6",
+        "LongName": "K\u00fcche",
+        "StoreyName": "Erdgeschoss",
+        "StoreyElevation": 0.0
+    },
+    "2RSCzLOBz4FAK$_wE8VckM": {
+        "ZoneUsage": "Single office",
+        "Name": "2",
+        "LongName": "Buero",
+        "StoreyName": "Erdgeschoss",
+        "StoreyElevation": 0.0
+    },
+    "2dQFggKBb1fOc1CqZDIDlx": {
+        "ZoneUsage": "Living",
+        "Name": "7",
+        "LongName": "Galerie",
+        "StoreyName": "Dachgeschoss",
+        "StoreyElevation": 2.7
+    },
+    "3$f2p7VyLB7eox67SA_zKE": {
+        "ZoneUsage": "Traffic area",
+        "Name": "1",
+        "LongName": "Flur",
+        "StoreyName": "Erdgeschoss",
+        "StoreyElevation": 0.0
+    },
+    "347jFE2yX7IhCEIALmupEH": {
+        "ZoneUsage": "Bed room",
+        "Name": "4",
+        "LongName": "Schlafzimmer",
+        "StoreyName": "Erdgeschoss",
+        "StoreyElevation": 0.0
+    }
+}

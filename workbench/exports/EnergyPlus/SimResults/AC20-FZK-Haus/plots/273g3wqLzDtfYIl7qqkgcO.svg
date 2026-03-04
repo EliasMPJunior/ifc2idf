@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024mm" height="576mm" viewBox="0 0 1024 576">
+    <defs>
+        <marker id="arrowend" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" />
+        </marker>
+        <marker id="arrowstart" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="10 0, 0 3.5, 10 7" />
+        </marker>
+    </defs>
+    <style type="text/css">
+    
+        .cut path {
+            stroke: #222222;
+            fill: #444444;
+            fill-rule: evenodd;
+        }
+        .projection path {
+            stroke: #222222;
+            fill: none;
+            stroke-opacity: 0.6;
+        }
+        .IfcDoor path,
+        .Symbol path {
+            fill: none;
+        }
+        .Symbol path {
+            stroke-width: 0.5px;
+        }
+        .IfcSpace path {
+            fill-opacity: .2;
+        }
+        .Dimension path {
+            marker-end: url(#arrowend);
+            marker-start: url(#arrowstart);
+        }
+        text {
+            font-size: 2;
+        }
+        path {
+            stroke-width: 0.3;
+        }
+    
+    </style>
+    <g id="storey-870ea0fa-d15f-4dde-9892-bc7d34baa998" class="IfcBuildingStorey" data-name="Dachgeschoss" data-guid="273g3wqLzDtfYIl7qqkgcO" data-plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,3.900000],[0.000000,0.000000,0.000000,1.000000]]" data-matrix3="[[15.000000,0.000000,422.000000],[0.000000,15.000000,363.000000],[0.000000,0.000000,1.000000]]">
+        <g id="product-58c36207-1644-4382-afc9-bc61510a343a-body" class="IfcDoor" data-name="Innentuer-1" data-guid="1Oms875aH3Wg$9l65H2ZGw">
+            <path d="M533.9,281.362 L520.625,281.362 A13.275,13.275 1.5708 0,0 533.9,294.638" />
+        </g>
+        <g id="product-b4b1964f-0cfd-4f21-84b4-a7552c71ed30-body" class="IfcDoor" data-name="Innentuer-3" data-guid="2qiPPF3FrF8OIqfrKiSUqm">
+            <path d="M459.388,276 A13.275,13.275 0 0,0 446.112,262.725 L446.112,276" />
+        </g>
+        <g id="product-3340ab6f-4d66-43b2-9899-29d7cf17b29b-body" class="IfcDoor" data-name="Innentuer-2" data-guid="0pGAjlJMP3ifYPATVF5xAR">
+            <path d="M513.538,276 A13.275,13.275 0 0,0 500.262,262.725 L500.262,276" />
+        </g>
+        <g id="product-a768faaa-50b9-41a5-8981-3348cd48dbfb-body" class="IfcSpace" data-name="7" data-guid="2dQFggKBb1fOc1CqZDIDlx">
+            <path d="M426.5,231.187 L597.5,231.187 L597.5,344.813 L426.5,344.813 L426.5,231.187" />
+            <text text-anchor="middle" x="512" y="288"><tspan x="512" dy="0.34999999999999998em">86.36m²</tspan></text>        </g>
+        <g id="product-7d60be80-428b-4582-901a-293a51c58980-body" class="IfcWindow" data-name="OG-Fenster-2" data-guid="1zOBw0Gej5Wf0QAJfHnOc0">
+            <path d="M424.775,280.653 L424.775,282.198 L424.325,282.198 L424.325,280.653 L424.775,280.653 M424.775,293.802 L424.775,295.347 L424.325,295.347 L424.325,293.802 L424.775,293.802" />
+            <path d="M424.325,280.653 L424.325,282.198 L423.875,282.198 L423.875,280.653 L424.325,280.653 M424.325,293.802 L424.325,295.347 L423.875,295.347 L423.875,293.802 L424.325,293.802" />
+            <path d="M424.325,282.198 L424.325,282.97 L423.875,282.97 L423.875,282.198 L424.325,282.198 M424.325,293.03 L424.325,293.802 L423.875,293.802 L423.875,293.03 L424.325,293.03" />
+            <path d="M423.875,281.889 L423.875,282.97 L423.425,282.97 L423.425,281.889 L423.875,281.889 M423.875,293.03 L423.875,294.111 L423.425,294.111 L423.425,293.03 L423.875,293.03" />
+            <path d="M423.95,282.97 L423.95,293.03 L423.8,293.03 L423.8,282.97 L423.95,282.97" />
+            <path d="M424.062,287.812 L424.062,288.188 L423.875,288.188 L423.875,287.812 L424.062,287.812" />
+            <path d="M423.875,287.812 L423.875,288.188 L423.688,288.188 L423.688,287.812 L423.875,287.812" />
+        </g>
+        <g id="product-58c36207-1644-4382-afc9-bc61510a343a-box" class="IfcDoor" data-name="Innentuer-1" data-guid="1Oms875aH3Wg$9l65H2ZGw">
+            <path d="M533.9,281.362 L520.625,281.362 A13.275,13.275 1.5708 0,0 533.9,294.638" />
+        </g>
+        <g id="product-3340ab6f-4d66-43b2-9899-29d7cf17b29b-box" class="IfcDoor" data-name="Innentuer-2" data-guid="0pGAjlJMP3ifYPATVF5xAR">
+            <path d="M513.538,276 A13.275,13.275 0 0,0 500.262,262.725 L500.262,276" />
+        </g>
+        <g id="product-b4b1964f-0cfd-4f21-84b4-a7552c71ed30-box" class="IfcDoor" data-name="Innentuer-3" data-guid="2qiPPF3FrF8OIqfrKiSUqm">
+            <path d="M459.388,276 A13.275,13.275 0 0,0 446.112,262.725 L446.112,276" />
+        </g>
+        <g id="product-8a3303cf-6ab7-4163-8a40-ec489b7ab270-body" class="IfcWindow" data-name="OG-Fenster-1" data-guid="2ACmFFQhT1Ouf0x4YRUh9m">
+            <path d="M599.825,295.347 L599.825,293.802 L600.275,293.802 L600.275,295.347 L599.825,295.347 M599.825,282.198 L599.825,280.653 L600.275,280.653 L600.275,282.198 L599.825,282.198" />
+            <path d="M599.375,295.347 L599.375,293.802 L599.825,293.802 L599.825,295.347 L599.375,295.347 M599.375,282.198 L599.375,280.653 L599.825,280.653 L599.825,282.198 L599.375,282.198" />
+            <path d="M599.375,293.802 L599.375,293.03 L599.825,293.03 L599.825,293.802 L599.375,293.802 M599.375,282.97 L599.375,282.198 L599.825,282.198 L599.825,282.97 L599.375,282.97" />
+            <path d="M598.925,294.111 L598.925,293.03 L599.375,293.03 L599.375,294.111 L598.925,294.111 M598.925,282.97 L598.925,281.889 L599.375,281.889 L599.375,282.97 L598.925,282.97" />
+            <path d="M599.3,293.03 L599.3,282.97 L599.45,282.97 L599.45,293.03 L599.3,293.03" />
+            <path d="M599.562,288.188 L599.375,288.188 L599.375,287.812 L599.562,287.812 L599.562,288.188" />
+            <path d="M599.375,288.188 L599.188,288.188 L599.188,287.812 L599.375,287.812 L599.375,288.188" />
+        </g>
+        <g id="product-7d60be80-428b-4582-901a-293a51c58980-box" class="IfcWindow" data-name="OG-Fenster-2" data-guid="1zOBw0Gej5Wf0QAJfHnOc0">
+            <path d="M424.775,280.5 L423.425,280.5 L423.425,295.5 L424.775,295.5 L424.775,280.5" />
+        </g>
+        <g id="product-856206b9-c21b-452d-9abc-a35a99103de2-box" class="IfcWallStandardCase" data-name="Wand-Ext-OG-2" data-guid="25OWQvmXj5BPgyergP43tY">
+            <path d="M422,213 L422,217.5 L602,217.5 L602,213 L422,213" />
+        </g>
+        <g id="product-8a3303cf-6ab7-4163-8a40-ec489b7ab270-box" class="IfcWindow" data-name="OG-Fenster-1" data-guid="2ACmFFQhT1Ouf0x4YRUh9m">
+            <path d="M600.275,280.5 L598.925,280.5 L598.925,295.5 L600.275,295.5 L600.275,280.5" />
+        </g>
+        <g id="product-dddedd7f-1498-4e82-9817-060791b68be3-box" class="IfcWallStandardCase" data-name="Wand-Ext-OG-4" data-guid="3Ttjr$59XEWfWN1WUHjelZ">
+            <path d="M602,363 L602,358.5 L422,358.5 L422,363 L602,363" />
+        </g>
+        <g id="product-a768faaa-50b9-41a5-8981-3348cd48dbfb-box" class="IfcSpace" data-name="7" data-guid="2dQFggKBb1fOc1CqZDIDlx">
+            <path d="M597.5,358.5 L597.5,217.5 L426.5,217.5 L426.5,358.5 L597.5,358.5" />
+            <text text-anchor="middle" x="512" y="288"><tspan x="512" dy="0.34999999999999998em">107.16m²</tspan></text>        </g>
+        <g id="product-df324d5e-52a4-4197-8572-08263dee8193-box" class="IfcWallStandardCase" data-name="Wand-Ext-OG-3" data-guid="3VCarUKgH1buLo22Ozxe6J">
+            <path d="M602,213 L597.5,213 L597.5,280.652 L600.275,280.652 L602,280.652 L602,213 M597.5,295.348 L597.5,363 L602,363 L602,295.348 L600.275,295.348 L597.5,295.348" />
+        </g>
+        <g id="product-df324d5e-52a4-4197-8572-08263dee8193-body" class="IfcWallStandardCase" data-name="Wand-Ext-OG-3" data-guid="3VCarUKgH1buLo22Ozxe6J">
+            <path d="M597.5,231.187 L597.5,280.652 L600.275,280.652 L602,280.652 L602,231.187 L597.5,231.187 M597.5,295.348 L597.5,344.813 L602,344.813 L602,295.348 L600.275,295.348 L597.5,295.348" />
+        </g>
+        <g id="product-2ec5748a-7cb6-4b3f-92fc-fb015a7d1d9e-box" class="IfcWallStandardCase" data-name="Wand-Ext-OG-1" data-guid="0knNIAVBPBFvBy_m5QVHsU">
+            <path d="M422,363 L426.5,363 L426.5,295.348 L424.775,295.348 L422,295.348 L422,363 M426.5,280.652 L426.5,213 L422,213 L422,280.652 L424.775,280.652 L426.5,280.652" />
+        </g>
+        <g id="product-2ec5748a-7cb6-4b3f-92fc-fb015a7d1d9e-body" class="IfcWallStandardCase" data-name="Wand-Ext-OG-1" data-guid="0knNIAVBPBFvBy_m5QVHsU">
+            <path d="M426.5,344.813 L426.5,295.348 L424.775,295.348 L422,295.348 L422,344.813 L426.5,344.813 M426.5,280.652 L426.5,231.187 L422,231.187 L422,280.652 L424.775,280.652 L426.5,280.652" />
+        </g>
+    </g>
+</svg>

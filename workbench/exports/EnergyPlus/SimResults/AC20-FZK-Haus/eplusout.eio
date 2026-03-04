@@ -1,0 +1,216 @@
+Program Version,EnergyPlus, Version 9.4.0-998c4b761e, YMD=2026.03.04 19:36
+! <Version>, Version ID
+ Version, 9.4
+! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
+ Timesteps per Hour,  4, 15
+! <System Convergence Limits>, Minimum System TimeStep {minutes}, Max HVAC Iterations, Minimum Plant Iterations, Maximum Plant Iterations
+ System Convergence Limits, 1, 20, 2, 8
+! <Simulation Control>, Do Zone Sizing, Do System Sizing, Do Plant Sizing, Do Design Days, Do Weather Simulation, Do HVAC Sizing Simulation
+ Simulation Control, No, Yes, No, No, Yes, No
+! <Performance Precision Tradeoffs>, Use Coil Direct Simulation, Zone Radiant Exchange Algorithm, Override Mode, Number of Timestep In Hour, Force Euler Method, Minimum Number of Warmup Days, Force Suppress All Begin Environment Resets, Minimum System Timestep, MaxZoneTempDiff, MaxAllowedDelTemp
+ Performance Precision Tradeoffs, No, ScriptF, Normal, 4, No, 1, No, 1.0, 0.300, 2.0000E-003
+! <Output Reporting Tolerances>, Tolerance for Time Heating Setpoint Not Met, Tolerance for Zone Cooling Setpoint Not Met Time
+ Output Reporting Tolerances, 0.200, 0.200, 
+! <Site:GroundTemperature:BuildingSurface>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:BuildingSurface,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00
+! <Site:GroundTemperature:FCfactorMethod>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:FCfactorMethod,   3.10,   2.46,   3.61,   5.41,  10.11,  13.75,  16.20,  16.94,  15.67,  12.85,   9.08,   5.58
+! <Site:GroundTemperature:Shallow>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Shallow,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00
+! <Site:GroundTemperature:Deep>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Deep,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00
+! <Site:GroundReflectance>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:SnowModifier>, Normal, Daylighting {dimensionless}
+ Site:GroundReflectance:SnowModifier,   1.000,   1.000
+! <Site:GroundReflectance:Snow>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:Snow:Daylighting>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow:Daylighting,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Environment:Weather Station>,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient-Internal,Temperature Modifier Coefficient-Internal
+Environment:Weather Station,10.000,0.140,270.000,1.500,1.586,9.750E-003
+! <Site:Location>, Location Name, Latitude {N+/S- Deg}, Longitude {E+/W- Deg},  Time Zone Number {GMT+/-}, Elevation {m},  Standard Pressure at Elevation {Pa}, Standard RhoAir at Elevation
+Site:Location,Aachen NW DEU ISD-TMYx WMO#=105010,50.80,6.02,1.00,232.00,98569,1.1715
+! <Site Water Mains Temperature Information>,Calculation Method{},Water Mains Temperature Schedule Name{},Annual Average Outdoor Air Temperature{C},Maximum Difference In Monthly Average Outdoor Air Temperatures{deltaC},Fixed Default Water Mains Temperature{C}
+Site Water Mains Temperature Information,FixedDefault,NA,NA,NA,10.0
+! <Building Information>, Building Name,North Axis {deg},Terrain,  Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,  Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+ Building Information,None,0.000,Suburbs,4.00000E-002,0.40000,FullExterior,25,6
+! <Inside Convection Algorithm>, Algorithm {Simple | TARP | CeilingDiffuser | AdaptiveConvectionAlgorithm}
+Inside Convection Algorithm,TARP
+! <Outside Convection Algorithm>, Algorithm {SimpleCombined | TARP | MoWitt | DOE-2 | AdaptiveConvectionAlgorithm}
+Outside Convection Algorithm,DOE-2
+! <Sky Radiance Distribution>, Value {Anisotropic}
+Sky Radiance Distribution,Anisotropic
+! <Zone Air Solution Algorithm>, Value {ThirdOrderBackwardDifference | AnalyticalSolution | EulerMethod}
+ Zone Air Solution Algorithm, ThirdOrderBackwardDifference
+! <Zone Air Carbon Dioxide Balance Simulation>, Simulation {Yes/No}, Carbon Dioxide Concentration
+ Zone Air Carbon Dioxide Balance Simulation, No,N/A
+! <Zone Air Generic Contaminant Balance Simulation>, Simulation {Yes/No}, Generic Contaminant Concentration
+ Zone Air Generic Contaminant Balance Simulation, No,N/A
+! <Zone Air Mass Flow Balance Simulation>, Enforce Mass Balance, Adjust Zone Mixing, Adjust Zone Infiltration {AddInfiltration | AdjustInfiltration | None}, Infiltration Zones {MixingSourceZonesOnly | AllZones}
+ Zone Air Mass Flow Balance Simulation, No,N/A,N/A,N/A
+! <HVACSystemRootFindingAlgorithm>, Value {RegulaFalsi | Bisection | BisectionThenRegulaFalsi | RegulaFalsiThenBisection}
+ HVACSystemRootFindingAlgorithm, RegulaFalsi
+! <Environment:Site Atmospheric Variation>,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+Environment:Site Atmospheric Variation,0.220,370.000,6.500000E-003
+! <Surface Geometry>,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+ Surface Geometry,UpperLeftCorner,Counterclockwise,WorldCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+! <Surface Heat Transfer Algorithm>, Value {CTF - ConductionTransferFunction | EMPD - MoisturePenetrationDepthConductionTransferFunction | CondFD - ConductionFiniteDifference | HAMT - CombinedHeatAndMoistureFiniteElement} - Description,Inside Surface Max Temperature Limit{C}, Surface Convection Coefficient Lower Limit {W/m2-K}, Surface Convection Coefficient Upper Limit {W/m2-K}
+Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.0
+! <Shading Summary>, Number of Fixed Detached Shades, Number of Building Detached Shades, Number of Attached Shades
+ Shading Summary,0,0,0
+! <Zone Summary>, Number of Zones, Number of Zone Surfaces, Number of SubSurfaces
+ Zone Summary,7,102,33
+! <Zone Information>,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST}, Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2}, Number of Surfaces, Number of SubSurfaces, Number of Shading SubSurfaces,  Part of Total Building Area
+ Zone Information, 0LT8GR_E9ESEGH5UY_G9E9,0.0,0.00,0.00,0.00,8.31,2.19,1.25,1,1,1,4.70,11.70,0.30,4.01,0.00,2.50,2.50,64.97,TARP,DOE-2,25.99,26.79,17.21,4.80,6,3,3,Yes
+ Zone Information, 0E_HBKIQ5DMQLIJ$2V3J_M,0.0,0.00,0.00,0.00,5.73,7.85,1.25,1,1,1,4.04,7.41,5.99,9.70,0.00,2.50,2.50,31.26,TARP,DOE-2,12.50,8.43,6.03,2.40,6,2,0,Yes
+ Zone Information, 17JZCMFRF5TOFTUTIDA0D3,0.0,0.00,0.00,0.00,2.50,2.16,1.25,1,1,1,0.30,4.70,0.30,4.01,0.00,2.50,2.50,40.76,TARP,DOE-2,16.31,20.26,15.46,4.80,5,2,2,Yes
+ Zone Information, 2RSCZLOBZ4FAK$_WE8VCKM,0.0,0.00,0.00,0.00,2.05,7.85,1.25,1,1,1,0.30,3.80,5.99,9.70,0.00,2.50,2.50,32.46,TARP,DOE-2,12.99,18.03,13.23,4.80,6,3,0,Yes
+ Zone Information, 2DQFGGKBB1FOC1CQZDIDLX,0.0,0.00,0.00,0.00,6.05,5.00,3.73,1,1,1,0.30,11.70,0.30,9.70,2.70,6.09,2.03,217.53,TARP,DOE-2,107.16,53.51,52.12,1.39,16,16,1,Yes
+ Zone Information, 3$F2P7VYLB7EOX67SA_ZKE,0.0,0.00,0.00,0.00,3.94,4.83,1.28,1,1,1,0.30,7.41,4.01,5.75,0.00,2.50,2.48,28.66,TARP,DOE-2,11.53,5.48,3.45,0.00,14,4,2,Yes
+ Zone Information, 347JFE2YX7IHCEIALMUPEH,0.0,0.00,0.00,0.00,9.68,6.98,1.25,1,1,1,7.65,11.70,4.25,9.70,0.00,2.50,2.50,55.18,TARP,DOE-2,22.07,23.75,18.95,4.80,8,3,0,Yes
+! <Zone Internal Gains Nominal>,Zone Name, Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+ Zone Internal Gains Nominal, 0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,50.000,2.000E-002,0.500,2.000,0.000,0.000,0.000,0.000,2.500,No
+ Zone Internal Gains Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,N/A,0.000,1.333,0.000,0.000,0.000,0.000,0.000,1.333,No
+ Zone Internal Gains Nominal, 17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,2.000,0.500,3.333,300.000,0.000,0.000,0.000,0.000,303.333,No
+ Zone Internal Gains Nominal, 2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,14.000,7.143E-002,3.333,7.000,0.000,0.000,0.000,0.000,10.333,No
+ Zone Internal Gains Nominal, 2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,50.000,2.000E-002,0.500,2.000,0.000,0.000,0.000,0.000,2.500,No
+ Zone Internal Gains Nominal, 3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,N/A,0.000,0.667,0.000,0.000,0.000,0.000,0.000,0.667,No
+ Zone Internal Gains Nominal, 347JFE2YX7IHCEIALMUPEH,22.07,2.2,10.000,0.100,2.000,4.000,0.000,0.000,0.000,0.000,6.000,No
+! <People Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate,Nominal Minimum Number of People,Nominal Maximum Number of People
+ People Internal Gains Nominal, 0LT8GR_E9ESEGH5UY_G9E9,SCHEDULE PEOPLE LIVING,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,0.5,2.000E-002,50.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,1
+ People Internal Gains Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M,SCHEDULE PEOPLE WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,0.0,0.000,N/A,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,0
+ People Internal Gains Nominal, 17JZCMFRF5TOFTUTIDA0D3,SCHEDULE PEOPLE KITCHEN IN NON-RESIDENTIAL BUILDINGS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,8.2,0.500,2.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,8
+ People Internal Gains Nominal, 2RSCZLOBZ4FAK$_WE8VCKM,SCHEDULE PEOPLE SINGLE OFFICE,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,0.9,7.143E-002,14.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,1
+ People Internal Gains Nominal, 2DQFGGKBB1FOC1CQZDIDLX,SCHEDULE PEOPLE LIVING,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,2.1,2.000E-002,50.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,1,2
+ People Internal Gains Nominal, 3$F2P7VYLB7EOX67SA_ZKE,SCHEDULE PEOPLE TRAFFIC AREA,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,0.0,0.000,N/A,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,0,0
+ People Internal Gains Nominal, 347JFE2YX7IHCEIALMUPEH,SCHEDULE PEOPLE BED ROOM,347JFE2YX7IHCEIALMUPEH,22.07,2.2,2.2,0.100,10.000,0.500,0.500,AutoCalculate,SCHEDULE ACTIVITY 70 WATT,No,3.8200E-008,2,2
+! <Lights Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Lighting Level {W},Lights/Floor Area {W/m2},Lights per person {W/person},Fraction Return Air,Fraction Radiant,Fraction Short Wave,Fraction Convected,Fraction Replaceable,End-Use Category,Nominal Minimum Lighting Level {W},Nominal Maximum Lighting Level {W}
+ Lights Internal Gains Nominal, 0LT8GR_E9ESEGH5UY_G9E9,SCHEDULE LIGHTING LIVING,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,12.994,0.500,25.000,0.000,0.420,0.180,0.400,1.000,General,0.000,12.994
+ Lights Internal Gains Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M,SCHEDULE LIGHTING WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,16.670,1.333,N/A,0.000,0.420,0.180,0.400,1.000,General,0.000,16.670
+ Lights Internal Gains Nominal, 17JZCMFRF5TOFTUTIDA0D3,SCHEDULE LIGHTING KITCHEN IN NON-RESIDENTIAL BUILDINGS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,54.352,3.333,6.667,0.000,0.420,0.180,0.400,1.000,General,0.000,54.352
+ Lights Internal Gains Nominal, 2RSCZLOBZ4FAK$_WE8VCKM,SCHEDULE LIGHTING SINGLE OFFICE,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,43.283,3.333,46.667,0.000,0.420,0.180,0.400,1.000,General,0.000,43.283
+ Lights Internal Gains Nominal, 2DQFGGKBB1FOC1CQZDIDLX,SCHEDULE LIGHTING LIVING,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,53.580,0.500,25.000,0.000,0.420,0.180,0.400,1.000,General,0.000,53.580
+ Lights Internal Gains Nominal, 3$F2P7VYLB7EOX67SA_ZKE,SCHEDULE LIGHTING TRAFFIC AREA,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,7.688,0.667,N/A,0.000,0.420,0.180,0.400,1.000,General,0.000,7.688
+ Lights Internal Gains Nominal, 347JFE2YX7IHCEIALMUPEH,SCHEDULE LIGHTING BED ROOM,347JFE2YX7IHCEIALMUPEH,22.07,2.2,44.145,2.000,20.000,0.000,0.420,0.180,0.400,1.000,General,0.000,44.145
+! <ElectricEquipment Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Equipment Level {W},Equipment/Floor Area {W/m2},Equipment per person {W/person},Fraction Latent,Fraction Radiant,Fraction Lost,Fraction Convected,End-Use SubCategory,Nominal Minimum Equipment Level {W},Nominal Maximum Equipment Level {W}
+ ElectricEquipment Internal Gains Nominal, 0LT8GR_E9ESEGH5UY_G9E9,SCHEDULE EQUIPMENT LIVING,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,51.977,2.000,100.000,0.000,0.000,0.000,1.000,General,5.198,51.977
+ ElectricEquipment Internal Gains Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M,SCHEDULE EQUIPMENT WC AND SANITARY ROOMS IN NON-RESIDENTIAL BUILDINGS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,0.000,0.000,N/A,0.000,0.000,0.000,1.000,General,0.000,0.000
+ ElectricEquipment Internal Gains Nominal, 17JZCMFRF5TOFTUTIDA0D3,SCHEDULE EQUIPMENT KITCHEN IN NON-RESIDENTIAL BUILDINGS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,4891.635,300.000,600.000,0.000,0.000,0.000,1.000,General,489.164,4891.635
+ ElectricEquipment Internal Gains Nominal, 2RSCZLOBZ4FAK$_WE8VCKM,SCHEDULE EQUIPMENT SINGLE OFFICE,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,90.895,7.000,98.000,0.000,0.000,0.000,1.000,General,9.090,72.716
+ ElectricEquipment Internal Gains Nominal, 2DQFGGKBB1FOC1CQZDIDLX,SCHEDULE EQUIPMENT LIVING,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,214.320,2.000,100.000,0.000,0.000,0.000,1.000,General,21.432,214.320
+ ElectricEquipment Internal Gains Nominal, 3$F2P7VYLB7EOX67SA_ZKE,SCHEDULE EQUIPMENT TRAFFIC AREA,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,0.000,0.000,N/A,0.000,0.000,0.000,1.000,General,0.000,0.000
+ ElectricEquipment Internal Gains Nominal, 347JFE2YX7IHCEIALMUPEH,SCHEDULE EQUIPMENT BED ROOM,347JFE2YX7IHCEIALMUPEH,22.07,2.2,88.290,4.000,40.000,0.000,0.000,0.000,1.000,General,17.658,70.632
+! <Solar View Factor Check Values>,Zone/Enclosure Name,Original Check Value,Calculated Fixed Check Value,Final Check Value,Number of Iterations,Fixed RowSum Convergence,Used RowSum Convergence
+Solar View Factor Check Values,Solar Enclosure 1,0.191537,6.727859E-004,6.727859E-004,12,66.000000,6.727859E-004
+Solar View Factor Check Values,0E_HBKIQ5DMQLIJ$2V3J_M,1.776357E-015,7.726826E-004,7.726826E-004,9,7.726826E-004,7.726826E-004
+Solar View Factor Check Values,2RSCZLOBZ4FAK$_WE8VCKM,8.881784E-015,6.538690E-004,6.538690E-004,10,6.538690E-004,6.538690E-004
+Solar View Factor Check Values,347JFE2YX7IHCEIALMUPEH,1.776357E-015,9.031312E-004,9.031312E-004,12,9.031312E-004,9.031312E-004
+! <Shadowing/Sun Position Calculations Annual Simulations>, Shading Calculation Method, Shading Calculation Update Frequency Method, Shading Calculation Update Frequency {days}, Maximum Figures in Shadow Overlap Calculations {}, Polygon Clipping Algorithm, Pixel Counting Resolution, Sky Diffuse Modeling Algorithm, Output External Shading Calculation Results, Disable Self-Shading Within Shading Zone Groups, Disable Self-Shading From Shading Zone Groups to Other Zones
+Shadowing/Sun Position Calculations Annual Simulations,PolygonClipping,Periodic,20,15000,SutherlandHodgman,512,SimpleSkyDiffuseModeling,No,No,No
+! <Surface View Factor Check Values>,Zone/Enclosure Name,Original Check Value,Calculated Fixed Check Value,Final Check Value,Number of Iterations,Fixed RowSum Convergence,Used RowSum Convergence
+Surface View Factor Check Values,Radiant Enclosure 1,0.191537,6.727859E-004,6.727859E-004,12,66.000000,6.727859E-004
+Surface View Factor Check Values,0E_HBKIQ5DMQLIJ$2V3J_M,1.776357E-015,7.726826E-004,7.726826E-004,9,7.726826E-004,7.726826E-004
+Surface View Factor Check Values,2RSCZLOBZ4FAK$_WE8VCKM,8.881784E-015,6.538690E-004,6.538690E-004,10,6.538690E-004,6.538690E-004
+Surface View Factor Check Values,347JFE2YX7IHCEIALMUPEH,1.776357E-015,9.031312E-004,9.031312E-004,12,9.031312E-004,9.031312E-004
+! <ZoneInfiltration Airflow Stats Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/Exterior Surface Area {m3/s-m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2}
+ ZoneInfiltration Airflow Stats Nominal, 0LT8GR_E9ESEGH5UY_G9E9,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,3.610E-003,1.389E-004,1.144E-004,0.200,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,1.736E-003,1.389E-004,2.061E-004,0.200,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, 17JZCMFRF5TOFTUTIDA0D3,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,2.265E-003,1.389E-004,1.118E-004,0.200,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, 2RSCZLOBZ4FAK$_WE8VCKM,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,1.803E-003,1.389E-004,1.001E-004,0.200,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, 2DQFGGKBB1FOC1CQZDIDLX,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,1.209E-002,1.128E-004,6.818E-005,0.200,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, 3$F2P7VYLB7EOX67SA_ZKE,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,1.592E-003,1.381E-004,1.933E-004,0.200,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, 347JFE2YX7IHCEIALMUPEH,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,3.066E-003,1.389E-004,1.291E-004,0.200,1.000,0.000,0.000,0.000
+! <ZoneVentilation Airflow Stats Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/person Area {m3/s-person},ACH - Air Changes per Hour,Fan Type {Exhaust;Intake;Natural},Fan Pressure Rise {Pa},Fan Efficiency {},Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2},Minimum Indoor Temperature{C}/Schedule,Maximum Indoor Temperature{C}/Schedule,Delta Temperature{C}/Schedule,Minimum Outdoor Temperature{C}/Schedule,Maximum Outdoor Temperature{C}/Schedule,Maximum WindSpeed{m/s}
+ ZoneVentilation Airflow Stats Nominal, 0LT8GR_E9ESEGH5UY_G9E9_WINTER,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,3.610E-003,1.389E-004,6.944E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 0LT8GR_E9ESEGH5UY_G9E9_SUMMER,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,1.805E-002,6.944E-004,3.472E-002,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 0LT8GR_E9ESEGH5UY_G9E9_OVERHEATING,CONTINUOUS,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,5.414E-002,2.083E-003,0.104,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M_WINTER,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,1.736E-003,1.389E-004,N/A,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M_SUMMER,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,8.682E-003,6.944E-004,N/A,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 0E_HBKIQ5DMQLIJ$2V3J_M_OVERHEATING,CONTINUOUS,0E_HBKIQ5DMQLIJ$2V3J_M,12.50,0.0,2.605E-002,2.083E-003,N/A,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 17JZCMFRF5TOFTUTIDA0D3_WINTER,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,2.265E-003,1.389E-004,2.778E-004,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 17JZCMFRF5TOFTUTIDA0D3_SUMMER,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,1.132E-002,6.944E-004,1.389E-003,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 17JZCMFRF5TOFTUTIDA0D3_OVERHEATING,CONTINUOUS,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,3.397E-002,2.083E-003,4.167E-003,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 2RSCZLOBZ4FAK$_WE8VCKM_WINTER,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,1.803E-003,1.389E-004,1.944E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 2RSCZLOBZ4FAK$_WE8VCKM_SUMMER,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,9.017E-003,6.944E-004,9.722E-003,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 2RSCZLOBZ4FAK$_WE8VCKM_OVERHEATING,CONTINUOUS,2RSCZLOBZ4FAK$_WE8VCKM,12.99,0.9,2.705E-002,2.083E-003,2.917E-002,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 2DQFGGKBB1FOC1CQZDIDLX_WINTER,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,1.209E-002,1.128E-004,5.639E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 2DQFGGKBB1FOC1CQZDIDLX_SUMMER,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,6.043E-002,5.639E-004,2.819E-002,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 2DQFGGKBB1FOC1CQZDIDLX_OVERHEATING,CONTINUOUS,2DQFGGKBB1FOC1CQZDIDLX,107.16,2.1,0.181,1.692E-003,8.458E-002,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 3$F2P7VYLB7EOX67SA_ZKE_WINTER,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,1.592E-003,1.381E-004,N/A,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 3$F2P7VYLB7EOX67SA_ZKE_SUMMER,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,7.960E-003,6.903E-004,N/A,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 3$F2P7VYLB7EOX67SA_ZKE_OVERHEATING,CONTINUOUS,3$F2P7VYLB7EOX67SA_ZKE,11.53,0.0,2.388E-002,2.071E-003,N/A,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 347JFE2YX7IHCEIALMUPEH_WINTER,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,3.066E-003,1.389E-004,1.389E-003,0.200,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,0.00,10.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 347JFE2YX7IHCEIALMUPEH_SUMMER,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,1.533E-002,6.944E-004,6.944E-003,1.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,10.00,17.00,40.00
+ ZoneVentilation Airflow Stats Nominal, 347JFE2YX7IHCEIALMUPEH_OVERHEATING,CONTINUOUS,347JFE2YX7IHCEIALMUPEH,22.07,2.2,4.598E-002,2.083E-003,2.083E-002,3.000,Natural,0.000,1.0,1.000,0.000,0.000,0.000,-100.00,100.00,-100.00,17.00,100.00,40.00
+! <CrossMixing Airflow Stats Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/person Area {m3/s-person},ACH - Air Changes per Hour,From/Source Zone,Delta Temperature {C}
+ CrossMixing Airflow Stats Nominal, Air Boundary Mixing Zones 1 and 1,Constant-1.0,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,9.024E-003,3.472E-004,1.736E-002,0.500,0LT8GR_E9ESEGH5UY_G9E9,0.00
+ CrossMixing Airflow Stats Nominal, Air Boundary Mixing Zones 1 and 1,Constant-1.0,0LT8GR_E9ESEGH5UY_G9E9,25.99,0.5,9.024E-003,3.472E-004,1.736E-002,0.500,0LT8GR_E9ESEGH5UY_G9E9,0.00
+ CrossMixing Airflow Stats Nominal, Air Boundary Mixing Zones 3 and 3,Constant-1.0,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,5.662E-003,3.472E-004,6.944E-004,0.500,17JZCMFRF5TOFTUTIDA0D3,0.00
+ CrossMixing Airflow Stats Nominal, Air Boundary Mixing Zones 3 and 3,Constant-1.0,17JZCMFRF5TOFTUTIDA0D3,16.31,8.2,5.662E-003,3.472E-004,6.944E-004,0.500,17JZCMFRF5TOFTUTIDA0D3,0.00
+! <AirFlow Model>, Simple
+ AirFlow Model, Simple
+! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+RoomAir Model,0LT8GR_E9ESEGH5UY_G9E9,Mixing/Well-Stirred
+RoomAir Model,0E_HBKIQ5DMQLIJ$2V3J_M,Mixing/Well-Stirred
+RoomAir Model,17JZCMFRF5TOFTUTIDA0D3,Mixing/Well-Stirred
+RoomAir Model,2RSCZLOBZ4FAK$_WE8VCKM,Mixing/Well-Stirred
+RoomAir Model,2DQFGGKBB1FOC1CQZDIDLX,Mixing/Well-Stirred
+RoomAir Model,3$F2P7VYLB7EOX67SA_ZKE,Mixing/Well-Stirred
+RoomAir Model,347JFE2YX7IHCEIALMUPEH,Mixing/Well-Stirred
+! <AirflowNetwork Model:Control>, No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+AirflowNetwork Model:Control,NoMultizoneOrDistribution
+! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
+Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
+ Load Timesteps in Zone Design Calculation Averaging Window,    4
+! <Heating Sizing Factor Information>, Sizing Factor ID, Value
+ Heating Sizing Factor Information, Global,   1.0000    
+! <Cooling Sizing Factor Information>, Sizing Factor ID, Value
+ Cooling Sizing Factor Information, Global,   1.0000    
+! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}, Calc DOAS Heat Addition Rate {W}
+ Zone Sizing Information, 0LT8GR_E9ESEGH5UY_G9E9, Cooling, 743.83191, 743.83191, 8.89900E-002, 8.89900E-002, SUMMER DESIGN DAY FROM WEATHER FILE, 7/29 16:30:00, 25.10000, 7.39976E-003, 25.98855, 0.51977, 0.00000, 0.00000
+ Zone Sizing Information, 0LT8GR_E9ESEGH5UY_G9E9, Heating, 465.61931, 465.61931, 1.28099E-002, 1.28099E-002, WINTER DESIGN DAY FROM WEATHER FILE, 2/28 09:15:00, 10.57500, 6.27777E-003, 25.98855, 0.51977, 0.00000, 0.00000
+ Zone Sizing Information, 0E_HBKIQ5DMQLIJ$2V3J_M, Cooling, 30.24953, 30.24953, 2.30314E-003, 2.30314E-003, SUMMER DESIGN DAY FROM WEATHER FILE, 7/29 16:30:00, 25.10000, 7.39976E-003, 12.50270, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, 0E_HBKIQ5DMQLIJ$2V3J_M, Heating, 402.00159, 402.00159, 1.27604E-002, 1.27604E-002, WINTER DESIGN DAY FROM WEATHER FILE, 2/28 09:15:00, 10.57500, 6.27777E-003, 12.50270, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, 17JZCMFRF5TOFTUTIDA0D3, Cooling, 5555.78905, 5555.78905, 0.66471, 0.66471, SUMMER DESIGN DAY FROM WEATHER FILE, 7/29 12:00:00, 24.30000, 7.71052E-003, 16.30545, 8.15273, 0.00000, 0.00000
+ Zone Sizing Information, 2RSCZLOBZ4FAK$_WE8VCKM, Cooling, 742.67846, 742.67846, 8.88540E-002, 8.88540E-002, SUMMER DESIGN DAY FROM WEATHER FILE, 7/29 17:30:00, 24.60000, 7.18429E-003, 12.98500, 0.92750, 0.00000, 0.00000
+ Zone Sizing Information, 2RSCZLOBZ4FAK$_WE8VCKM, Heating, 240.82288, 240.82288, 6.62525E-003, 6.62525E-003, WINTER DESIGN DAY FROM WEATHER FILE, 3/2 06:00:00, 1.00000, 3.66822E-003, 12.98500, 0.92750, 0.00000, 0.00000
+ Zone Sizing Information, 2DQFGGKBB1FOC1CQZDIDLX, Cooling, 2452.98385, 2452.98385, 0.29348, 0.29348, SUMMER DESIGN DAY FROM WEATHER FILE, 7/29 17:00:00, 24.90000, 7.21307E-003, 107.16000, 2.14320, 0.00000, 0.00000
+ Zone Sizing Information, 2DQFGGKBB1FOC1CQZDIDLX, Heating, 1716.66071, 1716.66071, 4.72254E-002, 4.72254E-002, WINTER DESIGN DAY FROM WEATHER FILE, 2/28 09:30:00, 10.75000, 6.26820E-003, 107.16000, 2.14320, 0.00000, 0.00000
+ Zone Sizing Information, 3$F2P7VYLB7EOX67SA_ZKE, Cooling, 1068.22132, 1068.22132, 0.44730, 0.44730, SUMMER DESIGN DAY FROM WEATHER FILE, 7/29 16:45:00, 25.00000, 7.30601E-003, 11.53140, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, 347JFE2YX7IHCEIALMUPEH, Cooling, 828.10495, 828.10495, 9.90789E-002, 9.90789E-002, SUMMER DESIGN DAY FROM WEATHER FILE, 7/29 12:30:00, 24.45000, 7.38976E-003, 22.07250, 2.20725, 0.00000, 0.00000
+ Zone Sizing Information, 347JFE2YX7IHCEIALMUPEH, Heating, 242.26553, 242.26553, 6.66559E-003, 6.66559E-003, WINTER DESIGN DAY FROM WEATHER FILE, 2/27 07:45:00, 0.67500, 2.52192E-003, 22.07250, 2.20725, 0.00000, 0.00000
+! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 0LT8GR_E9ESEGH5UY_G9E9 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 0LT8GR_E9ESEGH5UY_G9E9 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 8.89900E-002
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 0E_HBKIQ5DMQLIJ$2V3J_M IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 0E_HBKIQ5DMQLIJ$2V3J_M IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.30314E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 17JZCMFRF5TOFTUTIDA0D3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 17JZCMFRF5TOFTUTIDA0D3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.66471
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 2RSCZLOBZ4FAK$_WE8VCKM IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 2RSCZLOBZ4FAK$_WE8VCKM IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 8.88540E-002
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 2DQFGGKBB1FOC1CQZDIDLX IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 2DQFGGKBB1FOC1CQZDIDLX IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.29348
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 3$F2P7VYLB7EOX67SA_ZKE IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 3$F2P7VYLB7EOX67SA_ZKE IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.44730
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 347JFE2YX7IHCEIALMUPEH IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, 347JFE2YX7IHCEIALMUPEH IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 9.90789E-002
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values, Sky Temperature Model
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,RUN PERIOD 1,WeatherFileRunPeriod,01/01/2013,12/31/2013,Tuesday,365,Use RunPeriod Specified Day,Yes,Yes,No,Yes,Yes,Clark and Allen
+Environment:Daylight Saving,No,
+Environment:WarmupDays,  7
+! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+ Warmup Convergence Information,0LT8GR_E9ESEGH5UY_G9E9,RunPeriod: RUN PERIOD 1,2.1464311809E-015,2.4312504166E-015,Pass,Pass,3.9351975342E-002,6.4632750142E-002,Pass,Pass
+ Warmup Convergence Information,0E_HBKIQ5DMQLIJ$2V3J_M,RunPeriod: RUN PERIOD 1,3.2566542056E-015,2.7455426067E-015,Pass,Pass,9.2411455571E-003,2.2835308120E-002,Pass,Pass
+ Warmup Convergence Information,17JZCMFRF5TOFTUTIDA0D3,RunPeriod: RUN PERIOD 1,0.5625469229,1.6973274039,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,2RSCZLOBZ4FAK$_WE8VCKM,RunPeriod: RUN PERIOD 1,2.0724163126E-015,2.2740759639E-015,Pass,Pass,7.4642093264E-002,0.1672115113,Pass,Pass
+ Warmup Convergence Information,2DQFGGKBB1FOC1CQZDIDLX,RunPeriod: RUN PERIOD 1,2.7015426933E-015,2.4455726625E-015,Pass,Pass,3.7673494295E-002,7.4349584407E-002,Pass,Pass
+ Warmup Convergence Information,3$F2P7VYLB7EOX67SA_ZKE,RunPeriod: RUN PERIOD 1,3.0552109199E-002,3.6587386641E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,347JFE2YX7IHCEIALMUPEH,RunPeriod: RUN PERIOD 1,2.5165055225E-015,2.2884841923E-015,Pass,Pass,4.5507560838E-002,9.5018879413E-002,Pass,Pass
+! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
+Program Control:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
+End of Data

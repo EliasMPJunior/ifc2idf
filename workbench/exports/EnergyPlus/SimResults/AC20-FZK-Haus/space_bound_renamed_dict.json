@@ -1,0 +1,83 @@
+{
+    "0Lt8gR_E9ESeGH5uY_g9e9": {
+        "3GVjzXXdGlJ3KdeRhHKfU_": "InnerWall_N",
+        "0W9qLBnAEKxGyDG3aaC7Sx": "InnerWall_N_1",
+        "0iCm9iR1IwGqmD8UGv$izX": "InnerWall_W",
+        "2IcFpKExJ7L0xqSikQ$RMc": "InnerCeiling",
+        "0wxqSYU9XfzU3VLFEoAGQ9": "GroundFloor",
+        "3iG9WO1yvn7Q0liDeNczIp": "OuterWall_S",
+        "3qyT_DQI88XMWhb_P1vfxP": "OuterWall_E",
+        "0pBw99AFX7i8WRP5Nr0bmh": "AdiabaticWall_N"
+    },
+    "0e_hbkIQ5DMQlIJ$2V3j_m": {
+        "3AddSfVO7DGmy_y3h9IJ_l": "InnerWall_E",
+        "2pDD83uqxmRSy8GMp6Szu8": "InnerCeiling",
+        "09BIv6kxYHYe$Fi0$bzjnr": "InnerWall_S",
+        "2AWEX06$pdmmQGdv$hxhWO": "InnerWall_W",
+        "2weIpzIiCR4kwbSmcs97PG": "GroundFloor",
+        "2wEOGUfsldoePkKj8B92Zg": "OuterWall_N"
+    },
+    "17JZcMFrf5tOftUTidA0d3": {
+        "0gid$ajd6blB0V3EDTOfei": "InnerWall_E",
+        "0tsXsCXEp6uljIOre6ZFRo": "InnerWall_N",
+        "2VUy1ye7aIAHnJMjhMFGWd": "InnerWall_N_1",
+        "30_zhx$GCtcBp285QVsdG_": "InnerCeiling",
+        "1Wo7jfPGGvdgmZeiVZPQDp": "GroundFloor",
+        "0LC85yx5Qb4xRN8o5wBtrF": "OuterWall_S",
+        "1CD3MquFqt5C2MnLRuWGXl": "OuterWall_W"
+    },
+    "2RSCzLOBz4FAK$_wE8VckM": {
+        "3S62uZocO66ngdmMaRS2M9": "InnerWall_E",
+        "14TeGe_aGDXLMTt8fX0vQP": "InnerCeiling",
+        "1zvtHpRHFWSVHgO9MXUL0M": "InnerWall_S",
+        "2Sn7uAlFxA$POrax5b6wqo": "GroundFloor",
+        "3XYW9SWB7YBTXnJuv3X$K5": "OuterWall_N",
+        "3XTF9VnRG$5_FyP6rRZVuw": "OuterWall_W"
+    },
+    "2dQFggKBb1fOc1CqZDIDlx": {
+        "30Y14$n6BcKo4zt3hjgwMk": "InnerFloor",
+        "1qEbH1KsDpUVONBlPN2z6e": "InnerFloor_1",
+        "0RmNuXZ0b7zvL3k1pnthLj": "InnerFloor_1",
+        "3poPVBFJumC3O8TyAwfjTl": "InnerFloor_1",
+        "0iVlcYUfm86KH6vpLEFx4l": "InnerFloor_1",
+        "1hYST5uGdrRPiH45KdXX64": "InnerFloor_1",
+        "2GnYVfNeYR6NOPkw4t5oDJ": "InnerFloor_1",
+        "0fs9mTUlAv8vzQ4lTd2_fp": "OuterRoof",
+        "17wtAD5BGhLw7NwUk3Likt": "OuterRoof_1",
+        "348wyWzxcjJLGiA5p7KlFU": "GroundFloor",
+        "2qENT$df1pydUnvUQVzSwA": "OuterWall_E",
+        "3_hJUfivtebP6_paWETVhJ": "OuterWall_S",
+        "0dxBkPkUSBXBx7uHwKy0y2": "OuterWall_W",
+        "13UjdmCIGNmNY28Gtm7OlY": "OuterWall_N",
+        "2K6EO1Sb9CgRDyKd4LJGYp": "AdiabaticFloor",
+        "0j0JBR2dbDTeNcut0mTMir": "AdiabaticFloor_1"
+    },
+    "3$f2p7VyLB7eox67SA_zKE": {
+        "17KP$4dmVzTuXd21AK9wbx": "InnerWall_S",
+        "3NVoyTv9li_QOpozxqzdcB": "InnerWall_S_1",
+        "0LXqLKaTo0k0HX$faGDq3i": "InnerWall_S_1",
+        "3LwflcAqdsG0JEx6iRJffW": "InnerWall_N",
+        "3EoBRcaA$859Ee_8Qfrodo": "InnerWall_N_1",
+        "24CS3eKnkyWTHMmvk8AYvJ": "InnerWall_E",
+        "3gDPy6RtY1_t5dbjoUwYxI": "InnerCeiling",
+        "1Oj77mh75tbSxm94qqlPFI": "InnerCeiling_1",
+        "3ajGAdZJqM2TVCk7YhD3JS": "OuterWall_S",
+        "2vfaTwq4m5$ujNRFPaGpdU": "OuterCeiling",
+        "1$5LZayB5FfW_ApqaofJ6x": "OuterWall_N",
+        "29sJT6Ho2mKZovzttaNM5H": "GroundFloor",
+        "3EbbM8XqdFk076K2TBn8pv": "OuterWall_W",
+        "1J31PmXeXC6O1X7bmWVpL7": "AdiabaticWall_E",
+        "3XOCa98850nAAp9EKg5$aJ": "AdiabaticWall_N",
+        "3iLSLmgMrF_PqNGHqF_MUy": "AdiabaticWall_W"
+    },
+    "347jFE2yX7IhCEIALmupEH": {
+        "0F8DHwVIWaA92A8pankadM": "InnerWall_S",
+        "3U2Qhl_xlN0e5XdX$tS8aD": "InnerWall_W",
+        "0lyLYtqNldltxOgyjHos_O": "InnerWall_W_1",
+        "2XUhfJhXX3mEyxbTybTDYC": "InnerCeiling",
+        "2daBdKK14H6N6ekhTDweXH": "GroundFloor",
+        "3Ji5NbfxvZ_5G1BI$GM2jJ": "OuterWall_N",
+        "217LlFHxJqNQBqY5_3xaRw": "OuterWall_E",
+        "0EJnZ84rz0sR9UqLU$R489": "AdiabaticWall_W"
+    }
+}

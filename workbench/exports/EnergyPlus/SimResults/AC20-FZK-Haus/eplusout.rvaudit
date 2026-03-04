@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/AC20-FZK-Haus_6ac81e.rvi
+ input file:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/eplusout.eso
+ output file:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/eplusout.csv
+ getting all vars from:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/eplusout.eso
+  number variables requested for output=         165
+ ReadVars Run Time=00hr 00min  2.74sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/AC20-FZK-Haus_6ac81e.mvi
+ input file:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/eplusout.mtr
+ output file:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/eplusmtr.csv
+ getting all vars from:/content/projects/p_test260302/export/EnergyPlus/SimResults/AC20-FZK-Haus/eplusout.mtr
+  number variables requested for output=           4
+ ReadVars Run Time=00hr 00min  0.15sec
+ ReadVarsESO program completed successfully.
