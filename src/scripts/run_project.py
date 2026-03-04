@@ -110,9 +110,9 @@ def main():
                 try:
                     # URL do GitHub Raw como fallback seguro (arquivo pequeno de exemplo seria ideal)
                     # Usando URL da OneBuilding ou similar que seja direto
-                    epw_url = "https://raw.githubusercontent.com/labeee/weather_files/master/BRA_SC_Florianopolis-Hercilio.Luz.Intl.AP.838990_TMYx.2007-2021/BRA_SC_Florianopolis-Hercilio.Luz.Intl.AP.838990_TMYx.2007-2021.epw"
+                    epw_url = "https://github.com/BIM2SIM/bim2sim-test-resources/blob/a30bdad1c6103d18c2a504dad1835ad2f5d6aeaf/weather_files/DEU_NW_Aachen.105010_TMYx.epw"
                     
-                    dest_epw = project_path / "weather" / "Florianopolis.epw"
+                    dest_epw = project_path / "weather" / "DEU_NW_Aachen.105010_TMYx.epw"
                     dest_epw.parent.mkdir(parents=True, exist_ok=True)
                     
                     print(f"Baixando de {epw_url}...")
