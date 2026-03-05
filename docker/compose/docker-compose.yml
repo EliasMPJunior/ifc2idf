@@ -10,11 +10,28 @@ services:
         volumes:
             - ../../src:/app
             - ../../workbench:/data
+            - ../../projects:/projects
             - ../../bim2sim:/opt/conda/lib/python3.10/site-packages/bim2sim
         ports:
             - "${PORT:-8081}:8000"
         environment:
             - TZ=America/Sao_Paulo
+        command:
+            - bash
+            - -c
+            - |
+                tail -f /dev/null
+
+    ifc2sb:
+        image: eliasmpjunior/ifc2sb:latest
+        platform: linux/amd64
+        build:
+            context: ../../
+            dockerfile: ./docker/config/Dockerfile.ifc2sb
+        container_name: ifc2sb
+        hostname: ifc2sb
+        volumes:
+            - ../../projects:/projects
         command:
             - bash
             - -c
