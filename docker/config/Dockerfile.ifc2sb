@@ -1,60 +1,65 @@
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
-ENV DEBIAN_FRONTEND=noninteractive
+WORKDIR /bim2sim
 
-# Install build dependencies
-# Note: libocct-* packages in Ubuntu 22.04 provide OpenCascade 7.5 or 7.6 which is compatible
-RUN apt-get update && apt-get install -y \
-    git cmake gcc g++ ninja-build \
-    libfreetype6-dev libxt-dev libxmu-dev libxi-dev \
-    libgl1-mesa-dev libglu1-mesa-dev libfreeimage-dev \
-    libtbb-dev libomp-dev \
-    libboost-all-dev libxml2-dev \
-    libpolyclipping-dev \
-    libocct-data-exchange-dev libocct-draw-dev libocct-foundation-dev \
-    libocct-modeling-algorithms-dev libocct-modeling-data-dev \
-    libocct-ocaf-dev libocct-visualization-dev \
-    qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
+RUN apt-get -y install unzip
 
+
+################################################################################
+## Dependencies
+RUN apt-get install -y git cmake gcc g++ tcllib tklib tcl-dev tk-dev libfreetype6-dev libxt-dev libxmu-dev libxi-dev libgl1-mesa-dev libglu1-mesa-dev libfreeimage-dev libtbb-dev qt5-default libboost-all-dev libxml2-dev libomp-dev libcgal-dev
+################################################################################
+
+
+################################################################################
+# OpenCascade
 WORKDIR /tmp
+#RUN git clone https://github.com/Open-Cascade-SAS/OCCT && cd OCCT && mkdir build && cd build 
+#WORKDIR /tmp/OCCT/build
+RUN git clone -b master https://github.com/bimworld/occ.git && cd occ && unzip opencascade-7.5.3.zip -d /tmp/
+RUN cd opencascade-7.5.3 && mkdir build && cd build 
+WORKDIR /tmp/opencascade-7.5.3/build
+RUN cmake .. -Wno-dev -DBUILD_DOC_Overview=OFF -DBUILD_Inspector=OFF -DBUILD_LIBRARY_TYPE=Shared -DBUILD_RESOURCES=OFF -DBUILD_SAMPLES_QT=OFF -DBUILD_USE_PCH=OFF -DBUILD_YACCLEX=OFF -DCMAKE_BUILD_TYPE=Release -DUSE_TBB=ON -DUSE_FREEIMAGE=ON
+RUN make -j2 
+RUN make install
+################################################################################
 
-# Build IfcOpenShell (C++ only)
-# We need to build it because standard packages usually don't include headers/static libs for dev
-# Using v0.6.0 as recommended by IFC2SB documentation to avoid svgfill submodule issues in v0.7.0
-RUN git clone --recursive https://github.com/IfcOpenShell/IfcOpenShell.git && \
-    cd IfcOpenShell && \
-    git checkout v0.6.0 && \
-    git submodule update --init --recursive || true && \
-    mkdir build && cd build && \
-    cmake ../cmake \
-        -G Ninja \
-        -DSCHEMAS="IFC2X3;IFC4" \
-        -DCOLLADA_SUPPORT=OFF \
-        -DBUILD_IFCPYTHON=OFF \
-        -DBUILD_EXAMPLES=OFF \
-        -DBUILD_CONVERT=OFF \
-        -DBUILD_GEOMSERVER=OFF \
-        -DUSE_OCCT=ON \
-        -DOCC_INCLUDE_DIR=/usr/include/opencascade \
-        -DOCC_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu && \
-    ninja -j2 && \
-    ninja install && \
-    cd /tmp && rm -rf IfcOpenShell
 
-# Build IFC2SB
-RUN git clone --recursive https://github.com/RWTH-E3D/IFC2SB.git && \
-    cd IFC2SB && \
-    mkdir build && cd build && \
-    # CMakeLists.txt might be in 'cmake' folder based on similar RWTH projects or root
-    # Trying cmake folder first, if fails we might need to check root or src
-    cmake ../cmake \
-        -G Ninja \
-        -DSTATIC_OCC_IFCOS=OFF \
-        -DCLIPPER_INCLUDE_PATH="/usr/include/polyclipping" && \
-    ninja -j2 && \
-    cp IFC2SB /usr/local/bin/IFC2SB && \
-    cd /tmp && rm -rf IFC2SB
+################################################################################
+# IfcOpenShell
+WORKDIR /tmp
+RUN git clone --branch v0.6.0 https://github.com/IfcOpenShell/IfcOpenShell.git  && cd IfcOpenShell && mkdir build && cd build
+WORKDIR /tmp/IfcOpenShell/build
+RUN  cmake ../cmake -Wno-dev -DOCC_INCLUDE_DIR=/usr/local/include/opencascade -DBUILD_CONVERT=OFF -DBUILD_DOCUMENTATION=OFF -DBUILD_EXAMPLES=OFF -DBUILD_GEOMSERVER=OFF -DBUILD_CONVERT=OFF -DBUILD_PACKAGE=OFF -DCOLLADA_SUPPORT=OFF -DGLTF_SUPPORT=OFF -DBUILD_IFCPYTHON=OFF -DCMAKE_BUILD_TYPE=Release -DENABLE_BUILD_OPTIMIZATIONS=ON -DIFCXML_SUPPORT=OFF -DUSE_MMAP=OFF -DUSE_VLD=OFF -DBUILD_SHARED_LIBS=ON
+RUN make -j2
+RUN make install
+################################################################################
 
-WORKDIR /projects
+
+################################################################################
+# Clipper Library
+RUN apt-get -y install libpolyclipping-dev
+################################################################################
+
+
+################################################################################
+RUN git clone --recursive https://github.com/RWTH-E3D/IFC2SB.git /tmp/ifc2sb/code
+WORKDIR /tmp/ifc2sb/code
+RUN mkdir build && cd build && cmake ../cmake -DCLIPPER_INCLUDE_PATH="/usr/include/polyclipping" && make -j2
+WORKDIR /tmp/ifc2sb/code/build
+RUN ./IFC2SB -h
+################################################################################
+
+
+################################################################################
+# Clean
+WORKDIR /tmp
+RUN rm -r /tmp/IfcOpenShell
+RUN rm -r /tmp/occ
+RUN rm -r /tmp/opencascade-7.5.3
+# RUN rm -r /tmp/triangle
+################################################################################
+
 CMD ["/bin/bash"]
