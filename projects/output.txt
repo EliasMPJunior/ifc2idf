@@ -1,0 +1,4381 @@
+
+[1m[37m-------------------------------------------------
+### IFC-based Space Boundary Generator IFC2SB ###
+Generation of second level space boundaries for Ifc4 files.
+
+#####  ######  ####   ####   ####  #####  
+  #    #      #    # #    # #      #    # 
+  #    #####  #           #  ####  #####  
+  #    #      #       ####       # #    # 
+  #    #      #    # #      #    # #    # 
+#####  #       ####  ######  ####  #####  
+
+Version:     0.9 (2022)
+Developer:   Eric Fichter
+Institute:   E3D - Institute of Energy Efficiency and Sustainable Building,
+             RWTH Aachen University 
+-------------------------------------------------
+[0m
+-------------------------------------------------
+# Arguments
+Input file:          /projects/archicad_ifc4.ifc
+Output file:         /projects/archicad_ifc4_with_SB.ifc
+Threads:             8
+Graph:               true
+First level only:    false
+STL:                 false
+Transmission length: 0.41
+Split:               false
+No holes:            false
+Convex:              false
+Simple Opening:      false
+Shadings:            false
+Virtual Opening:     false
+Virtual by Spaces:   false
+-------------------------------------------------
+
+-------------------------------------------------
+
+### Products
+Parse ifc file                                                       ... 	Elapsed time: 0.5430 s
+Check ifc schema (IFC4)                                              ... 	Elapsed time: 0.0000 s
+Get length unit conversion factor (f: 1.000000, n: 8)                ... 	Elapsed time: 0.0005 s
+	#3	'Model'	0.01	0.01
+Identify relevant products (8)                                       ... 	Elapsed time: 0.0017 s
+Create shapes (unit: millimetermetre, 0.001000, context: Body, 8)    ... 	Elapsed time: 0.8965 s
+Simplify products (8)                                                ... 	Elapsed time: 0.0054 s
+Check product tolerances (8)                                         ... 	Elapsed time: 0.0020 s
+Add decomposed products (8)                                          ... 	Elapsed time: 0.0006 s
+Find not filled openings in products (8)                             ... 	Elapsed time: 0.0003 s
+Generate shapes of openings (9/9)                                    ... 	Elapsed time: 0.0216 s
+Subtract openings from products (9)                                  ... 	Elapsed time: 0.0177 s
+Check for broken shells (8)                                          ... 	Elapsed time: 0.0673 s
+Identify non-planar products (0/8)                                   ... 	Elapsed time: 0.0088 s
+Check products (8)                                                   ... 	Elapsed time: 0.0881 s
+Fuse products (8)                                                    ... 	Elapsed time: 0.0009 s
+Check products (8)                                                   ... 	Elapsed time: 0.0752 s
+Remove products (8)                                                  ... 	Elapsed time: 0.0000 s
+ Create shapes of IfcSpaces (3)                                      ... 	Elapsed time: 0.1132 s
+
+### Faces
+Collect original faces (212)                                         ... 	Elapsed time: 0.0071 s
+[Info] Parent element 3CzN3K9CT6COuZdbsnx9cQ (IfcWall) of 1Vwbu_8rDD_gnB7OYWBy_l (IfcWindow) linked by 19GEiJi8AYMRuYbbzBv3yS (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 1BeF0NFvL58vcmSUfbMgZG (IfcWall) of 3YtBxJzvzF0edQMZdqq2gP (IfcWindow) linked by 0bmtqVVmnqopCjsnnw9svy (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 3bZ$sGjfjFXwOfC8_ZhRIJ (IfcWall) of 2nT5SH0nX52Q871DbklnzI (IfcWindow) linked by 0c9y6vwpMvbkFfkGnvHqRy (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 1ExBOuLofEdRleJfLs2EKw (IfcWall) of 0aukXWE1v3ORwCmVAWBHhq (IfcDoor) linked by 2bwla2XSUpH4NcD_q0GkzY (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 1Bi1jQff19z8T9VF94lJLM (IfcWall) of 0ooxRCID1AnBlKsvSHg0m0 (IfcDoor) linked by 0WPC2HuEUZe0klVdk0_sG6 (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 1BeF0NFvL58vcmSUfbMgZG (IfcWall) of 2ChNUT51jEKARrczgObFfO (IfcWindow) linked by 1UVVNm8fOD$JD2TjvJGk7c (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 3CzN3K9CT6COuZdbsnx9cQ (IfcWall) of 25IeRKBAPEtBnLltLzV8Zq (IfcWindow) linked by 0VXnNLuE3CYa7UKHAM512V (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 1Bi1jQff19z8T9VF94lJLM (IfcWall) of 2SZd9Exaj8aeuJLm38XvY$ (IfcWindow) linked by 0PZ$20IV$KV8b0R9LCZNME (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Parent element 1ExBOuLofEdRleJfLs2EKw (IfcWall) of 2kijCaJNT7GxC3oS9Pc8Oq (IfcDoor) linked by 1ThdgaqBhpmS7je$c5qVQb (IfcOpeningElement) already has a hole where opening should be cut.
+[Info] Create shapes of window and door instances that could not be processed, yet.
+[Info] Common passed volume criteria. 0ooxRCID1AnBlKsvSHg0m0 0.112
+[Info] Common passed volume criteria. 2SZd9Exaj8aeuJLm38XvY$ 0
+[Info] Common passed volume criteria. 1Vwbu_8rDD_gnB7OYWBy_l 0
+[Info] Common passed volume criteria. 25IeRKBAPEtBnLltLzV8Zq 0
+[Info] Common passed volume criteria. 2ChNUT51jEKARrczgObFfO 0
+[Info] Common passed volume criteria. 3YtBxJzvzF0edQMZdqq2gP 0
+[Info] Common passed volume criteria. 2nT5SH0nX52Q871DbklnzI 0
+[Info] Common passed volume criteria. 2kijCaJNT7GxC3oS9Pc8Oq 0.112
+[Info] Common passed volume criteria. 0aukXWE1v3ORwCmVAWBHhq 0.112
+Add window/door faces to walls (8/266)                               ... 	Elapsed time: 0.5343 s
+Analyze original faces (266)                                         ... 	Elapsed time: 0.0605 s
+Check original faces (266)                                           ... 	Elapsed time: 0.0005 s
+Find duplicate hashes in original faces (0/0)                        ... 	Elapsed time: 0.0002 s
+
+### Boundaries
+Fuse original faces (366, 503)                                       ... 	Elapsed time: 0.3160 s
+Check faces (503)                                                    ... 	Elapsed time: 0.0836 s
+Check fuse (366)                                                     ... 	Elapsed time: 0.0008 s
+Check fixed normal (0/503)                                           ... 	Elapsed time: 0.0000 s
+Check for redundant cFaces (503)                                     ... 	Elapsed time: 0.0003 s
+Check containment in fuse (366, 503)                                 ... 	Elapsed time: 0.0024 s
+Check containment in cFaces (366, 503)                               ... 	Elapsed time: 0.0001 s
+Check for duplicate vertices (503)                                   ... 	Elapsed time: 0.0025 s
+[Info] 0 of 503 faces have an unknown orientation.
+All face normals are known.
+Correct face normals (503)                                           ... 	Elapsed time: 0.0075 s
+Save half-edge information (skip seam edges) (503)                   ... 	Elapsed time: 0.0011 s
+Check adjacency (503)                                                ... 	Elapsed time: 0.2251 s
+Identify enclosed faces (503)                                        ... 	Elapsed time: 0.0202 s
+Remove trash faces (350)                                             ... 	Elapsed time: 0.0001 s
+Identify duplicate faces (350)                                       ... 	Elapsed time: 0.0005 s
+Remove trash faces (138)                                             ... 	Elapsed time: 0.0000 s
+Check duplicate face ids (138)                                       ... 	Elapsed time: 0.0001 s
+Save face adjacency information (138)                                ... 	Elapsed time: 0.0014 s
+Add reversed duplicates of offset faces (138)                        ... 	Elapsed time: 0.0000 s
+Remove adjacence information between faces by orientation (138)      ... 	Elapsed time: 0.0002 s
+Identify hanging faces # (138)                                       ... 	Elapsed time: 0.0001 s
+Remove trash faces and adjacency information of trashed faces (130)  ... 	Elapsed time: 0.0000 s
+Identify decoupled offset faces (130)                                ... 	Elapsed time: 0.0000 s
+Remove trash faces and adjacency information of trashed faces (130)  ... 	Elapsed time: 0.0000 s
+[Info] Non-manifoldness appeared
+	Edge: 639955271	4
+		286 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342762354, 0, 0, 6.252953)	false	O: 0	L: 2116512198	V: 1447993864	774366263	n:1	-0	-0	Adj:	1342670130	805418674
+		303 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342670130, 0, 0, 0.351184)	false	O: 1	L: 2116512198	V: 1447993864	774366263	n:-0	0	1	Adj:	1342762354	805935106
+		399 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 805935106, 0, 0, 0.389933)	false	O: 0	L: 2116512198	V: 1447993864	774366263	n:-0.03	-0	-1	Adj:	1342670130	805418674
+		400 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 805418674, 0, 0, 4.185389)	false	O: 1	L: 2116512198	V: 1447993864	774366263	n:-0.03	-0	-1	Adj:	1342762354	805935106
+	Edge: 506801479	4
+		280 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342799106, 0, 0, 7.427431)	false	O: 0	L: 2116512198	V: 774335079	1447996728	n:1	-0	-0	Adj:	1342670130	805413746
+		303 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342670130, 0, 0, 0.351184)	false	O: 1	L: 2116512198	V: 774335079	1447996728	n:-0	0	1	Adj:	1342799106	805935106
+		399 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 805935106, 0, 0, 0.389933)	false	O: 0	L: 2116512198	V: 774335079	1447996728	n:-0.03	-0	-1	Adj:	1342670130	805413746
+		401 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 805413746, 0, 0, 5.224051)	false	O: 1	L: 2116512198	V: 774335079	1447996728	n:-0.03	-0	-1	Adj:	1342799106	805935106
+Non-manifold edges (2)                                               ... 	Elapsed time: 0.0017 s
+Remove adjacency of faces on non-manifold edges by angle (130)       ... 	Elapsed time: 0.0007 s
+Non-manifold edges (0)                                               ... 	Elapsed time: 0.0001 s
+Check adjacency self reference (0/130)                               ... 	Elapsed time: 0.0001 s
+Search components (4)                                                ... 	Elapsed time: 0.0314 s
+[Info] Duplicate face from same product 59 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1610795698, 0, 0, 0.191439)	435 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1610795698, 0, 1, 0.191439).
+[Info] Duplicate face from same product 115 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1074637074, 0, 0, 0.191439)	422 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1074637074, 0, 1, 0.191439).
+[Info] Duplicate face from same product 278 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342418050, 0, 0, 0.191439)	501 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342418050, 0, 1, 0.191439).
+[Info] Duplicate face from same product 288 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342763842, 0, 0, 0.191439)	486 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342763842, 0, 1, 0.191439).
+[Info] Duplicate face from same product 340 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1074697186, 0, 0, 0.191439)	488 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1074697186, 0, 1, 0.191439).
+[Info] Duplicate face from same product 344 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1074678626, 0, 0, 0.191439)	473 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1074678626, 0, 1, 0.191439).
+Check redundant faces (0/130)                                        ... 	Elapsed time: 0.0014 s
+Check space closed (4)                                               ... 	Elapsed time: 0.0003 s
+Check fixed normal (0/130)                                           ... 	Elapsed time: 0.0000 s
+
+### Spaces
+Identify facade space (4)                                            ... 	Elapsed time: 0.0000 s
+Check fixed normal (0/130)                                           ... 	Elapsed time: 0.0000 s
+Calculate solid classifiers of spaces (4)                            ... 	Elapsed time: 0.0029 s
+Remove invalid spaces (4)                                            ... 	Elapsed time: 0.0023 s
+Remove trash faces and adjacency information of trashed faces (130)  ... 	Elapsed time: 0.0000 s
+Remove inner and coplanar window and door faces (373/310)            ... 	Elapsed time: 0.0002 s
+Remove seam edges from faces (130)                                   ... 	Elapsed time: 0.0024 s
+Unify faces (130)                                                    ... 	Elapsed time: 0.0206 s
+Remove trash faces from spaces (4)                                   ... 	Elapsed time: 0.0001 s
+Remove trash faces (124)                                             ... 	Elapsed time: 0.0000 s
+Check correct pointers in adjacency (124)                            ... 	Elapsed time: 0.0000 s
+[Info] Opening face has no parent face 423 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1745300114, 0, 1, 1.890000)	 | '0ooxRCID1AnBlKsvSHg0m0'	IfcDoor	 | Add face 503 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449279352, 0, 0, 1.890000).
+[Info] Opening face has no parent face 436 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1209096114, 0, 1, 1.890000)	 | '0ooxRCID1AnBlKsvSHg0m0'	IfcDoor	 | Add face 504 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1443712952, 0, 0, 1.890000).
+[Info] Opening face has no parent face 437 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1446848488, 0, 1, 1.350000)	 | '2SZd9Exaj8aeuJLm38XvY$'	IfcWindow	 | Add face 505 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449180552, 0, 0, 1.350000).
+[Info] Opening face has no parent face 438 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442461208, 0, 1, 1.350000)	 | '2SZd9Exaj8aeuJLm38XvY$'	IfcWindow	 | Add face 506 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442709544, 0, 0, 1.350000).
+[Info] Opening face has no parent face 445 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449140808, 0, 1, 1.350000)	 | '1Vwbu_8rDD_gnB7OYWBy_l'	IfcWindow	 | Add face 507 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1450747704, 0, 0, 1.350000).
+[Info] Opening face has no parent face 446 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1442456952, 0, 1, 1.350000)	 | '1Vwbu_8rDD_gnB7OYWBy_l'	IfcWindow	 | Add face 508 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1446730984, 0, 0, 1.350000).
+[Info] Opening face has no parent face 451 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449147400, 0, 1, 1.350000)	 | '25IeRKBAPEtBnLltLzV8Zq'	IfcWindow	 | Add face 509 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447955464, 0, 0, 1.350000).
+[Info] Opening face has no parent face 452 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1442442968, 0, 1, 1.350000)	 | '25IeRKBAPEtBnLltLzV8Zq'	IfcWindow	 | Add face 510 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447363896, 0, 0, 1.350000).
+[Info] Opening face has no parent face 455 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443246280, 0, 1, 1.350000)	 | '2ChNUT51jEKARrczgObFfO'	IfcWindow	 | Add face 511 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442487624, 0, 0, 1.350000).
+[Info] Opening face has no parent face 456 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449182600, 0, 1, 1.350000)	 | '2ChNUT51jEKARrczgObFfO'	IfcWindow	 | Add face 512 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449098296, 0, 0, 1.350000).
+[Info] Opening face has no parent face 461 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442536248, 0, 1, 1.350000)	 | '3YtBxJzvzF0edQMZdqq2gP'	IfcWindow	 | Add face 513 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443275944, 0, 0, 1.350000).
+[Info] Opening face has no parent face 462 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449185016, 0, 1, 1.350000)	 | '3YtBxJzvzF0edQMZdqq2gP'	IfcWindow	 | Add face 514 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443228024, 0, 0, 1.350000).
+[Info] Opening face has no parent face 469 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442424088, 0, 1, 1.350000)	 | '2nT5SH0nX52Q871DbklnzI'	IfcWindow	 | Add face 515 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442834664, 0, 0, 1.350000).
+[Info] Opening face has no parent face 470 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449197528, 0, 1, 1.350000)	 | '2nT5SH0nX52Q871DbklnzI'	IfcWindow	 | Add face 516 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449211224, 0, 0, 1.350000).
+[Info] Opening face has no parent face 474 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1611412626, 0, 1, 1.890000)	 | '2kijCaJNT7GxC3oS9Pc8Oq'	IfcDoor	 | Add face 517 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450992712, 0, 0, 1.890000).
+[Info] Opening face has no parent face 487 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1745142658, 0, 1, 1.890000)	 | '2kijCaJNT7GxC3oS9Pc8Oq'	IfcDoor	 | Add face 518 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449730088, 0, 0, 1.890000).
+[Info] Opening face has no parent face 489 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342705138, 0, 1, 1.890000)	 | '0aukXWE1v3ORwCmVAWBHhq'	IfcDoor	 | Add face 519 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450939304, 0, 0, 1.890000).
+[Info] Opening face has no parent face 502 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 806599282, 0, 1, 1.890000)	 | '0aukXWE1v3ORwCmVAWBHhq'	IfcDoor	 | Add face 520 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449701176, 0, 0, 1.890000).
+Create missing parent faces (284, 142)                               ... 	Elapsed time: 0.0068 s
+Reduce edges in faces  (142)                                         ... 	Elapsed time: 0.0132 s
+Check for duplicate vertices (142)                                   ... 	Elapsed time: 0.0008 s
+Process space shells for export (4)                                  ... 	Elapsed time: 0.0117 s
+[Info] No IfcSite geometry found.
+Remove trash faces from spaces (4)                                   ... 	Elapsed time: 0.0000 s
+Remove trash faces (142)                                             ... 	Elapsed time: 0.0000 s
+[Info] Parent face has same size. 423 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1745300114, 0, 1, 1.890000) - 503 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449279352, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 436 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1209096114, 0, 1, 1.890000) - 504 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1443712952, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 437 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1446848488, 0, 1, 1.350000) - 505 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449180552, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 438 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442461208, 0, 1, 1.350000) - 506 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442709544, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 445 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449140808, 0, 1, 1.350000) - 507 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1450747704, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 446 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1442456952, 0, 1, 1.350000) - 508 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1446730984, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 451 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449147400, 0, 1, 1.350000) - 509 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447955464, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 452 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1442442968, 0, 1, 1.350000) - 510 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447363896, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 455 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443246280, 0, 1, 1.350000) - 511 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442487624, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 456 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449182600, 0, 1, 1.350000) - 512 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449098296, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 461 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442536248, 0, 1, 1.350000) - 513 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443275944, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 462 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449185016, 0, 1, 1.350000) - 514 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443228024, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 469 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442424088, 0, 1, 1.350000) - 515 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442834664, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 470 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449197528, 0, 1, 1.350000) - 516 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449211224, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 474 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1611412626, 0, 1, 1.890000) - 517 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450992712, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 487 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1745142658, 0, 1, 1.890000) - 518 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449730088, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 489 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342705138, 0, 1, 1.890000) - 519 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450939304, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 502 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 806599282, 0, 1, 1.890000) - 520 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449701176, 0, 0, 1.890000) (1.89), (1.89)
+Check parent faces (0/142)                                           ... 	Elapsed time: 0.0058 s
+Check fixed normal (0/142)                                           ... 	Elapsed time: 0.0000 s
+
+### Boundaries second level
+Find clip face pairs using non-sb faces (142, 0)                     ... 	Elapsed time: 0.0566 s
+Find clip face pairs between sbs (142, 0)                            ... 	Elapsed time: 0.0204 s
+Clip faces (427)                                                     ... 	Elapsed time: 0.2747 s
+Correct face normals (427)                                           ... 	Elapsed time: 0.0053 s
+Check faces (427)                                                    ... 	Elapsed time: 0.0895 s
+Check for duplicate vertices (427)                                   ... 	Elapsed time: 0.0018 s
+Check fixed normal (0/427)                                           ... 	Elapsed time: 0.0000 s
+Calculate points on faces (427)                                      ... 	Elapsed time: 0.2952 s
+Triangulate faces for ray tracer (427)                               ... 	Elapsed time: 0.0340 s
+Create mesh for ray tracer (3453, 1151, 1151)                        ... 	Elapsed time: 0.0005 s
+Build intersector (1151)                                             ... 	Elapsed time: 0.0092 s
+Create rays (427)                                                    ... 	Elapsed time: 0.0003 s
+Perform ray tracing (427)                                            ... 	Elapsed time: 0.0030 s
+Triangulate faces for ray tracer (310)                               ... 	Elapsed time: 0.0149 s
+Create mesh for ray tracer (2754, 918, 918)                          ... 	Elapsed time: 0.0005 s
+Build intersector (918)                                              ... 	Elapsed time: 0.0104 s
+Create rays (138)                                                    ... 	Elapsed time: 0.0002 s
+Perform ray tracing (138)                                            ... 	Elapsed time: 0.0005 s
+Unify faces (427)                                                    ... 	Elapsed time: 0.0333 s
+Trash 2b opening faces (427)                                         ... 	Elapsed time: 0.0000 s
+Remove trash faces from spaces (4)                                   ... 	Elapsed time: 0.0001 s
+Remove trash faces (274)                                             ... 	Elapsed time: 0.0004 s
+Reduce edges in faces  (274)                                         ... 	Elapsed time: 0.0065 s
+Check pointers (274)                                                 ... 	Elapsed time: 0.0001 s
+Check loops of faces  (0/274)                                        ... 	Elapsed time: 0.0031 s
+[Info] Parent face has same size. 423 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1745300114, 0, 1, 1.890000) - 503 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449279352, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 436 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1209096114, 0, 1, 1.890000) - 504 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1443712952, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 437 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1446848488, 0, 1, 1.350000) - 505 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449180552, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 438 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442461208, 0, 1, 1.350000) - 506 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442709544, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 445 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449140808, 0, 1, 1.350000) - 507 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1450747704, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 446 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1442456952, 0, 1, 1.350000) - 508 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1446730984, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 451 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449147400, 0, 1, 1.350000) - 509 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447955464, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 452 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1442442968, 0, 1, 1.350000) - 510 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447363896, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 455 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443246280, 0, 1, 1.350000) - 511 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442487624, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 456 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449182600, 0, 1, 1.350000) - 512 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449098296, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 461 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442536248, 0, 1, 1.350000) - 513 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443275944, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 462 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449185016, 0, 1, 1.350000) - 514 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443228024, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 469 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442424088, 0, 1, 1.350000) - 515 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442834664, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 470 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449197528, 0, 1, 1.350000) - 516 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449211224, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 474 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1611412626, 0, 1, 1.890000) - 517 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450992712, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 487 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1745142658, 0, 1, 1.890000) - 518 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449730088, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 489 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342705138, 0, 1, 1.890000) - 519 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450939304, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 502 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 806599282, 0, 1, 1.890000) - 520 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449701176, 0, 0, 1.890000) (1.89), (1.89)
+Check parent faces (0/142)                                           ... 	Elapsed time: 0.0054 s
+[Info] Parent face has same size. 912 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1745300114, 0, 1, 1.890000) - 930 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449279352, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 913 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1209096114, 0, 1, 1.890000) - 931 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1443712952, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 914 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1446848488, 0, 1, 1.350000) - 932 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1449180552, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 915 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442461208, 0, 1, 1.350000) - 933 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442709544, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 916 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449140808, 0, 1, 1.350000) - 934 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1450747704, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 917 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1451067064, 0, 1, 1.350000) - 935 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449538280, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 918 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1449147400, 0, 1, 1.350000) - 936 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447955464, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 919 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1442442968, 0, 1, 1.350000) - 937 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 1447363896, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 920 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443246280, 0, 1, 1.350000) - 938 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442487624, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 921 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449182600, 0, 1, 1.350000) - 939 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449098296, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 922 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1442536248, 0, 1, 1.350000) - 940 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443275944, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 923 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1449185016, 0, 1, 1.350000) - 941 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443228024, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 924 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442424088, 0, 1, 1.350000) - 942 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1442834664, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 925 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449197528, 0, 1, 1.350000) - 943 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1449211224, 0, 0, 1.350000) (1.35), (1.35)
+[Info] Parent face has same size. 926 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1611412626, 0, 1, 1.890000) - 944 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450992712, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 927 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1745142658, 0, 1, 1.890000) - 945 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449730088, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 928 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1342705138, 0, 1, 1.890000) - 946 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1450939304, 0, 0, 1.890000) (1.89), (1.89)
+[Info] Parent face has same size. 929 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 806599282, 0, 1, 1.890000) - 947 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1449701176, 0, 0, 1.890000) (1.89), (1.89)
+Check parent faces (0/274)                                           ... 	Elapsed time: 0.0053 s
+Check corresponding faces  (4/274)                                   ... 	Elapsed time: 0.0471 s
+Check space behind (0/274)                                           ... 	Elapsed time: 0.0001 s
+Check for holes in faces  (13/274)                                   ... 	Elapsed time: 0.0001 s
+Check for convexity of faces (247/274)                               ... 	Elapsed time: 0.0024 s
+Check for duplicate vertices (274)                                   ... 	Elapsed time: 0.0012 s
+Check super and subfaces (142)                                       ... 	Elapsed time: 0.0000 s
+Check superface (0/274)                                              ... 	Elapsed time: 0.0000 s
+Set enumerations (142)                                               ... 	Elapsed time: 0.0001 s
+Check internal/external enum (0/142)                                 ... 	Elapsed time: 0.0000 s
+Check internal/external enum (0/274)                                 ... 	Elapsed time: 0.0000 s
+
+### Model
+Link data of original IfcSpaces (3/3)                                ... 	Elapsed time: 0.0782 s
+Remove entities from model                                           ... 	Elapsed time: 0.0017 s
+Add virtual elements to model (0)                                    ... 	Elapsed time: 0.0000 s
+Check model pointers (4)                                             ... 	Elapsed time: 0.0002 s
+[Info] No collisions of products in original IFC file
+Add entities to model                                                ... 	Elapsed time: 0.1440 s
+Remove relationships from model                                      ... 	Elapsed time: 0.0031 s
+[Info] Changed isExternal attribute to false for product '2Q$Sq$dxX23QbZLmid6CAi' in pset '3h0xYxtRxdG8Pqtz8ttR4d' (#1762=IfcPropertySingleValue('IsExternal',$,IfcBoolean(.F.),$)).
+Revise IsExternal attribute                                          ... 	Elapsed time: 0.0010 s
+[Info] Changed isExternal attribute to true for product '2Q$Sq$dxX23QbZLmid6CAi' in pset '3h0xYxtRxdG8Pqtz8ttR4d' (#1762=IfcPropertySingleValue('IsExternal',$,IfcBoolean(.T.),$)).
+Revise IsExternal attribute                                          ... 	Elapsed time: 0.0001 s
+Correct isExternal attribut in product psets (4)                     ... 	Elapsed time: 0.0015 s
+Write Ifc file                                                       ... 	Elapsed time: 0.3762 s
+
+### Check
+Check model
+	Space 1Zl_Dyw_vAQhohCecXII34: ok
+	Space 0oBCF0j592rBerxN1YGlmh: ok
+	Space 2mZNAgozbBzAFP1oihlah3: ok
+	ExternalSpatialElement 1YO30Aoj5EhB$0kBxe4sW9: ok
+No IfcRelSpaceBoundary found.
+142 instances of IfcRelSpaceBoundary1stLevel found.
+	IfcRelSpaceBoundary1stLevel 0QeNeZP2bFe8EfYmMgOk$V:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1UiwOOeJ96YhLd3uqXQhP$:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3Uf32XL7j2ae1FtUaKJTN1:
+		has small area
+	IfcRelSpaceBoundary1stLevel 049d9jXwbD9xvK2CJQ0E_x:
+		has small area
+	IfcRelSpaceBoundary1stLevel 317bUiIAb5_BORPZgFiurz:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3KeePDB9n3UvdsjFYydTYR:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2wxWt8JE97G9gLGLf$H1o7:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3DYAUhN6H91x5eRSgaFP9R:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3iJEIU4hTAi9hKt$p3fj0z:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3FviFt9316ZPyNturNQiAU:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3LFo3jpLXEKfEQ2nCoB8uX:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3pCEQcE7f1T9MiMLLfruDZ:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3t2VLTPJj59RylpscnSSJk:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2GfsHOtEH65ApDuIO1YlPt:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2NQ6Du7qH1NBhD8G_Pn_Zm:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2bEi83iunAPB0jX7Z_g1h1:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0MV$uuLwrDKuNodWPw$SW6:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3PN1BKl5P5dP2MeQJKKqnu:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1yETbwSgD3Iu0lC7d_tb2u:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0knPVjXHvC_Q6IbA2YwEnP:
+		has small area
+	IfcRelSpaceBoundary1stLevel 33cY9UmXrFARgcsMBiQ5S0:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0_lYc18TbBrPgpm2O3M8gZ:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 3BeW0NFs994P2dc_uMtMdO:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 1fRX14d1b1heGw1umPaBA8:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 26Y7DJ0eX6ju$ME1DbCp8X:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 36JKaL0lr1bBPs3nyno6Ws:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 0zPcfoJFnAngwy7p9cO0mt:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 0QKh2t_4P1evxFh87pYA8O:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 3BX7fnVzr7JPALYOo7tm07:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 0GNbrLNrjC8PefyYedrsZG:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 1tQvwuNrD30QcpEJumNlj7:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 1PBhOzDYr7X9hAVqfoZpsh:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 0HLRWwaYvFKQ9dEmr9xZx8:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 3SQfAqeF51ZeSUYA3LlYmi:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 2T0W0DcTf2DBISoHrJbtuw:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 0TUrC$Cnb8ieWfBI4XJSKg:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 2j$0nwcvT9ywMTH72OqcxA:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 2DpHQ1FtzAlOwVkq5odAbL:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 14GnjoNDvDDehbFqW$_eHz:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 3blKmCXevAOAv58WRBcQZr:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 0M7ebXKbHD2uJgPcn6FQhC:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 2HWLq3B5bFhgKM4BezcZ6$:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 3FRBS1Ab55Bwph2vRHkjGt:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 2s0RP2GsjCxvy98QW4atQi:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 1KPAYcAUP6DuCabGGWN6Nj:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 1h$14Eggz6qfGL0rBztEz5:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 1N1p4ITKf4dw$0SAw7D4Xv:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 0SaEd0ESf3$hGJTSYcarxo:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 2lFFb16m12OhtEaTvt_R7m:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 1iD9jjLG52R8N7KHNwF19k:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary1stLevel 3v8b4OqWXCgfN7q9D0lQk4:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0evZr_SKf34gxw2Ky2whq7:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1fUN3gPjj9QfPLmYAGCOSE:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1F5222cVH4FOzkFIPN5y2U:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1s_XliFQnAhxzgow4zqfCC:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1O6gpa59b8PRkJDiYMd3KU:
+		has small area
+	IfcRelSpaceBoundary1stLevel 29nqFwnGT4be5D7uXLNKL6:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2kpW9h6VbAgw1HklVM89fN:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2NLSQOY298_BaDYrS7etvW:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3VBbmZucPAzv75YSKBPUJ3:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0GaDtTgF1CkOZd5UrbvIEI:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1zoAknL$99MBzAW03CRpB_:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1GRGycakL2swhI8HDAHa9M:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3X7lpuHWzDEPEiFt_$LgaR:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1YZ$FLBM95gwIgRdwMLAAC:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3gvvK4ESb119_OEn5PEo1L:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1eUCj7LQn1hvXj4YJVSL3d:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0xgtIE$TL2yRsifZw4ztXL:
+		has small area
+	IfcRelSpaceBoundary1stLevel 29zMf7iZf7Af3YdOPE7zFe:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3BSICZ5b5Ad8IUKVrSTY29:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1o2J$Q79r3kwMvNEGedVK2:
+		has small area
+	IfcRelSpaceBoundary1stLevel 05p3SRx2XE6OBh6kJ3WAyi:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1hdSgsP0r1vBbuD$pPMCCj:
+		has small area
+	IfcRelSpaceBoundary1stLevel 09OVgxh7DC7A0Vg$bjWsR6:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0IGZCg0vD9AxBCxBWKX1XA:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0y5azDHmf2B9TRuaW4VHUo:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1wxw7$gIr3Reat3BN$AOVy:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0lwr91JyP4suS7bzACb$QJ:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0_TYytX4f2M9441WWtshmt:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0dJgflDn17BQZtU9OunoQ2:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0kdBL15wD8ZuON0vcbODNe:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0iefxb$Lz7yeznY9OCBzm9:
+		has small area
+	IfcRelSpaceBoundary1stLevel 21TQeWbQ5E$voHFJVpSeEe:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0SwM5MlbfCruo5UkvnG6ER:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3dhLk9q8T2YgnvHAMNSgy3:
+		has small area
+	IfcRelSpaceBoundary1stLevel 19PpifQIXC2u$vm2o9Rsme:
+		has small area
+	IfcRelSpaceBoundary1stLevel 33Oh17HcD1eBBXycHBOaNE:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2KzXia7LDEIQEoi8D0n8J7:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3jbdj2tzbBhufP$IWWZjNh:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3tsNPiVK5F7RMyA0x$E26s:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0ySTmhUKbC7gClnGdmhXT4:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1sAoGaB0XEfeE4ZITbLicY:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1r_5b4HD14CAb0LC2bn1wZ:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1m_38GOaT3G8Vbq5$V5BFx:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0iEw_fUi1DMOxa$x_HaYUo:
+		has small area
+	IfcRelSpaceBoundary1stLevel 00MkeAJ8T94vDD_7ARbrT5:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0VxRueiBzBmfFV0P0Di8m0:
+		has small area
+	IfcRelSpaceBoundary1stLevel 03KufzOcb5FwA5pXTiY4A3:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3j$HLnhp19iQmmDyXJ3os0:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2cB$ObXAf0vBC24b89OERR:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0cn849wC58tOqpHjhuuFaE:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2bGMdtJNr43u0yMC5r6tBe:
+		has small area
+	IfcRelSpaceBoundary1stLevel 05io3xuaX66BKbxhvcpn_C:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2OAUCGKaT1tvxXQgTCHpgN:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2IyfEvwi968RY$5IpXem9Z:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3f9vKzqmP7BO$wQy9hEs0Z:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0Q02D3TMbFywacn_0tSvf7:
+		has small area
+	IfcRelSpaceBoundary1stLevel 28NTyZxSL4bxdqyFE1wAE6:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3jHua5PBz4Cfn4Hj444joL:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1XvzrxKVn2kw19cSfQx6DD:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3wd22GGn9Bm8vSN422mYEL:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3250dcCyf2sw3jxBSYgm2$:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1YqcMGN3X229rHykD1hmZ9:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3zVIauT6vAi8sEB8Dba2O_:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1$vedIqWXF7ONWZebP3xAY:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0y2uo6sj936Qnd3tXai4fR:
+		has small area
+	IfcRelSpaceBoundary1stLevel 00Y7IX4fnEMgBNKxQXOrwQ:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3sy$A03tL6tADqGIfEiEqC:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1BCvL7d8z1U9Tu_ayLHnnm:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2WSRfCgjLEf97r6qWGneii:
+		has small area
+	IfcRelSpaceBoundary1stLevel 35R5kwKDH9Ph52kIfV3PCA:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2GaH6ZAOL7J8DtGgtpbiXn:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2C_N7sLev4yuRpQn1mm1oy:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3OKriZVjL68gVr71OqW2hi:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0ePTErZrT5KBGhZCUcpjEs:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3tM2w$ITLFNuak6z2U2ZHu:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3LYSKVidH0EgK1crFN8Jcn:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2jG7b8AEfFlBkUsAlC2Ywt:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0koHfsAWL7Qwphq2CIedQq:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1yhe44fKfD48fGDa4CWXYN:
+		has small area
+	IfcRelSpaceBoundary1stLevel 09rBE8k511owhEd1amdh3f:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1g8EVMygPESueDume2rKgk:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2LZzHF0b94OA5wjM5RRjPT:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3FO8iMevfEiu18K5V5e08w:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2unhhySX14Rf7AlJciOp9C:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1korJsSm94F9_9GuG8UIGD:
+		has small area
+	IfcRelSpaceBoundary1stLevel 1$f5qrJ7jA0OVWfRXDSIYT:
+		has small area
+	IfcRelSpaceBoundary1stLevel 3TA0Z0whXD8xP_yIOI$wu3:
+		has small area
+	IfcRelSpaceBoundary1stLevel 0U6yGCz4P6YPTa8ZOP$d57:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2NO3VWm5bB4Pd$la6bFBpC:
+		has small area
+	IfcRelSpaceBoundary1stLevel 25R4eUJTv4bQ9SqFiMr9hA:
+		has small area
+	IfcRelSpaceBoundary1stLevel 2Q1lgwxbbFnPNyKQN2D2fh:
+		has small area
+274 instances of IfcRelSpaceBoundary2ndLevel found.
+	IfcRelSpaceBoundary2ndLevel 3klVabEKL8CwuX0NDeQ4cO:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3JOpMlLGj5jenMAqxyXd0G:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1vVtLdjIX8a8iA9Ibm548D:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2CvRz73Zr7xPN7Zzmbu7Pv:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3FF0PlZpH7nRr1u79ZtqNb:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1V_PoXhLr6o8jMkNCnWBav:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1tjLax2tD5Xvl01ciuSpli:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0Xl0O4g6b7QOKUsDiTwrF6:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1$0VaJEdP21hecxkjeVxbl:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1KcZ0eTR5E$fL8VWQwx5p0:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3L8MqvHQ9DCuNa7ItrxNYa:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0EqgseLfX1JBx7tEoCiInY:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0T3O3zwErAifZATwfNUBzg:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2F3d2Px4T3fhVbqErrl99q:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 22GtHjcRb1Q9L_mUAqE1Qa:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2kOtJqDOb01AKSjuTB$LQM:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1D6D11wOD3Ag34oxfR_kyK:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1GcRxR$0rFJw5UEg2O1VL8:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2N8USkliHD0xi2eZyk89bo:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0xhK3o4mz7lwkiIwdQFsWt:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3WzzcVWqrBpPBJTZPQFWbL:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2YSEWpzgr3$QK0MlKhfrCB:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2mNTrd0uj3QA_HdGxXnWRc:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2AYjCCSrHFnBIQ_SS8z$jJ:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1H0udmQkv6UPcxf_fd6p_$:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1RsKXel9vC9vix$KahIJcg:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2n1kIMJOH7Fw3Wo2t8ja1u:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2cCTlsVwT2JgQiHHYu2a7p:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0IKutL1RL9tB3BKy$_xR8I:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2Lq9jkJ$vFzf9inYnCiFYu:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1PD_uaCjfFbOfu0wfvM97X:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1uBDwuznz98AYYpqNr2foG:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1oSFw1pP9EU9aq08t8ttmQ:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 07ej1DkW5D09I$dKZEeHxM:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 155SeEHun71g2z77GcRIW1:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3yDPf891HAIOMJAyqzEqWY:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0WHAKum6n4MB1rwjRV3gL6:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3y8cN_6UX0KAy3I6urRrCI:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1LdR5Ykd18ZxUi7B0nw9lU:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Q4o3uL656qfM_qvqgoYde:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2ty8$l7$X9Su9mCzbLXed9:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1h10cM2k59wxhdvFC6J50P:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2wPJNPHOzBKwzj$Uj_MGI$:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1zhVY5_r9D7QObas5AHQwI:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1FPTbBYxf17emonBhIYRnB:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0ottlZk117UekHOpHOUSCC:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2tybUXAqTE_QAI$3asUz_w:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2R07n2ns55Yur4fKAMlqtT:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2uyu3CJ4r0ghr1r5r9CMEE:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0KRFWH71DA5eTHV8xp_udk:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3NU_d$ZEL0xAdsHZ_F_4Td:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1NJcSkk196MQ4k8_Rr8G8$:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0IWHJLzOb0f9ge3i85KaRI:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0NZU7YNsb0ZPFDmbcGeAHr:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1YmrsRWbjAJez_SoCVwd$o:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 09Nc_pGhvDrRiFTIpY_QAB:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0OIMapl1P9i9Zt3mImCPHo:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1W2erLIyr70x0QySSILW63:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 14fPTGiGD1phhF1j8XoHvq:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2O50uhs_zFMed36Kh2oOd_:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0S5o$MnNX7JuvoJnfYUlOz:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2_h3GG0q1EcR0dKCoiuRfG:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2orScv3ur7fPUZWh_G8RkD:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1T3Hnwn35CzfBooAafyBft:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1vmkbktMzDbuAGY_palHNe:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 071y5p$J52zAVDGiCruWrV:
+		is not closed
+		is not consistently oriented
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0l15KkIQvAIujNZ3CZJ5mJ:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0YyDO8$FP7WBoyYv14nM5u:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 00pyR1XV90QAMxuWBtsng_:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0iWHOvW5XEmhnT1vO4bgTk:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2zJaHcMQ14YuQCk4fTWb_C:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0uU4axpkX3AuLU$juLqYV7:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3jhmWhX4D2DBugQKdvIywu:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 22_y2ngjPAdQMwtzbXB$rw:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0Lpk$KHcHDkP4qME806alD:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2PwG1ihH13_RIqpq4kNqOw:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3HXHhqR9XBlQlDaTYibdPO:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Fen9N3CLDNOH9$ZpdbnY7:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3XGQY4ZIvAAvTXM51wgu8K:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 24xfALrlTC7PhNOYEqGbGz:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0VxxBhrWj1Je0y_BrlBWWn:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2ubwQWBrP5BxiQpEAhnzJ1:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 33d7q_9BP6jhmqvUegDglS:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0_kh7bOub4qw6evd8MrT0L:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3li7AsoLr0thViPi51$NZY:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2RCzgB1hT62vG_7jGMCuzG:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3q4C1_emnFjgFM9PfmlwzY:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3zIfN1jhD2ehueHfZNi0Xo:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 379IJxr3f8dAax1lufGZXu:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3qn3WCO7vAFgz8AwyGJH4y:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 06a20DQUHA4BbkuN0QTvoC:
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2IzUiu4e14vxrh58eAPsrD:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2BWtcIoPD4yvCnoaZXz5sY:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3zpxZIY0b5J8TAd2tOs5YO:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 024znCuEfC58Q9ZH5hT6vi:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1mGC9OUiX6kOogcaaKWqdD:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0X8q$2bKr1ZAnUpvMDwMnF:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Wfm5tt_LFjBl_CLUncNmP:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3bJWa0dBH79wc5Lp$lroQF:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3Okq5gmcLAugeaO0Xc2oFr:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0OB5FRzk9BW9uV6v8pJtpo:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2whxApwUL2hfRsPCWTDCoL:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3mdu1tc$b38hUysGE5BN_9:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1jxpclA7L5oO4bOJvGPYzi:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Vcz_iymf2uP8WGis57OAX:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1OsmCeDu14iRkU8B8R8dPv:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 075KNyVJH7ox2srVpWR9QO:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 203pwQiL5BQBg$6zTB_8xe:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1snHn2ICz2QQSCSyEZxs2F:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0Bi1FPoAP8BfYbVXuL1tgs:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1s7tNk6FTC3RBZaeY8DF1d:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2WHV_ve6D5qvoosQ_z$eDq:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0vjtDcH$X1CBBbWhE2NntX:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2UBPFDKNL4EAXZJlkDk2Ez:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2YyyAp84fC98Wxa19MaANy:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0cdJDHi$DEBRCcU8PUP0jO:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2aMKg33Z96YOxqkjHQzI8d:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1KfioJa2D43h8JZP_dN5YB:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3qRCuwqYfFsOo8o_66t8L4:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2AAakbAnn64v9TWG$sk$Dv:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1NKC0aExH0SA1LsXOMzTna:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3khnxwewbCGP$ynszGZBJa:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 34QainIcLF7eFbw8bOCyzu:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0mCpNKViz1LxBEfUcVLvDx:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2I4EhkEebF_Qvyq7oCeagd:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3n5KMmAcH1iu9RzP9CYu0W:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0mC2UMHSDAFP1i4xCDu3aX:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1SYLQMmn14aviTa3hVxfsd:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2BfZ9hMsX0KP_qBix$hSDi:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0LZl7DBrX7IATqzqYGe4Rl:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0DlRavINjEvP46euWhamVa:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1G3LjZuDHD_QdlBvyNmVx_:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1titHlaETEneOO5rFc$xnj:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2fDQF3IGLEXRCbgi$ENBYO:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2ON7tRN7zFe9P9iFc37iXp:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0shhZ6v4z9HwxCnDgbRy8i:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1GWtxgo9PAJfvyCnoGG8rQ:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2Q21_ORvHCFQRBu7f0_rzh:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2zuYTdojn4AvfCo64t8qg5:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1iehcbZMrBwekcEYt94g$P:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3t09JIj3nBWvSNhtxuU5mb:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0_h$T2T$bFK8BH33$o4Ins:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0odXE$Roz5SuPsVd44N5Xm:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1NjKP5jA56$P3MZXPBC8s0:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0CUWPDxF58OguDB7c5sJfC:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Zf6nYowzDL9K4n_4q0t1u:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1eu0lsYb9Ea8wy50QRwWmA:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3pPRBLwmvFxQ27cy_LwHLA:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3F7AzNJVjASvDTBLjgVD4S:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0JdTGjqxv1_AeO_4OEQMCD:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3Al6h3iR91TxcyMYcSFN94:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3GyedR3hDFZBTncNsRzJUY:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2_WtsFjKb8qu3uWEAmwfMf:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3FfAqKTBvEMv3NSbsOAMcc:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1ckElokK5FtvY3yYiI0Qyc:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0Ye3boD4f308WCRRm0msqY:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2cP813$er5qOdwd1rbiW2L:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3PJSUBVx90ovA5o3ikPMRG:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 27fui5hTT89e9pcKOKKXJz:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3XdJ3hJwD5khb9378DbbsS:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0sykqqvJ14BBu$sOKaXeOs:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1VJiG4OefFWQZbzinjO$cQ:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Ta6fJVTz57vb0G8zbiuvI:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0tyni$X5DBCAgTd6BrOazD:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3CX$Wxh0vAAvAuCKyhSla$:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0_x8uVm7rDbAyb_MsZBpLN:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0m8CoZNpX1tQMlU7dko$hy:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0Z3YJKTWjBSAzgf5SQVjjA:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1bGF42gGjCofBB$YCiTnJ_:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2QQ5nw3y9FDuVQ4YVeRf3R:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3pD6iFR9H6qu8aK4bQ59L6:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2HKiPAwt1Ccu3BhaHWq2Sq:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 02sm9CXUXAABwl_8Y6HOmX:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2Q7f52soTDcujD26u2otil:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0gYpvGDiX3JuFWM6CoAlm5:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0Jp7xyx7vB9vsqPfmyDJdV:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2kkWvUeHj1zAwMwhwBFXD5:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0aJ7cLIeHDpfZUNSUXxaY9:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1D2o51bYvBqgWuBqjzxlVs:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1fqXBsLBHBjAw8l3xRcqzT:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2DmDEjsSn0wuwBJ_5NUqSN:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2JeRh5R050RQrOSUq$Pyk6:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1LoFezle13lPLLnaRuG5Yt:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1gjuCFvNLC8hcgxalwXb_p:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2J$cig_6b8WOEM_1FJJDM$:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2F6_4FV3r80x_9V62S1Xyn:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 09CXvzH5f7NRVJcac7F7X7:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3jvCKZ60vDdeHDHh0kQGlZ:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2AQoBYlo92xOfDQjSgBaLX:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2QNLlC8iH96AW_w7Lhexjy:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0X4ONX9GT8Wu$jgkchA4vc:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0eTMwU9ufBs93bTg4xstJV:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Ykhfb9oX87OKdQKRYQW8O:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0K9ms77hD2K9fk3kFY59NQ:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1MBm0lMkj5pf8AKHRZIVt2:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3ztMyTJIn15BbluRY4Y2a7:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1jiROzGAz1ouT8Quihwvj2:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3rmNx_s6D3l8m8Vuf_wkFf:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 03bhbB1rXE_Qj9PRocaDYB:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3_vJ839WnD5falIrbpkOMD:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0ECvwuFM1DJh$6asca98X4:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2Ovuo2nV9E8wXLDPpcNRxU:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1ErEjwXlb6eegSJabGqZh1:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1wK2leinX8qfUUGx17sHxu:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 03PgJlHIDA5gskHG29dMDT:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0M0MDyPYLCMwyYM2ENOhvh:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2KNDa9bMv8Nuenv6SOWyPX:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 07WPYAK69B6RF7SHkcLWsQ:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1lFLk0XvH18QW0N7Lty6cq:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 28p2$h1lX1kxPFrFpw3F37:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3LmkY07RDEAO6aIVNptwe2:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 09NrUJguf9Cu6QXD7Ca1Kp:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3ebXYf0sT1UAfeLTG4KClc:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2z6omzcEbFxxFqc7KZJSfG:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1fujcS3H1EAh6JPB$KJC6J:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2DxGloCQ904v9Oi_tdyxHq:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3HLvihZV55oxfaW5GoO5ae:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 022Wm_Aw99tfyDYOxxhfGQ:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3fIhRJhtT1ZxIS1_mqpnRf:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2Es7SifizEewU7ooyDX7Yv:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2QNKuhXKj6kxpKt8Zx5HGM:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3F8rYETPH1n8q_oeDZNC2x:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0r8eyYkTv5VgKZOdZtxmEq:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2KPdYt7cfCpg5TxpHuBTKv:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2Kbt5LS$v4ORgN1wP$CsUt:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 348WFEKlbEp9X8D0msCeQH:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2qeuS8iaLDB84WoWVaeVdy:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3S0x$QlKv2VPjOrVJkRBUT:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2cLe4Xe$r7XhqvkS6MLBE0:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 359hWeeJjCsvqUzYXDd0of:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1blp$ABuz1XPP87uLhxIx$:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2MsjW5kHrCpRvuOaIwj0RG:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3NLB9RLtD7IxH2U5YVveHl:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2x5YzRv_XESQ4KYeebjqXW:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3UwyxMPSvAox_krjFPjhuU:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0ufobxX391oAjkTn12thNC:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1tT1wPm69CGfcgndYQKYX$:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3lrAHxPxD86eapYa5ygxbv:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3bDEXfR_53U8qLZMzT7UGB:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0FmH2Fcc542QJMS_1BH9X9:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0mk0eqUvv2ffECsLRoq$_B:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1HvkoXQ8DCce2EgFBgd1$m:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0a0O84o6rDDezSvqusN4VU:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0hyOmJAcP1BRq9GlmwCfu9:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3s3Vr9e_rAu8LJZhVqHGK4:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1LhU9HJor8vhsCCCGTlxqm:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1DHyhmV2HAKu3ESrYcHksz:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Jz3e$M9r62Q_E$CUY$szl:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 38iMvTlsPCtvGU9GQ5X82x:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1giGnyO4PFOR3PyheGDdPs:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0vfugi5TXBnx9gD8uczsRt:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0oVeoru5DEu9zNfygGARnP:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2cHxWYabH6Ov$ew2QRRIoR:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1Xc7eteSLCtOa_wPltbfuD:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0M9gHXa$DBHBMEWRTBp2vr:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 115KKcOub6rgKkY3YoYhyQ:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1IA1AZEmT7YABfcexg6w9B:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0ZBMy3J497evIpi0hhdM1$:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2mNJRRarHCThTUQ4aiEYTf:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2_nif00ob8s8i9uuIHItFI:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0Sz1zN80bDdg_pTbp2uH42:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3fhLbp0yX9ZxIu6$U4kGRS:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0qdiu$5OD9yQMisTLW0HMh:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0SGCmqqFT6tfFHESsxfOh2:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2OG2eOMtn6$8BaJ6yw7BIR:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1LTPZh68X50uVnlkM7eU8W:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0$U4JLCcL8Whzt3mMwEUZj:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0CTKXkrTT8$eXkVXStdkNl:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 3_iEU0grjC0ODseY0QAoUH:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2j73a0u_H3_g3YqqQH33kD:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 1sIqOqst14QfVnvmiif3sW:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 0rRB$xhjL13PxkKQYefN5M:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2iKgHdUqP6DxcFw_w7zglP:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	IfcRelSpaceBoundary2ndLevel 2i9PqxA35DhewPR9PAFQBW:
+		is not closed
+		is not consistently oriented
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		is not consistently oriented
+		has negative volume
+		has small area
+		is not closed
+		is not consistently oriented
+		has small area
+		has small area
+		is not closed
+		has negative volume
+		has small area
+		is not closed
+		has small area
+	Elapsed time: 2.47143 s
+Program finished successfully!
+Total Elapsed time: 7.25081 s
+-------------------------------------------------

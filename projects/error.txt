@@ -1,0 +1,95 @@
+[Warning] Short edge. 663	201861698	663 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 201861698, 0, 0, 7.427437)	201802546	0.000257	1	1
+[Warning] Short edge. 664	2013702482	664 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 2013702482, 0, 0, 6.252964)	2013290674	0.000257	1	1
+[Warning] Short edge. 675	403346658	675 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 403346658, 0, 0, 0.000004)	403107330	0.000286175	1	1
+[Warning] Short edge. 679	402681186	679 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 402681186, 0, 0, 0.000002)	403005586	0.000286175	1	1
+[Error] Super short edge. 692	671951554	692 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671951554, 0, 0, 0.000011)	672039202	9.10555e-05	1	1
+[Error] Super short edge. 697	671341458	697 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671341458, 0, 0, 0.000002)	672039202	9.10555e-05	1	1
+[Warning] Small area. 749	671488162	749 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671488162, 0, 0, 0.000000)	2.26988e-08	1	1
+[Error] Super short edge. 749	671488162	749 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671488162, 0, 0, 0.000000)	672295090	1.83904e-05	1	1
+[Warning] Small area. 755	671539010	755 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671539010, 0, 0, 0.000000)	2.26923e-08	1	1
+[Error] Super short edge. 755	671539010	755 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671539010, 0, 0, 0.000000)	671379378	1.83904e-05	1	1
+[Error] Super short edge. 817	537006482	817 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 537006482, 0, 0, 0.000002)	537587970	9.10555e-05	1	1
+[Error] Super short edge. 823	537005490	823 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 537005490, 0, 0, 0.000011)	537587970	9.10555e-05	1	1
+[Error] Super short edge. 854	940329730	854 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 940329730, 0, 0, 0.581623)	940066114	1.4e-05	1	1
+[Error] Super short edge. 871	2013271554	871 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013271554, 0, 0, 0.520647)	2013640946	1.4e-05	1	1
+[Error] Super short edge. 873	2013693586	873 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013693586, 0, 0, 0.520646)	2013640434	1.4e-05	1	1
+[Error] Super short edge. 875	940514674	875 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 940514674, 0, 0, 0.581623)	939642178	1.4e-05	1	1
+[Warning] No point on face was found. 749 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671488162, 0, 0, 0.000000) 2.26988e-08
+[Warning] No point on face was found. 755 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671539010, 0, 0, 0.000000) 2.26923e-08
+[Warning] Corresponding face pair doesn't match in number of vertices. 521 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1446686664, 0, 0, 8.505562) - 533 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1342606498, 0, 0, 8.505561) | (0) - (1), (12) - (8) - (4.29285e-08), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 522 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1447638616, 0, 0, 19.744356) - 543 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1610743746, 0, 0, 19.744361) | (0) - (1), (14) - (8) - (2.20242e-07), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 533 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1342606498, 0, 0, 8.505561) - 521 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1446686664, 0, 0, 8.505562) | (1) - (0), (8) - (12) - (4.29285e-08), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 543 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1610743746, 0, 0, 19.744361) - 522 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1447638616, 0, 0, 19.744356) | (1) - (0), (8) - (14) - (2.20242e-07), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 662 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1446599560, 0, 0, 7.618877) - 672 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1443138392, 0, 0, 7.618864) | (0) - (0), (20) - (18) - (1.72754e-06), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 664 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1448930296, 0, 0, 6.444402) - 677 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1447720312, 0, 0, 6.444389) | (0) - (0), (20) - (18) - (2.01096e-06), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 672 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1443138392, 0, 0, 7.618864) - 662 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1446599560, 0, 0, 7.618877) | (0) - (0), (18) - (20) - (1.72754e-06), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 677 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1447720312, 0, 0, 6.444389) - 664 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1448930296, 0, 0, 6.444402) | (0) - (0), (18) - (20) - (2.01096e-06), (180)
+[Warning] Corresponding face pair doesn't match in area. 692 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451667960, 0, 0, 0.000014) - 866 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013479810, 0, 0, 0.000014) | (1) - (0), (1.36583e-05) - (1.35833e-05-> 0.00552151), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 692 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451667960, 0, 0, 0.000014) - 866 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013479810, 0, 0, 0.000014) | (1) - (0), (8) - (6) - (0.00552151), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 693 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671776658, 0, 0, 4.600313) - 867 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1447274152, 0, 0, 4.600312) | (1) - (0), (12) - (16) - (2.77319e-07), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 732 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451067160, 0, 0, 0.389933) - 877 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1442586024, 0, 0, 0.389933) | (1) - (0), (8) - (16) - (9.81533e-10), (180)
+[Warning] Corresponding face pair doesn't match in area. 817 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1444371064, 0, 0, 0.000014) - 908 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 939659458, 0, 0, 0.000014) | (1) - (0), (1.36583e-05) - (1.35833e-05-> 0.00552151), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 817 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1444371064, 0, 0, 0.000014) - 908 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 939659458, 0, 0, 0.000014) | (1) - (0), (8) - (6) - (0.00552151), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 818 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 537373330, 0, 0, 4.600315) - 906 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1447561144, 0, 0, 4.600315) | (1) - (0), (12) - (16) - (8.79924e-08), (180)
+[Warning] Corresponding face pair not matching. 866 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013479810, 0, 0, 0.000014) - 692 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451667960, 0, 0, 0.000014) | (0) - (1) null
+[Warning] Corresponding face pair doesn't match in number of vertices. 867 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1447274152, 0, 0, 4.600312) - 693 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671776658, 0, 0, 4.600313) | (0) - (1), (16) - (12) - (2.77319e-07), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 877 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1442586024, 0, 0, 0.389933) - 732 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451067160, 0, 0, 0.389933) | (0) - (1), (16) - (8) - (9.81533e-10), (180)
+[Warning] Corresponding face pair doesn't match in number of vertices. 906 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1447561144, 0, 0, 4.600315) - 818 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 537373330, 0, 0, 4.600315) | (0) - (1), (16) - (12) - (8.79924e-08), (180)
+[Warning] Corresponding face pair not matching. 908 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 939659458, 0, 0, 0.000014) - 817 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1444371064, 0, 0, 0.000014) | (0) - (1) null
+[Warning] For face 521 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1446686664, 0, 0, 8.505562), 0) the product 0J9Jz3_hr1_x7COm0Rigju appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 681 (IfcWall, 363sTT59nBAOR86$WERgCc, 1611133090, 0, 0, 7.318233), 0) the product 363sTT59nBAOR86$WERgCc appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 910 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 939703538, 0, 0, 0.008003), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 662 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1446599560, 0, 0, 7.618877), 0) the product 1ExBOuLofEdRleJfLs2EKw appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 883 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1449534728, 0, 0, 5.213685), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 884 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451066280, 0, 0, 0.010365), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 911 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 940056930, 0, 0, 3.278694), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 607 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 1443219736, 0, 0, 7.941772), 0) the product 1BeF0NFvL58vcmSUfbMgZG appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 585 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 940340130, 0, 0, 5.826630), 0) the product 3CzN3K9CT6COuZdbsnx9cQ appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 522 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1447638616, 0, 0, 19.744356), 0) the product 0J9Jz3_hr1_x7COm0Rigju appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 906 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1447561144, 0, 0, 4.600315), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 582 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 940069026, 0, 0, 7.113610), 0) the product 3CzN3K9CT6COuZdbsnx9cQ appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 877 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1442586024, 0, 0, 0.389933), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 553 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1444531304, 0, 0, 15.049566), 0) the product 1Bi1jQff19z8T9VF94lJLM appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 905 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 939659202, 0, 0, 0.009439), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 897 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013467618, 0, 0, 0.020396), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 898 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013470706, 0, 0, 10.548371), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 672 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1443138392, 0, 0, 7.618864), 0) the product 1ExBOuLofEdRleJfLs2EKw appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 677 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1447720312, 0, 0, 6.444389), 0) the product 1ExBOuLofEdRleJfLs2EKw appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 870 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 2013479922, 0, 0, 0.009441), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 643 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1451136808, 0, 0, 8.463610), 0) the product 3bZ$sGjfjFXwOfC8_ZhRIJ appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 867 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1447274152, 0, 0, 4.600312), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 610 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 403390546, 0, 0, 6.807794), 0) the product 1BeF0NFvL58vcmSUfbMgZG appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 523 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1744894386, 0, 0, 7.467533), 0) the product 0J9Jz3_hr1_x7COm0Rigju appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 680 (IfcWall, 363sTT59nBAOR86$WERgCc, 1476649458, 0, 0, 7.318186), 0) the product 363sTT59nBAOR86$WERgCc appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 864 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451367992, 0, 0, 0.008005), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 664 (IfcWall, 1ExBOuLofEdRleJfLs2EKw, 1448930296, 0, 0, 6.444402), 0) the product 1ExBOuLofEdRleJfLs2EKw appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 881 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1443213352, 0, 0, 4.176290), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 640 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 1451363720, 0, 0, 5.826630), 0) the product 3bZ$sGjfjFXwOfC8_ZhRIJ appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 865 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451136856, 0, 0, 3.278692), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 882 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1449540184, 0, 0, 0.009100), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 732 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451067160, 0, 0, 0.389933), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 722 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671399282, 0, 0, 6.258097), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 775 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 604329410, 0, 0, 10.548366), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 761 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671368658, 0, 0, 5.213689), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 762 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671411554, 0, 0, 4.176293), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 859 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1449652440, 0, 0, 5.747593), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 782 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 604223698, 0, 0, 6.258089), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 885 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451551160, 0, 0, 6.258088), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 891 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1451549144, 0, 0, 6.258088), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 815 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 537065538, 0, 0, 5.747592), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 818 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 537373330, 0, 0, 4.600315), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 530 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1208198610, 0, 0, 7.467531), 0) the product 0J9Jz3_hr1_x7COm0Rigju appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 533 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1342606498, 0, 0, 8.505561), 0) the product 0J9Jz3_hr1_x7COm0Rigju appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 693 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671776658, 0, 0, 4.600313), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 543 (IfcSlab, 0J9Jz3_hr1_x7COm0Rigju, 1610743746, 0, 0, 19.744361), 0) the product 0J9Jz3_hr1_x7COm0Rigju appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 690 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671712002, 0, 0, 5.747592), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 566 (IfcWall, 1Bi1jQff19z8T9VF94lJLM, 1442522488, 0, 0, 15.049569), 0) the product 1Bi1jQff19z8T9VF94lJLM appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 595 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 2013720290, 0, 0, 5.826627), 0) the product 3CzN3K9CT6COuZdbsnx9cQ appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 713 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 671713442, 0, 0, 3.278692), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 899 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 1449362632, 0, 0, 5.747593), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 840 (IfcRoof, 2Q$Sq$dxX23QbZLmid6CAi, 537294706, 0, 0, 3.278694), 0) the product 2Q$Sq$dxX23QbZLmid6CAi appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 638 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 201941474, 0, 0, 6.807794), 0) the product 1BeF0NFvL58vcmSUfbMgZG appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 635 (IfcWall, 1BeF0NFvL58vcmSUfbMgZG, 201793618, 0, 0, 7.941775), 0) the product 1BeF0NFvL58vcmSUfbMgZG appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 655 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 201794402, 0, 0, 5.826627), 0) the product 3bZ$sGjfjFXwOfC8_ZhRIJ appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 659 (IfcWall, 3bZ$sGjfjFXwOfC8_ZhRIJ, 201794290, 0, 0, 8.463610), 0) the product 3bZ$sGjfjFXwOfC8_ZhRIJ appears only in odd number (3) in material list (layer cannot be closed).
+[Warning] For face 590 (IfcWall, 3CzN3K9CT6COuZdbsnx9cQ, 2013594066, 0, 0, 7.113610), 0) the product 3CzN3K9CT6COuZdbsnx9cQ appears only in odd number (3) in material list (layer cannot be closed).
