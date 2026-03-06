@@ -1,0 +1,60 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install build dependencies
+# Note: libocct-* packages in Ubuntu 22.04 provide OpenCascade 7.5 or 7.6 which is compatible
+RUN apt-get update && apt-get install -y \
+    git cmake gcc g++ ninja-build \
+    libfreetype6-dev libxt-dev libxmu-dev libxi-dev \
+    libgl1-mesa-dev libglu1-mesa-dev libfreeimage-dev \
+    libtbb-dev libomp-dev \
+    libboost-all-dev libxml2-dev \
+    libpolyclipping-dev \
+    libocct-data-exchange-dev libocct-draw-dev libocct-foundation-dev \
+    libocct-modeling-algorithms-dev libocct-modeling-data-dev \
+    libocct-ocaf-dev libocct-visualization-dev \
+    qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp
+
+# Build IfcOpenShell (C++ only)
+# We need to build it because standard packages usually don't include headers/static libs for dev
+# Using v0.6.0 as recommended by IFC2SB documentation to avoid svgfill submodule issues in v0.7.0
+RUN git clone --recursive https://github.com/IfcOpenShell/IfcOpenShell.git && \
+    cd IfcOpenShell && \
+    git checkout v0.6.0 && \
+    git submodule update --init --recursive || true && \
+    mkdir build && cd build && \
+    cmake ../cmake \
+        -G Ninja \
+        -DSCHEMAS="IFC2X3;IFC4" \
+        -DCOLLADA_SUPPORT=OFF \
+        -DBUILD_IFCPYTHON=OFF \
+        -DBUILD_EXAMPLES=OFF \
+        -DBUILD_CONVERT=OFF \
+        -DBUILD_GEOMSERVER=OFF \
+        -DUSE_OCCT=ON \
+        -DOCC_INCLUDE_DIR=/usr/include/opencascade \
+        -DOCC_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu && \
+    ninja -j2 && \
+    ninja install && \
+    cd /tmp && rm -rf IfcOpenShell
+
+# Build IFC2SB
+RUN git clone --recursive https://github.com/RWTH-E3D/IFC2SB.git && \
+    cd IFC2SB && \
+    mkdir build && cd build && \
+    # CMakeLists.txt might be in 'cmake' folder based on similar RWTH projects or root
+    # Trying cmake folder first, if fails we might need to check root or src
+    cmake ../cmake \
+        -G Ninja \
+        -DSTATIC_OCC_IFCOS=OFF \
+        -DCLIPPER_INCLUDE_PATH="/usr/include/polyclipping" && \
+    ninja -j2 && \
+    cp IFC2SB /usr/local/bin/IFC2SB && \
+    cd /tmp && rm -rf IFC2SB
+
+WORKDIR /projects
+CMD ["/bin/bash"]
